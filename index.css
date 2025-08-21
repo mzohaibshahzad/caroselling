@@ -5,32 +5,18 @@
      box-sizing: border-box;
  }
 
- .container {
+ .app-container {
      max-width: 1440px;
      margin: 0 auto;
      padding-left: 10px;
      padding-right: 10px;
  }
 
+ /* navbar-sec */
  .nav-main {
      background-color: black;
      color: white;
      padding-bottom: 100px;
- }
-
- @media screen and (max-width: 700px) {
-     .links a {
-         display: none;
-     }
-
-     .menu {
-         display: block;
-     }
-
-     .logo {
-         font-size: 30px;
-     }
-
  }
 
  nav {
@@ -72,6 +58,23 @@
      cursor: pointer;
  }
 
+ @media screen and (max-width: 700px) {
+     .links a {
+         display: none;
+     }
+
+     .menu {
+         display: block;
+     }
+
+     .logo {
+         font-size: 30px;
+     }
+
+ }
+
+ /* navbar-end */
+
  /* Hero section start */
  .heroleft {
      max-width: 950px;
@@ -79,13 +82,13 @@
 
  .hero-para {
      font-size: 110px;
-
+     font-weight: 400;
  }
 
  .hero-sec-para {
      font-size: 100px;
 
-
+     font-weight: 400;
  }
 
  .hero-sec-para span {
@@ -114,6 +117,25 @@
      display: flex;
      align-items: center;
      justify-content: space-between;
+ }
+
+ .right-para {
+     color: white;
+     font-weight: 300;
+     font-size: 20px;
+     line-height: 24px;
+     letter-spacing: 0;
+ }
+
+ .heroright {
+     max-width: 500px;
+     width: 100%;
+ }
+
+ .flex-hero {
+     display: flex;
+     justify-content: space-between;
+     padding-bottom: 90px;
  }
 
  @media screen and (max-width: 700px) {
@@ -164,27 +186,11 @@
      }
  }
 
- .hero-img {
-     width: 100%;
-     height: 100%;
- }
-
- .heroright {
-     max-width: 500px;
-     width: 100%;
- }
-
- .flex-hero {
-     display: flex;
-     justify-content: space-between;
-     padding-bottom: 90px;
- }
-
  /* Hero section end */
  /* about section start */
  h2 {
      max-width: 600px;
-     font-size: 35px;
+     font-size: 42px;
      font-weight: 500;
      padding-bottom: 60px;
      padding-top: 40px;
@@ -196,9 +202,9 @@
  }
 
  .about-para-1 {
-     max-width: 400px;
-     padding-bottom: 10px;
-     font-size: 19px;
+     max-width: 690px;
+     padding-bottom: 15px;
+     font-size: 20px;
      font-weight: 400;
  }
 
@@ -220,7 +226,7 @@
  }
 
  .our-para {
-     font-size: 45px;
+     font-size: 40px;
      font-weight: 400;
      max-width: 1050px;
      padding-bottom: 20px;
@@ -235,10 +241,13 @@
  .image {
      max-width: 586px;
      padding-top: 20px;
-     margin-bottom: -10px;
+     margin-bottom: -8px;
  }
 
  .about-card {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
      max-width: 800px;
      background-color: #f1eeee;
      border-radius: 8px;
@@ -256,7 +265,7 @@
 
  .about-para {
      font-weight: 400;
-     font-size: 29px;
+     font-size: 20px;
      padding-bottom: 20px;
  }
 
@@ -269,7 +278,7 @@
 
  .card-heading {
      color: blue;
-     font-size: 35px;
+     font-size: 30px;
  }
 
  .about-grid {
@@ -360,7 +369,7 @@
  .choose-para {
      font-size: 22px;
      font-weight: 400;
-     max-width: 724px;
+     max-width: 824px;
      padding: 20px 0px;
  }
 
@@ -369,7 +378,7 @@
      font-weight: 600;
      line-height: 60px;
      letter-spacing: 0.4px;
-     max-width: 497px;
+     max-width: 600px;
      text-align: center;
  }
 
@@ -476,7 +485,7 @@
      font-size: 85px;
      line-height: 95px;
      letter-spacing: -3.4px;
-     max-width: 426px;
+     max-width: 726px;
  }
 
  .cta-para {
@@ -601,9 +610,24 @@
 
  .footer-list-flex {
      display: flex;
-     flex-direction: row;
      justify-content: space-between;
      padding: 60px 0;
+ }
+
+ @media screen and (max-width: 700px) {
+     .footer-list-flex {
+         flex-direction: column;
+
+     }
+
+     .footer-links {
+         flex-direction: column;
+     }
+
+     .footer-right {
+         display: flex;
+         flex-direction: column;
+     }
  }
 
  .footer-right a {
