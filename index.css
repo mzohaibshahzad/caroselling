@@ -339,7 +339,7 @@
 
  /* choose us section */
  .main-choose {
-     padding: 100px 0px;
+     padding: 50px 0px;
  }
 
  .choose-done {
@@ -348,23 +348,38 @@
  }
 
  .choose-btn {
-     padding: 14px 20px;
+
+     padding: 10px 12px;
      border-radius: 8px;
-     margin: 5px 2px;
+     font-size: 14px;
+     font-weight: 400;
      background-color: #f1eeee;
      border: 1px solid lightgrey;
+     cursor: pointer;
+     text-decoration: none;
+     color: black
  }
+
+ .button-section a {
+     text-decoration: none;
+     color: black;
+ }
+
+ .button-sec-flex {
+     max-width: 2500px;
+     display: flex;
+     flex-wrap: wrap;
+     gap: 8px;
+     padding: 10px;
+
+ }
+
 
  .choose-head {
      font-size: 51px;
  }
 
- .button-section {
-     margin-left: auto;
-     margin-right: auto;
-     max-width: 2500px;
-     padding: 20px 0px;
- }
+
 
  .choose-para {
      font-size: 22px;
@@ -592,6 +607,11 @@
 
  .footer-list {
      list-style: none;
+ }
+
+ .footer-list a {
+     text-decoration: none;
+     color: lightgray;
  }
 
  .footer-list-head {
