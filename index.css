@@ -501,6 +501,7 @@
      line-height: 95px;
      letter-spacing: -3.4px;
      max-width: 726px;
+
  }
 
  .cta-para {
@@ -533,6 +534,7 @@
      display: flex;
      justify-content: space-between;
      align-items: center;
+
  }
 
  .cta-img {
