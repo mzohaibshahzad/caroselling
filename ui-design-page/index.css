@@ -1,0 +1,190 @@
+ * {
+     font-family: "Inter", sans-serif;
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+ }
+
+ .app-container {
+     max-width: 1440px;
+     margin: 0 auto;
+     padding-left: 10px;
+     padding-right: 10px;
+ }
+
+ /* Hero section start */
+ .heroleft {
+     max-width: 950px;
+ }
+
+ .hero-para {
+     font-size: 110px;
+     font-weight: 400;
+ }
+
+ .hero-sec-para {
+     font-size: 100px;
+
+     font-weight: 400;
+ }
+
+ .hero-sec-para span {
+     background-color: blue;
+ }
+
+ .hero-btn {
+
+     font-size: 20px;
+     padding: 15px 20px;
+     margin-top: 50px;
+     text-align: center;
+     background-color: blue;
+     border: none;
+     border-radius: 100px;
+     color: white;
+ }
+
+ .hero-btn:hover {
+     background-color: white;
+     color: black;
+     cursor: pointer;
+ }
+
+ .hero-main {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     background-color: black;
+     color: white;
+ }
+
+ .hero-flex {
+     display: flex;
+     align-items: center;
+     padding: 50px 0;
+ }
+
+ .right-para {
+     color: white;
+     font-weight: 300;
+     font-size: 20px;
+     line-height: 24px;
+     letter-spacing: 0;
+ }
+
+ .hero-right {
+     max-width: 500px;
+     width: 100%;
+ }
+
+
+
+ @media screen and (max-width: 700px) {
+     .hero-main {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         text-align: center;
+     }
+
+     .hero-para {
+         font-size: 40px;
+     }
+
+     .hero-sec-para {
+         font-size: 50px;
+     }
+
+     .hero-btn {
+         padding: 15px 30px;
+         margin-bottom: 20px;
+
+     }
+
+ }
+
+ @media screen and (max-width: 350px) {
+
+     .hero-main {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         text-align: center;
+     }
+
+     .hero-para {
+         font-size: 30px;
+     }
+
+     .hero-sec-para {
+         font-size: 40px;
+     }
+
+     .hero-btn {
+         font-size: 15px;
+         padding: 10px 20px;
+     }
+ }
+
+ /* painpoint-sec */
+ h2 {
+     max-width: 600px;
+     font-size: 42px;
+     font-weight: 500;
+     padding-bottom: 60px;
+     padding-top: 40px;
+ }
+
+ .about-spn {
+     background-color: blue;
+     color: white;
+ }
+
+ .about-para-1 {
+     max-width: 690px;
+     padding-bottom: 15px;
+     font-size: 20px;
+     font-weight: 400;
+     padding-bottom: 80px;
+ }
+
+ .about-right {
+     max-width: 45px;
+     height: 1px;
+     background-color: black;
+ }
+
+ .painpoint-flex {
+     display: flex;
+     max-width: 530px;
+     align-items: center;
+     gap: 20px;
+ }
+
+ .painpoint-head {
+     font-size: 106px;
+     font-weight: 400;
+     line-height: 110px;
+     letter-spacing: 0%;
+ }
+
+ .painpoint-para {
+     font-size: 21px;
+     font-weight: 400;
+     line-height: 24px;
+     letter-spacing: 0%;
+ }
+
+ .painpoint-span {
+     background-color: blue;
+     color: white;
+ }
+
+ .painpoint-flex {
+     display: grid;
+     grid-template-columns:auto auto auto;
+     padding: 50px 350px 40px 0px;
+     /* gap: 30px; */
+ }
+
+ /*painpoint-sec*/
