@@ -28,7 +28,7 @@
         }
 
         .padding-top-bottom {
-            padding: 50px 16px;
+            padding: 60px 0px;
         }
 
 
@@ -100,12 +100,11 @@
         /* about section start */
 
 
-        .about-main 
-        h2 {
+        .about-main h2 {
             max-width: 600px;
             font-size: 42px;
             font-weight: 500;
-           
+            padding-bottom: 30px;
 
         }
 
@@ -147,7 +146,7 @@
 
         .card-img {
             width: 100%;
-            height: 100%;
+            max-height: 350px;
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
         }
@@ -208,8 +207,22 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                text-align: center;
+
             }
+
+            .end-card {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .left-end-card p {
+                font-size: 20px;
+                padding-bottom: 20px;
+                padding-top: 20px;
+            }
+
+
         }
 
         .end-card {
@@ -227,7 +240,7 @@
             padding-left: 20px;
         }
 
-        .left-end-card p {
+        .left-end-para {
             font-size: 30px;
             padding-bottom: 20px;
         }
@@ -249,7 +262,7 @@
         .end-card-image {
             width: 100%;
             max-height: 350px;
-
+            border-top-left-radius: 10px;
         }
 
         /* our-services-sec end */
@@ -302,7 +315,7 @@
             font-size: 22px;
             font-weight: 400;
             max-width: 824px;
-            padding: 20px 0px;
+            padding: 40px 0px;
         }
 
         .tool-head {
@@ -410,13 +423,13 @@
             .tool-card {
                 max-width: 100%;
             }
+
         }
 
         .cta-head {
             font-weight: 400;
             font-size: 85px;
-            line-height: 95px;
-            letter-spacing: -3.4px;
+
             max-width: 726px;
         }
 
@@ -553,6 +566,7 @@
             display: flex;
             justify-content: space-between;
             padding: 60px 0;
+            gap: 30px;
         }
 
         @media screen and (max-width: 700px) {
@@ -612,6 +626,35 @@
             }
         }
 
+        @media screen and (max-width:850px) {
+            .our-para {
+                font-size: 30px;
+
+            }
+
+            .our-spn {
+
+                font-size: 40px;
+
+            }
+
+            .end-card {
+                flex-direction: column;
+                padding: 20px 20px 0px 20px;
+
+            }
+
+            .end-card-image {
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                overflow: hidden;
+            }
+
+            .left-end-card {
+                padding-left: 0px;
+            }
+        }
+
         @media screen and (max-width: 710px) {
             /* Hero section responsive */
 
@@ -628,10 +671,11 @@
                 margin-bottom: 20px;
 
             }
-              .padding-top-bottom {
-                padding: 60px 0px;
-            }
 
+
+            .choose-head {
+                font-size: 40px;
+            }
         }
 
         @media screen and (max-width: 582px) {
@@ -645,12 +689,10 @@
                 font-size: 60px;
             }
 
-           
+
 
             /* About section responsive */
-            .about-main,
             h2 {
-                padding-bottom: 40px;
                 font-size: 32px;
             }
 
@@ -658,6 +700,18 @@
 
                 font-size: 18px;
                 font-weight: 400;
+            }
+
+            /* service-section-responsive */
+            .our-para {
+                font-size: 25px;
+
+            }
+
+            .our-spn {
+
+                font-size: 30px;
+
             }
         }
 
@@ -680,10 +734,26 @@
 
 
             /* About section responsive */
-            .about-main
-            h2 {
+            .about-main h2 {
 
                 font-size: 28px;
+            }
+
+            /* service section  */
+            .our-para {
+                font-size: 20px;
+
+            }
+
+            .our-spn {
+
+                font-size: 25px;
+
+            }
+
+            .card-heading {
+                font-size: 25px;
+
             }
         }
 
@@ -701,63 +771,69 @@
                 font-size: 40px;
             }
 
-
+            .choose-head {
+                font-size: 25px;
+            }
         }
     </style>
 </head>
 
 <body>
-    <!-- nav-sec -->
-    <div class="main">
-        <div class="app-container">
+    <!-- hero-sec -->
+    <section>
+        <div class="main">
+            <div class="app-container">
 
-            <!-- hero-sec -->
-            <div class="hero-main  padding-top-bottom">
-                <div class="heroleft">
-                    <h1 class="hero-para">Build Smarter </h1>
-                    <h1 class="hero-sec-para">Websites With Proven<span> Results</span> </h1>
-                    <button class="hero-btn">Learn more</button>
-                </div>
-                <div class="heroright">
-                    <p class="right-para">We craft websites that blend creativity with strategy.
-                        From design to development, every detail drives results.
-                        Boost your visibility with powerful SEO solutions.
-                        Engage customers through seamless web and mobile apps.
-                        Transform your ideas into scalable digital products.
-                        Grow smarter, faster, and stronger with us.</p>
+                <!-- hero-sec -->
+                <div class="hero-main  padding-top-bottom">
+                    <div class="heroleft">
+                        <h1 class="hero-para">Build Smarter </h1>
+                        <h1 class="hero-sec-para">Websites With Proven<span> Results</span> </h1>
+                        <button class="hero-btn">Learn more</button>
+                    </div>
+                    <div class="heroright">
+                        <p class="right-para">We craft websites that blend creativity with strategy.
+                            From design to development, every detail drives results.
+                            Boost your visibility with powerful SEO solutions.
+                            Engage customers through seamless web and mobile apps.
+                            Transform your ideas into scalable digital products.
+                            Grow smarter, faster, and stronger with us.</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!-- about-sec -->
-    <div class="about-main  padding-top-bottom">
-        <div class="app-container">
-            <div class="about-main">
+    <section>
+        <div class="about-main  padding-top-bottom">
+            <div class="app-container">
+                <div class="about-main">
 
-                <h2>Your Growth, Our Mission to Build Digital
+                    <h2>Your Growth, Our Mission to Build Digital
 
-                    <span class="about-spn"> Success That Lasts</span>
-                </h2>
-                <p class="about-para-1"> We are a team of innovators passionate about creating impactful digital
-                    solutions. From web
-                    design to advanced AI-driven tools, we help businesses unlock their potential in the digital
-                    world. Our focus is not only on building technology but on building long-term partnerships that
-                    fuel your success. With every project, we strive to blend creativity, strategy, and performance.
-                </p>
-                <p class="about-para-1">
-                    Our team brings together creative thinkers, technical experts, and problem solvers who share one
-                    vision — to deliver digital experiences that make a difference.</p>
-                <p class="about-para-1">
-                    From designing stunning websites to building custom platforms, we focus on solutions that not
-                    only <span class="about-spn">look great but also perform with purpose.</span> </p>
+                        <span class="about-spn"> Success That Lasts</span>
+                    </h2>
+                    <p class="about-para-1"> We are a team of innovators passionate about creating impactful digital
+                        solutions. From web
+                        design to advanced AI-driven tools, we help businesses unlock their potential in the digital
+                        world. Our focus is not only on building technology but on building long-term partnerships that
+                        fuel your success. With every project, we strive to blend creativity, strategy, and performance.
+                    </p>
+                    <p class="about-para-1">
+                        Our team brings together creative thinkers, technical experts, and problem solvers who share one
+                        vision — to deliver digital experiences that make a difference.</p>
+                    <p class="about-para-1">
+                        From designing stunning websites to building custom platforms, we focus on solutions that not
+                        only <span class="about-spn">look great but also perform with purpose.</span> </p>
 
 
 
+                </div>
             </div>
         </div>
-    </div>
+    </section>
     <!-- our-services-sec -->
-    <div class="servies-main  padding-top-bottom">
+    <div class="service-section-main padding-top-bottom">
         <div class="app-container">
             <p class="our-para"> <span class="our-spn"> Transforming ideas into reality,</span> we craft innovative
                 digital solutions tailored to your vision Our services are designed to fuel growth, helping businesses
@@ -829,7 +905,8 @@
             <!-- 5 -->
             <div class="end-card">
                 <div class="left-end-card">
-                    <p><span class="card-heading">AI & Data</span> Harness the power of AI to automate and innovate your
+                    <p class="left-end-para"><span class="card-heading">AI & Data</span> Harness the power of AI to
+                        automate and innovate your
                         business.
                         From intelligent automation to advanced data-driven insights, we’ve got you covered.
                         Stay ahead with technology that transforms challenges into opportunities.</p>
@@ -897,7 +974,7 @@
                     run smarter.</p>
             </div>
             <div class="tool-image">
-                <img src="https://lh3.googleusercontent.com/0X-5f0tpXVLFvfCdRYU-H-tpHwypdNEaM5tbGYWIj5jsDSHZK9oHMlJfKGQg96TPpxw3vMA97RsGLZV4Ub2D70HNfAvEi0Tup2PGPE7YlwtGplirEpzhOaTkNnk2VonpDbUVJgcEQ5g0m2DahDe4Q1teM4RKHq8lhRwBIZKvBLzhT5xO8b8ODA=w1280 "
+                <img src="https://lh4.googleusercontent.com/0X-5f0tpXVLFvfCdRYU-H-tpHwypdNEaM5tbGYWIj5jsDSHZK9oHMlJfKGQg96TPpxw3vMA97RsGLZV4Ub2D70HNfAvEi0Tup2PGPE7YlwtGplirEpzhOaTkNnk2VonpDbUVJgcEQ5g0m2DahDe4Q1teM4RKHq8lhRwBIZKvBLzhT5xO8b8ODA=w1280 "
                     alt="img" class="tool-img">
             </div>
             <!-- <div class="tool-card-grid">
