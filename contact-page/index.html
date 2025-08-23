@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caroselling</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            font-family: "Inter", sans-serif;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .app-container {
+            max-width: 1440px;
+            margin: 0 auto;
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+
+        .padding-top-bottom {
+            padding: 60px 0px;
+        }
+
+
+        .main {
+            background-color: black;
+            color: white;
+        }
+
+        /* Hero section start */
+        .heroleft {
+            max-width: 950px;
+        }
+
+        .hero-para {
+            font-size: 110px;
+            font-weight: 400;
+        }
+
+        .hero-sec-para {
+            font-size: 100px;
+
+            font-weight: 400;
+        }
+
+        .hero-sec-para span {
+            background-color: blue;
+        }
+
+        .hero-btn {
+
+            font-size: 20px;
+            padding: 15px 20px;
+            margin: 50px 0px;
+            text-align: center;
+            background-color: blue;
+            border: none;
+            border-radius: 100px;
+            color: white;
+        }
+
+        .hero-btn:hover {
+            background-color: white;
+            color: black;
+            cursor: pointer;
+        }
+
+        .hero-main {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+
+        }
+
+        .right-para {
+            color: white;
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 24px;
+            letter-spacing: 0;
+        }
+
+        .heroright {
+            max-width: 500px;
+            width: 100%;
+        }
+
+        /* Hero section end */
+
+
+        /* ===== CONTACT SECTION ===== */
+        .form-section {
+            display: flex;
+            flex-wrap: wrap;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+            margin: 140px 0px;
+        }
+
+        /* Left side */
+        .form-left {
+            flex: 1 1 45%;
+            background: #0a0a0a;
+            color: white;
+            padding: 3rem 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .form-left h2 {
+            font-size: 2.2rem;
+            font-weight: 900;
+            margin-bottom: 1rem;
+            border-left: 5px solid blue;
+            padding-left: 12px;
+        }
+
+        .form-left p {
+            font-size: 1rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+            max-width: 500px;
+            line-height: 1.6;
+        }
+
+        .contact-info p {
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+        }
+
+        .contact-info span {
+            font-weight: bold;
+            color: blue;
+        }
+
+        /* Right side */
+        .form-right {
+            flex: 1 1 55%;
+            background: white;
+            padding: 3rem 2.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .form-right h3 {
+            margin-bottom: 1.5rem;
+            font-weight: bold;
+            font-size: 1.4rem;
+            color: #0a0a0a;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+        }
+
+        input,
+        textarea {
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 1rem;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+
+        input:focus,
+        textarea:focus {
+            border-color: blue;
+            outline: none;
+            box-shadow: 0 0 6px rgba(0, 123, 255, 0.3);
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        button {
+            padding: 1rem;
+            background: blue;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        button:hover {
+            background: blue;
+            transform: translateY(-2px);
+        }
+
+        /* Responsive */
+        @media(max-width: 900px) {
+            .form-section {
+                flex-direction: column;
+            }
+
+            .form-left,
+            .form-right {
+                flex: 1 1 100%;
+                padding: 2rem;
+            }
+        }
+
+        /* faq-section */
+        .faq-section {
+            margin: 4rem auto;
+        }
+
+        .faq-title {
+            font-size: 7rem;
+            font-weight: 900;
+            margin-bottom: 2rem;
+            line-height: 1.2;
+            color: #0a0a0a;
+        }
+
+        .faq-item {
+            background: white;
+            margin-bottom: 1rem;
+            padding: 1.2rem 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.09);
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .faq-item:hover {
+            background: #f5f9ff;
+        }
+
+        .faq-question {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+            font-size: 1rem;
+            color: #111;
+        }
+
+        .faq-question span {
+            color: black;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: transform 0.3s;
+        }
+
+        .faq-answer {
+            margin-top: 0.7rem;
+            display: none;
+            font-size: 0.95rem;
+            color: #444;
+            line-height: 1.5;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        .faq-item.active .faq-question span {
+            content: "–";
+            transform: rotate(180deg);
+        }
+
+        /* footer section */
+        .footer-main {
+            padding-top: 50px;
+            background-color: black;
+            color: white;
+        }
+
+        .footer-logo {
+            font-size: 40px;
+            font-weight: 500;
+            cursor: pointer;
+
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 50px;
+            padding: 0 15px;
+        }
+
+        .footer-links a {
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            font-size: 19px;
+            padding-bottom: 4px;
+            cursor: pointer;
+        }
+
+        .footer-top {
+            display: flex;
+            align-items: center;
+            gap: 60px;
+            /* border-bottom: 1px solid white; */
+            padding: 10px 0;
+        }
+
+        .footer-list {
+            list-style: none;
+        }
+
+        .footer-list a {
+            text-decoration: none;
+            color: lightgray;
+        }
+
+        .footer-list-head {
+            font-weight: 400;
+            margin-bottom: 10px;
+            color: white;
+            font-size: 25px;
+        }
+
+        .footer-list li {
+            padding: 6px 0;
+            font-size: 18px;
+            color: lightgrey;
+            cursor: pointer;
+        }
+
+        .footer-list-flex {
+            display: flex;
+            justify-content: space-between;
+            padding: 60px 0;
+            gap: 30px;
+        }
+
+        @media screen and (max-width: 700px) {
+            .footer-list-flex {
+                flex-direction: column;
+
+            }
+
+            .footer-links {
+                flex-direction: column;
+            }
+
+            .footer-right {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+        .footer-right a {
+            text-decoration: none;
+            color: lightgrey;
+            font-weight: 300;
+            font-size: 16px;
+            cursor: pointer;
+            padding: 0 10px;
+        }
+
+        .footer-top-flex {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            border-left: 2px solid white;
+        }
+
+        .ftr-spn {
+            border-bottom: 1px solid white;
+            padding-bottom: 5px;
+            color: blue;
+            cursor: pointer;
+        }
+
+        .footer-end {
+            padding: 20px 0;
+            text-align: center;
+        }
+
+
+        /* Media quries for responsive desing  */
+
+        @media screen and (max-width: 1280px) {
+
+            /* Hero section responsive */
+            .hero-main {
+                flex-direction: column;
+            }
+        }
+
+        @media screen and (max-width:850px) {
+            .our-para {
+                font-size: 30px;
+
+            }
+
+        }
+
+        @media screen and (max-width: 710px) {
+            /* Hero section responsive */
+
+            .hero-para {
+                font-size: 80px;
+            }
+
+            .hero-sec-para {
+                font-size: 80px;
+            }
+
+            .hero-btn {
+                padding: 15px 30px;
+                margin-bottom: 20px;
+
+            }
+
+
+
+        }
+
+        @media screen and (max-width: 582px) {
+
+            /* Hero section responsive */
+            .hero-para {
+                font-size: 60px;
+            }
+
+            .hero-sec-para {
+                font-size: 60px;
+            }
+
+
+        }
+
+        @media screen and (max-width: 453px) {
+
+            /* Hero section responsive */
+            .hero-para {
+                font-size: 50px;
+            }
+
+            .hero-sec-para {
+                font-size: 50px;
+            }
+
+            .right-para {
+
+                font-size: 15px;
+            }
+
+
+        }
+
+        @media screen and (max-width: 389px) {
+
+            .hero-main {
+                gap: 0px;
+            }
+
+            .hero-para {
+                font-size: 40px;
+            }
+
+            .hero-sec-para {
+                font-size: 40px;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- hero-sec -->
+    <section>
+        <div class="main">
+            <div class="app-container">
+
+                <!-- hero-sec -->
+                <div class="hero-main  padding-top-bottom">
+                    <div class="heroleft">
+                        <h1 class="hero-para">Build Smarter </h1>
+                        <h1 class="hero-sec-para">Websites With Proven<span> Results</span> </h1>
+                        <button class="hero-btn">Learn more</button>
+                    </div>
+                    <div class="heroright">
+                        <p class="right-para">We craft websites that blend creativity with strategy.
+                            From design to development, every detail drives results.
+                            Boost your visibility with powerful SEO solutions.
+                            Engage customers through seamless web and mobile apps.
+                            Transform your ideas into scalable digital products.
+                            Grow smarter, faster, and stronger with us.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Form section -->
+    <section>
+        <div class="app-container">
+
+            <section class="form-section">
+                <!-- Left Side -->
+                <div class="form-left">
+                    <h2>Get In Touch With Our Team</h2>
+                    <p>
+                        We’re here to answer your questions and guide you toward the right solutions for your business.
+                        Whether you’re looking to start a new project, need support, or want to explore how our services
+                        can help you grow, we’re just a message away. Reach out to us today and let’s build something
+                        impactful together.
+                    </p>
+
+                    <div class="contact-info">
+                        <p>📍 <span>Address:</span> 123 Business Street, City, Country</p>
+                        <p>📞 <span>Phone:</span> +123 456 7890</p>
+                        <p>✉️ <span>Email:</span> info@yourcompany.com</p>
+                        <p>⏰ <span>Working Hours:</span> Mon – Fri: 9:00 AM – 6:00 PM</p>
+                    </div>
+                </div>
+
+                <!-- Right Side -->
+                <div class="form-right">
+                    <h3>Contact Form</h3>
+                    <form>
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <input type="tel" placeholder="Your Phone">
+                        <textarea placeholder="Your Message"></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </section>
+    <!-- faq-section -->
+    <!-- FAQ SECTION -->
+    <div class="app-container">
+        <section class="faq-section">
+            <h1 class="faq-title">What.<br>The.<br>FAQ?</h1>
+
+            <div class="faq-item">
+                <div class="faq-question">How quickly will you respond to my inquiry? <span>+</span></div>
+                <div class="faq-answer">We usually reply within 24 business hours.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Can I schedule a meeting before starting a project? <span>+</span></div>
+                <div class="faq-answer">Yes! You can schedule a free consultation call to discuss your needs.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">What kind of businesses do you work with? <span>+</span></div>
+                <div class="faq-answer">We work with startups, small businesses, and enterprises across various
+                    industries.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Do you offer ongoing support after project completion? <span>+</span></div>
+                <div class="faq-answer">Absolutely. We provide continuous support, updates, and optimization as needed.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">How can I get a project quote? <span>+</span></div>
+                <div class="faq-answer">Simply fill out the form with your details, and we’ll provide a customized
+                    quote.</div>
+            </div>
+        </section>
+    </div>
+    <!-- footer-sec -->
+
+    <div class="footer-main padding-top-bottom ">
+        <div class="app-container">
+            <div class="footer-list-flex">
+                <!-- <ul class="footer-list">
+                    <p class="footer-list-head">Creater platform</p>
+                    <li>Theme marketplace</li>
+                    <li>Integrations</li>
+                    <li>Features</li>
+                </ul> -->
+
+                <ul class="footer-list">
+                    <p class="footer-list-head">Website</p>
+                    <li><a href="#">UI/UX Design</a></li>
+                    <li><a href="#">Website Design</a></li>
+                    <li><a href="#">SEO</a></li>
+                    <li><a href="#">Web Apps</a></li>
+                </ul>
+                <ul class="footer-list">
+                    <p class="footer-list-head">Software</p>
+                    <li><a href="#">Custom Software</a></li>
+                    <li><a href="#">SaaS Development</a></li>
+                </ul>
+                <ul class="footer-list">
+                    <p class="footer-list-head">AI & Data</p>
+                    <li><a href="#">Business Automation</a></li>
+                    <li><a href="#">AI Setup</a></li>
+                </ul>
+                <ul class="footer-list">
+                    <p class="footer-list-head">Information</p>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">E commerce</a></li>
+                    <li><a href="#">Testing</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Contact</a></li>
+
+                </ul>
+            </div>
+            <div class="footer-top-flex">
+                <div class="footer-links">
+                    <a href="#">Foundation</a>
+                    <a href="#">Open source</a>
+                    <a href="#">carbon</a>
+                </div>
+                <div class="footer-right">
+                    <a href="">Term</a>
+                    <a href="">Privacy</a>
+                    <a href="">Contact</a>
+                    <a href="">Ghost Foundation @ 2023</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    // FAQ toggle
+    document.querySelectorAll('.faq-item').forEach(item => {
+        item.addEventListener('click', () => {
+            item.classList.toggle('active');
+            const symbol = item.querySelector('span');
+            symbol.textContent = item.classList.contains('active') ? "–" : "+";
+        });
+    });
+</script>
+
+</html>
