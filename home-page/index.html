@@ -23,76 +23,19 @@
         .app-container {
             max-width: 1440px;
             margin: 0 auto;
-            padding-left: 10px;
-            padding-right: 10px;
+            padding-left: 16px;
+            padding-right: 16px;
         }
 
         .padding-top-bottom {
             padding: 50px 16px;
         }
 
-        /* navbar-sec */
-        .nav-main {
+
+        .main {
             background-color: black;
             color: white;
-            padding-bottom: 100px;
         }
-
-        nav {
-            display: flex;
-            justify-content: space-between;
-            padding: 50px 0;
-            align-items: center;
-        }
-
-        h1 {
-            font-size: 36px;
-
-        }
-
-        .links {
-            display: flex;
-            gap: 20px;
-        }
-
-        .links a {
-            text-decoration: none;
-            color: white;
-            font-weight: 500;
-            font-size: 19px;
-            border-bottom: 2px solid white;
-            padding-bottom: 4px;
-            cursor: pointer;
-
-        }
-
-        .menu a {
-
-            text-decoration: none;
-            color: white;
-            font-weight: 500;
-            font-size: 19px;
-            border-bottom: 2px solid white;
-            padding-bottom: 4px;
-            cursor: pointer;
-        }
-
-        @media screen and (max-width: 700px) {
-            .links a {
-                display: none;
-            }
-
-            .menu {
-                display: block;
-            }
-
-            .logo {
-                font-size: 30px;
-            }
-
-        }
-
-        /* navbar-end */
 
         /* Hero section start */
         .heroleft {
@@ -118,7 +61,7 @@
 
             font-size: 20px;
             padding: 15px 20px;
-            margin-top: 50px;
+            margin: 50px 0px;
             text-align: center;
             background-color: blue;
             border: none;
@@ -136,6 +79,8 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+            gap: 20px;
+
         }
 
         .right-para {
@@ -151,68 +96,17 @@
             width: 100%;
         }
 
-        .flex-hero {
-            display: flex;
-            justify-content: space-between;
-            padding-bottom: 90px;
-        }
-
-        @media screen and (max-width: 700px) {
-            .hero-main {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-            }
-
-            .hero-para {
-                font-size: 40px;
-            }
-
-            .hero-sec-para {
-                font-size: 50px;
-            }
-
-            .hero-btn {
-                padding: 15px 30px;
-                margin-bottom: 20px;
-
-            }
-
-        }
-
-        @media screen and (max-width: 350px) {
-
-            .hero-main {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-            }
-
-            .hero-para {
-                font-size: 30px;
-            }
-
-            .hero-sec-para {
-                font-size: 40px;
-            }
-
-            .hero-btn {
-                /* width: 100%; */
-                font-size: 15px;
-                padding: 10px 20px;
-            }
-        }
-
         /* Hero section end */
         /* about section start */
+
+
+        .about-main 
         h2 {
             max-width: 600px;
             font-size: 42px;
             font-weight: 500;
-            padding-bottom: 60px;
-            padding-top: 40px;
+           
+
         }
 
         .about-spn {
@@ -706,16 +600,119 @@
             padding: 20px 0;
             text-align: center;
         }
+
+
+        /* Media quries for responsive desing  */
+
+        @media screen and (max-width: 1280px) {
+
+            /* Hero section responsive */
+            .hero-main {
+                flex-direction: column;
+            }
+        }
+
+        @media screen and (max-width: 710px) {
+            /* Hero section responsive */
+
+            .hero-para {
+                font-size: 80px;
+            }
+
+            .hero-sec-para {
+                font-size: 80px;
+            }
+
+            .hero-btn {
+                padding: 15px 30px;
+                margin-bottom: 20px;
+
+            }
+              .padding-top-bottom {
+                padding: 60px 0px;
+            }
+
+        }
+
+        @media screen and (max-width: 582px) {
+
+            /* Hero section responsive */
+            .hero-para {
+                font-size: 60px;
+            }
+
+            .hero-sec-para {
+                font-size: 60px;
+            }
+
+           
+
+            /* About section responsive */
+            .about-main,
+            h2 {
+                padding-bottom: 40px;
+                font-size: 32px;
+            }
+
+            .about-para-1 {
+
+                font-size: 18px;
+                font-weight: 400;
+            }
+        }
+
+        @media screen and (max-width: 453px) {
+
+            /* Hero section responsive */
+            .hero-para {
+                font-size: 50px;
+            }
+
+            .hero-sec-para {
+                font-size: 50px;
+            }
+
+            .right-para {
+
+                font-size: 15px;
+            }
+
+
+
+            /* About section responsive */
+            .about-main
+            h2 {
+
+                font-size: 28px;
+            }
+        }
+
+        @media screen and (max-width: 389px) {
+
+            .hero-main {
+                gap: 0px;
+            }
+
+            .hero-para {
+                font-size: 40px;
+            }
+
+            .hero-sec-para {
+                font-size: 40px;
+            }
+
+
+        }
     </style>
 </head>
 
 <body>
     <!-- nav-sec -->
-    <div class="nav-main">
+    <div class="main">
         <div class="app-container">
 
             <!-- hero-sec -->
-            <div class="hero-main padding-wrapper padding-top-bottom">
+            <div class="hero-main  padding-top-bottom">
                 <div class="heroleft">
                     <h1 class="hero-para">Build Smarter </h1>
                     <h1 class="hero-sec-para">Websites With Proven<span> Results</span> </h1>
@@ -733,36 +730,34 @@
         </div>
     </div>
     <!-- about-sec -->
-    <div class="about-main padding-wrapper padding-top-bottom">
+    <div class="about-main  padding-top-bottom">
         <div class="app-container">
-            <div class="flex-hero">
-                <div class="about-left">
-                    <h2>Your Growth, Our Mission to Build Digital
+            <div class="about-main">
 
-                        <span class="about-spn"> Success That Lasts</span>
-                    </h2>
-                    <p class="about-para-1"> We are a team of innovators passionate about creating impactful digital
-                        solutions. From web
-                        design to advanced AI-driven tools, we help businesses unlock their potential in the digital
-                        world. Our focus is not only on building technology but on building long-term partnerships that
-                        fuel your success. With every project, we strive to blend creativity, strategy, and performance.
-                    </p>
-                    <p class="about-para-1">
-                        Our team brings together creative thinkers, technical experts, and problem solvers who share one
-                        vision — to deliver digital experiences that make a difference.</p>
-                    <p class="about-para-1">
-                        From designing stunning websites to building custom platforms, we focus on solutions that not
-                        only <span class="about-spn">look great but also perform with purpose.</span> </p>
+                <h2>Your Growth, Our Mission to Build Digital
 
-                </div>
-                <div class="about-right">
+                    <span class="about-spn"> Success That Lasts</span>
+                </h2>
+                <p class="about-para-1"> We are a team of innovators passionate about creating impactful digital
+                    solutions. From web
+                    design to advanced AI-driven tools, we help businesses unlock their potential in the digital
+                    world. Our focus is not only on building technology but on building long-term partnerships that
+                    fuel your success. With every project, we strive to blend creativity, strategy, and performance.
+                </p>
+                <p class="about-para-1">
+                    Our team brings together creative thinkers, technical experts, and problem solvers who share one
+                    vision — to deliver digital experiences that make a difference.</p>
+                <p class="about-para-1">
+                    From designing stunning websites to building custom platforms, we focus on solutions that not
+                    only <span class="about-spn">look great but also perform with purpose.</span> </p>
 
-                </div>
+
+
             </div>
         </div>
     </div>
     <!-- our-services-sec -->
-    <div class="servies-main padding-wrapper padding-top-bottom">
+    <div class="servies-main  padding-top-bottom">
         <div class="app-container">
             <p class="our-para"> <span class="our-spn"> Transforming ideas into reality,</span> we craft innovative
                 digital solutions tailored to your vision Our services are designed to fuel growth, helping businesses
@@ -851,9 +846,9 @@
     <!-- choose-use-sec -->
     <div class="main-choose padding-top-bottom">
         <div class="app-container">
-            <p class="choose-head padding-wrapper">Built for Your Success<span class="choose-done"> "Powered by
+            <p class="choose-head ">Built for Your Success<span class="choose-done"> "Powered by
                     Innovation"</span></p>
-            <p class="choose-para padding-wrapper">We don’t just complete projects—we craft solutions that create
+            <p class="choose-para ">We don’t just complete projects—we craft solutions that create
                 measurable growth and
                 real impact. Every strategy is rooted in creativity, expertise, and technology, ensuring your brand
                 stays ahead in a fast-changing digital world.</p>
@@ -946,11 +941,11 @@
         <div class="app-container">
             <div class="cta-flex">
                 <div class="cta-left">
-                    <p class="cta-head padding-wrapper"> Let’s Build Something Amazing</p>
-                    <p class="cta-para padding-wrapper">Ready to take your business to the next level? Partner with us
+                    <p class="cta-head "> Let’s Build Something Amazing</p>
+                    <p class="cta-para ">Ready to take your business to the next level? Partner with us
                         to create
                         innovative digital solutions that make an impact.</p>
-                    <button class="cta-btn padding-wrapper">Get started it's free</button>
+                    <button class="cta-btn ">Get started it's free</button>
                 </div>
                 <div class="cta-image">
                     <img src="https://lh4.googleusercontent.com/w6CWyvBYTt1zslNJJlR4CRtKA10F7ySHuzpl0JrOHJPZ8cFQhcjRxkNDG2akQI8LWm8bm8BqviUnOGF4XUQCFCVmFcYrZTEAP5JJTKTnFTq4dCDswxvfObdx2LXO0YvBJmZuPVPWzRSgfyho3bivxnkL9ufAOKTgDahB21u8yUWXXor5izUhCg=w1280 "
