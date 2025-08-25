@@ -9,598 +9,600 @@
 
 
     <style>
-         * {
-     font-family: "Inter", sans-serif;
-     padding: 0;
-     margin: 0;
-     box-sizing: border-box;
- }
-
- .app-container {
-     max-width: 1440px;
-     margin: 0 auto;
-     padding-left: 10px;
-     padding-right: 10px;
- }
+        * {
+            font-family: "Inter", sans-serif;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .app-container {
+            max-width: 1440px;
+            margin: 0 auto;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
 
- /* Hero section start */
- .heroleft {
-     max-width: 950px;
- }
+        /* Hero section start */
+        .heroleft {
+            max-width: 950px;
+        }
 
- .hero-para {
-     font-size: 110px;
-     font-weight: 400;
- }
+        .hero-para {
+            font-size: 110px;
+            font-weight: 400;
+        }
 
- .hero-sec-para {
-     font-size: 100px;
+        .hero-sec-para {
+            font-size: 100px;
 
-     font-weight: 400;
- }
+            font-weight: 400;
+        }
 
- .hero-sec-para span {
-     background-color: blue;
- }
+        .hero-sec-para span {
+            background-color: blue;
+        }
 
- .hero-btn {
+        .hero-btn {
 
-     font-size: 20px;
-     padding: 15px 20px;
-     margin-top: 50px;
-     text-align: center;
-     background-color: blue;
-     border: none;
-     border-radius: 100px;
-     color: white;
-     cursor: pointer;
+            font-size: 20px;
+            padding: 15px 20px;
+            margin-top: 50px;
+            text-align: center;
+            background-color: blue;
+            border: none;
+            border-radius: 100px;
+            color: white;
+            cursor: pointer;
 
- }
+        }
 
 
 
- .hero-main {
-     display: flex;
-     align-items: center;
-     justify-content: space-between;
-     background-color: black;
-     color: white;
- }
+        .hero-main {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: black;
+            color: white;
+        }
 
- .hero-flex {
-     display: flex;
-     align-items: center;
-     padding: 50px 0;
- }
+        .hero-flex {
+            display: flex;
+            align-items: center;
+            padding: 50px 0;
+        }
 
- .right-para {
-     color: white;
-     font-weight: 300;
-     font-size: 20px;
-     line-height: 24px;
-     letter-spacing: 0;
- }
+        .right-para {
+            color: white;
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 24px;
+            letter-spacing: 0;
+        }
 
- .hero-right {
-     max-width: 500px;
-     width: 100%;
- }
+        .hero-right {
+            max-width: 500px;
+            width: 100%;
+        }
 
 
 
- /* Media quries for responsive desing  */
+        /* Media quries for responsive desing  */
 
- @media screen and (max-width: 1280px) {
+        @media screen and (max-width: 1280px) {
 
-     /* Hero section responsive */
-     .hero-flex {
+            /* Hero section responsive */
+            .hero-flex {
 
-         flex-direction: column;
-     }
+                flex-direction: column;
+            }
 
-     .hero-main {
-         flex-direction: column;
-     }
- }
+            .hero-main {
+                flex-direction: column;
+            }
+        }
 
- @media screen and (max-width:850px) {
-     .hero-flex {
-         display: flex;
-         flex-direction: column;
-     }
+        @media screen and (max-width:850px) {
+            .hero-flex {
+                display: flex;
+                flex-direction: column;
+            }
 
-     .our-para {
-         font-size: 30px;
+            .our-para {
+                font-size: 30px;
 
-     }
+            }
 
-     .our-spn {
+            .our-spn {
 
-         font-size: 40px;
+                font-size: 40px;
 
-     }
- }
+            }
+        }
 
- @media screen and (max-width: 710px) {
+        @media screen and (max-width: 710px) {
 
-     /* Hero section responsive */
-     .hero-flex {
-         display: flex;
-         flex-direction: column;
-     }
+            /* Hero section responsive */
+            .hero-flex {
+                display: flex;
+                flex-direction: column;
+            }
 
-     .hero-para {
-         font-size: 80px;
-     }
+            .hero-para {
+                font-size: 80px;
+            }
 
-     .hero-sec-para {
-         font-size: 80px;
-     }
+            .hero-sec-para {
+                font-size: 80px;
+            }
 
-     .hero-btn {
-         padding: 15px 30px;
-         margin-bottom: 20px;
+            .hero-btn {
+                padding: 15px 30px;
+                margin-bottom: 20px;
 
-     }
-
-     .padding-top-bottom {
-         padding: 60px 0px;
-     }
-
-     .choose-head {
-         font-size: 40px;
-     }
- }
-
- @media screen and (max-width: 582px) {
-
-     /* Hero section responsive */
-     .hero-para {
-         font-size: 60px;
-     }
-
-     .hero-sec-para {
-         font-size: 60px;
-     }
-
-     .hero-right {
-         padding-top: 30px;
-     }
- }
-
- @media screen and (max-width: 453px) {
-
-     /* Hero section responsive */
-     .hero-para {
-         font-size: 50px;
-     }
-
-     .hero-sec-para {
-         font-size: 50px;
-     }
-
-     .right-para {
-
-         font-size: 15px;
-     }
- }
-
- @media screen and (max-width: 389px) {
-
-     .hero-main {
-         gap: 0px;
-     }
-
-     .hero-para {
-         font-size: 40px;
-     }
-
-     .hero-sec-para {
-         font-size: 40px;
-     }
-
-
- }
-
- /* pain-painpoint-sec */
- h2 {
-     max-width: 600px;
-     font-size: 42px;
-     font-weight: 500;
-     padding-bottom: 60px;
-     padding-top: 40px;
- }
-
- .about-spn {
-     background-color: blue;
-     color: white;
- }
-
- .about-para-1 {
-     max-width: 690px;
-     padding-bottom: 15px;
-     font-size: 20px;
-     font-weight: 400;
-     padding-bottom: 80px;
- }
-
- .about-right {
-     max-width: 45px;
-     height: 1px;
-     background-color: black;
- }
-
- .painpoint-flex {
-     display: flex;
-     max-width: 420px;
-     align-items: center;
-     gap: 25px;
- }
-
- .painpoint-head {
-     font-size: 106px;
-     font-weight: 400;
-     line-height: 110px;
-     letter-spacing: 0%;
- }
-
- .painpoint-para {
-     font-size: 21px;
-     font-weight: 400;
-     line-height: 24px;
-     letter-spacing: 0%;
- }
-
- .painpoint-span {
-     background-color: blue;
-     color: white;
- }
-
- .painpoint-top {
-     display: flex;
-     gap: 20px;
-     justify-content: space-between;
- }
-
- .painpoint-bottom {
-     display: flex;
-     gap: 80px;
- }
-
- .painpoint-flex-1 {
-     display: flex;
-     flex-direction: column;
-     row-gap: 25px;
- }
-
- @media screen and (max-width: 1280px) {
-
-     /* pain-point section responsive */
-     .painpoint-flex-1 {
-         display: grid;
-         grid-template-rows: auto auto auto;
-     }
- }
- @media screen and (max-width: 980px) {
-
-   .painpoint-top{
-    flex-wrap: wrap;
-   }
- 
- }
-
- .hero-main {
-     flex-direction: column;
- }
-
- @media screen and (max-width:850px) {
-     .hero-flex {
-         display: flex;
-         flex-direction: column;
-     }
-
-     .our-para {
-         font-size: 30px;
-
-     }
-
-     .our-spn {
-
-         font-size: 40px;
-
-     }
- }
-
- @media screen and (max-width: 710px) {
-
-     /* Hero section responsive */
-     .hero-flex {
-         display: flex;
-         flex-direction: column;
-     }
-
-     .hero-para {
-         font-size: 80px;
-     }
-
-     .hero-sec-para {
-         font-size: 80px;
-     }
-
-     .hero-btn {
-         padding: 15px 30px;
-         margin-bottom: 20px;
-
-     }
-
-     .padding-top-bottom {
-         padding: 60px 0px;
-     }
-
-     .choose-head {
-         font-size: 40px;
-     }
-       .painpoint-bottom{
-    flex-direction: column;
-    gap: 30px;
-   }
- }
-
- @media screen and (max-width: 582px) {
-
-     /* Hero section responsive */
-     .hero-para {
-         font-size: 60px;
-     }
-
-     .hero-sec-para {
-         font-size: 60px;
-     }
-
-     .hero-right {
-         padding-top: 30px;
-     }
- }
-
- @media screen and (max-width: 453px) {
-
-     /* Hero section responsive */
-     .hero-para {
-         font-size: 50px;
-     }
-
-     .hero-sec-para {
-         font-size: 50px;
-     }
-
-     .right-para {
-
-         font-size: 15px;
-     }
- }
-
- @media screen and (max-width: 389px) {
-
-     .hero-main {
-         gap: 0px;
-     }
-
-     .hero-para {
-         font-size: 40px;
-     }
-
-     .hero-sec-para {
-         font-size: 40px;
-     }
-
-
- }
-
- /* benefits-sec  */
- .benefits-h2 {
-     font-size: 26px;
-     font-weight: 400;
-     padding-left: 50px;
- }
-
- .benefits-sec {
-     max-width: 1260px;
-     margin: 0px auto;
- }
-
- .benefits-img {
-     width: 100%;
-     height: 400px;
- }
-
- .benefits-image {
-     max-width: 1262px;
- }
-
- .benefits-c-dsgn {
-     border-bottom: 1px solid black;
-     border-top: 1px solid black;
- 
- }
-
-
-
- .benefits-head {
-     font-size: 22px;
-     font-weight: 700;
-     line-height: 24.9px;
-     letter-spacing: 0%;
-     padding: 20px 0;
-     color: blue;
- }
-
- .benefits-spn {
-     background-color: blue;
-     color: white;
- }
-
- .benefits-para {
-     font-size: 20px;
-     padding-bottom: 20px;
- }
-
- .benefits-flex {
-     max-width: 1262px;
-     display: flex;
-     justify-content: space-between;
-     margin: 0px auto;
- }
-
- .padding-top-bottom {
-     padding: 50px 16px;
- }
-
- /*benefits section responsive */
-
- @media screen and (max-width: 1280px) {
-     .benefits-flex {
-         display: flex;
-         flex-direction: column;
-         justify-content: start;
-     }
- }
-
- /* ourprocess-sec */
-
- .ourprocess-flex {
-     display: flex;
-     align-items: center;
-     justify-content: space-between;
- }
-
- .our-h2 {
-     font-size: 80px;
-     font-weight: 400;
-     line-height: 90px;
-     max-width: 600px;
- }
-
- .ourprocess-para {
-     font-size: 24px;
- }
-
- .our-right {
-     max-width: 540px;
- }
-
- .process-flex {
-     display: flex;
-     align-items: center;
-     justify-content: space-between;
-     gap: 10px;
-     padding: 20px 0;
-     border-top: 1px #0000004D solid;
- }
-
- .process-left h5 {
-     font-weight: 400;
-     font-size: 18px;
-     line-height: 26px;
-     letter-spacing: -0.2px;
- }
-
- .arrow {
-     display: flex;
-     align-items: end;
-     font-size: 50px;
-     font-size: 200;
-     padding: 15px 0;
-
- }
-
- .process-left h3 {
-     font-size: 40px;
- }
-
- .process-left p {
-     font-size: 18px;
-     width: 250px;
- }
-
- .process-left {
-     width: 300px;
- }
-
- .process-img {
-     width: 100%;
-     height: 100%;
-     border-radius: 150px;
- }
-
- .process-image {
-     max-width: 800px;
-     width: 100%;
-     height: 220px;
- }
-
- @media screen and (max-width: 1280px) {
-     .ourprocess-flex {
-         display: flex;
-         flex-direction: column;
-         justify-content: start;
-         padding-bottom: 40px;
-     }
-  
- }
-
- /* cta-sec */
- .cta-head {
-     font-weight: 400;
-     font-size: 85px;
-    
-     max-width: 726px;
- }
-
- .cta-para {
-     font-weight: 400;
-     font-size: 20px;
-     line-height: 30px;
-     letter-spacing: 0.3px;
-     max-width: 500px;
-     padding-top: 20px;
-     padding-bottom: 20px;
- }
-
- .cta-main {
-     padding-bottom: 80px;
- }
-
- .cta-btn {
-     font-size: 20px;
-     padding: 15px 20px;
-     margin-top: 50px;
-     text-align: center;
-     background-color: blue;
-     border: none;
-     border-radius: 100px;
-     color: white;
-     cursor: pointer;
- }
-
-
-
- .cta-flex {
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
- }
-
- .cta-img {
-     width: 100%;
- }
-
- .cta-image {
-     max-width: 640px;
-     padding-bottom: 70px;
- }
-
-
-  /* footer section */
+            }
+
+            .padding-top-bottom {
+                padding: 60px 0px;
+            }
+
+            .choose-head {
+                font-size: 40px;
+            }
+        }
+
+        @media screen and (max-width: 582px) {
+
+            /* Hero section responsive */
+            .hero-para {
+                font-size: 60px;
+            }
+
+            .hero-sec-para {
+                font-size: 60px;
+            }
+
+            .hero-right {
+                padding-top: 30px;
+            }
+        }
+
+        @media screen and (max-width: 453px) {
+
+            /* Hero section responsive */
+            .hero-para {
+                font-size: 50px;
+            }
+
+            .hero-sec-para {
+                font-size: 50px;
+            }
+
+            .right-para {
+
+                font-size: 15px;
+            }
+        }
+
+        @media screen and (max-width: 389px) {
+
+            .hero-main {
+                gap: 0px;
+            }
+
+            .hero-para {
+                font-size: 40px;
+            }
+
+            .hero-sec-para {
+                font-size: 40px;
+            }
+
+
+        }
+
+        /* pain-painpoint-sec */
+        h2 {
+            max-width: 600px;
+            font-size: 42px;
+            font-weight: 500;
+            padding-bottom: 60px;
+            padding-top: 40px;
+        }
+
+        .about-spn {
+            background-color: blue;
+            color: white;
+        }
+
+        .about-para-1 {
+            max-width: 690px;
+            padding-bottom: 15px;
+            font-size: 20px;
+            font-weight: 400;
+            padding-bottom: 80px;
+        }
+
+        .about-right {
+            max-width: 45px;
+            height: 1px;
+            background-color: black;
+        }
+
+        .painpoint-flex {
+            display: flex;
+            max-width: 420px;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .painpoint-head {
+            font-size: 106px;
+            font-weight: 400;
+            line-height: 110px;
+            letter-spacing: 0%;
+        }
+
+        .painpoint-para {
+            font-size: 21px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0%;
+        }
+
+        .painpoint-span {
+            background-color: blue;
+            color: white;
+        }
+
+        .painpoint-top {
+            display: flex;
+            gap: 20px;
+            justify-content: space-between;
+        }
+
+        .painpoint-bottom {
+            display: flex;
+            gap: 80px;
+        }
+
+        .painpoint-flex-1 {
+            display: flex;
+            flex-direction: column;
+            row-gap: 25px;
+        }
+
+        @media screen and (max-width: 1280px) {
+
+            /* pain-point section responsive */
+            .painpoint-flex-1 {
+                display: grid;
+                grid-template-rows: auto auto auto;
+            }
+        }
+
+        @media screen and (max-width: 980px) {
+
+            .painpoint-top {
+                flex-wrap: wrap;
+            }
+
+        }
+
+        .hero-main {
+            flex-direction: column;
+        }
+
+        @media screen and (max-width:850px) {
+            .hero-flex {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .our-para {
+                font-size: 30px;
+
+            }
+
+            .our-spn {
+
+                font-size: 40px;
+
+            }
+        }
+
+        @media screen and (max-width: 710px) {
+
+            /* Hero section responsive */
+            .hero-flex {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .hero-para {
+                font-size: 80px;
+            }
+
+            .hero-sec-para {
+                font-size: 80px;
+            }
+
+            .hero-btn {
+                padding: 15px 30px;
+                margin-bottom: 20px;
+
+            }
+
+            .padding-top-bottom {
+                padding: 60px 0px;
+            }
+
+            .choose-head {
+                font-size: 40px;
+            }
+
+            .painpoint-bottom {
+                flex-direction: column;
+                gap: 30px;
+            }
+        }
+
+        @media screen and (max-width: 582px) {
+
+            /* Hero section responsive */
+            .hero-para {
+                font-size: 60px;
+            }
+
+            .hero-sec-para {
+                font-size: 60px;
+            }
+
+            .hero-right {
+                padding-top: 30px;
+            }
+        }
+
+        @media screen and (max-width: 453px) {
+
+            /* Hero section responsive */
+            .hero-para {
+                font-size: 50px;
+            }
+
+            .hero-sec-para {
+                font-size: 50px;
+            }
+
+            .right-para {
+
+                font-size: 15px;
+            }
+        }
+
+        @media screen and (max-width: 389px) {
+
+            .hero-main {
+                gap: 0px;
+            }
+
+            .hero-para {
+                font-size: 40px;
+            }
+
+            .hero-sec-para {
+                font-size: 40px;
+            }
+
+
+        }
+
+        /* benefits-sec  */
+        .benefits-h2 {
+            font-size: 26px;
+            font-weight: 400;
+            padding-left: 50px;
+        }
+
+        .benefits-sec {
+            max-width: 1260px;
+            margin: 0px auto;
+        }
+
+        .benefits-img {
+            width: 100%;
+            height: 400px;
+        }
+
+        .benefits-image {
+            max-width: 1262px;
+        }
+
+        .benefits-c-dsgn {
+            border-bottom: 1px solid black;
+            border-top: 1px solid black;
+
+        }
+
+
+
+        .benefits-head {
+            font-size: 22px;
+            font-weight: 700;
+            line-height: 24.9px;
+            letter-spacing: 0%;
+            padding: 20px 0;
+            color: blue;
+        }
+
+        .benefits-spn {
+            background-color: blue;
+            color: white;
+        }
+
+        .benefits-para {
+            font-size: 20px;
+            padding-bottom: 20px;
+        }
+
+        .benefits-flex {
+            max-width: 1262px;
+            display: flex;
+            justify-content: space-between;
+            margin: 0px auto;
+        }
+
+        .padding-top-bottom {
+            padding: 50px 16px;
+        }
+
+        /*benefits section responsive */
+
+        @media screen and (max-width: 1280px) {
+            .benefits-flex {
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+            }
+        }
+
+        /* ourprocess-sec */
+
+        .ourprocess-flex {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .our-h2 {
+            font-size: 80px;
+            font-weight: 400;
+            line-height: 90px;
+            max-width: 600px;
+        }
+
+        .ourprocess-para {
+            font-size: 24px;
+        }
+
+        .our-right {
+            max-width: 540px;
+        }
+
+        .process-flex {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            padding: 20px 0;
+            border-top: 1px #0000004D solid;
+        }
+
+        .process-left h5 {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 26px;
+            letter-spacing: -0.2px;
+        }
+
+        .arrow {
+            display: flex;
+            align-items: end;
+            font-size: 50px;
+            font-size: 200;
+            padding: 15px 0;
+
+        }
+
+        .process-left h3 {
+            font-size: 40px;
+        }
+
+        .process-left p {
+            font-size: 18px;
+            width: 250px;
+        }
+
+        .process-left {
+            width: 300px;
+        }
+
+        .process-img {
+            width: 100%;
+            height: 100%;
+            border-radius: 150px;
+        }
+
+        .process-image {
+            max-width: 800px;
+            width: 100%;
+            height: 220px;
+        }
+
+        @media screen and (max-width: 1280px) {
+            .ourprocess-flex {
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                padding-bottom: 40px;
+            }
+
+        }
+
+        /* cta-sec */
+        .cta-head {
+            font-weight: 400;
+            font-size: 85px;
+
+            max-width: 726px;
+        }
+
+        .cta-para {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 30px;
+            letter-spacing: 0.3px;
+            max-width: 500px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .cta-main {
+            padding-bottom: 80px;
+        }
+
+        .cta-btn {
+            font-size: 20px;
+            padding: 15px 20px;
+            margin-top: 50px;
+            text-align: center;
+            background-color: blue;
+            border: none;
+            border-radius: 100px;
+            color: white;
+            cursor: pointer;
+        }
+
+
+
+        .cta-flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .cta-img {
+            width: 100%;
+        }
+
+        .cta-image {
+            max-width: 640px;
+            padding-bottom: 70px;
+        }
+
+
+        /* footer section */
         .footer-main {
             padding-top: 50px;
             background-color: black;
@@ -713,46 +715,50 @@
             text-align: center;
         }
 
- @media screen and (max-width: 700px) {
-     .cta-flex {
-         flex-direction: column;
-         align-items: center;
-         text-align: center;
-     }
+        @media screen and (max-width: 700px) {
+            .cta-flex {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
 
-     .cta-head {
-         font-size: 50px;
-     }
+            .cta-head {
+                font-size: 50px;
+            }
 
-     .cta-para {
-         font-size: 20px;
-     }
+            .cta-para {
+                font-size: 20px;
+            }
 
-     .cta-btn {
-         padding: 10px 20px;
-         font-size: 15px;
-     }
+            .cta-btn {
+                padding: 10px 20px;
+                font-size: 15px;
+            }
 
-     .cta-image {
-         padding-right: 30px;
-     }
- }
-  @media screen and (max-width: 800px) {
-    .process-flex{
-        flex-direction: column;
-    }
-    .process-left{
-width: 100%;
-    }
-    .process-left p{
-        width: 100%;
-    } 
-    .process-image {
-     max-width: 800px;
-     width: 100%;
-     height: 150px;
- }
-  }
+            .cta-image {
+                padding-right: 30px;
+            }
+        }
+
+        @media screen and (max-width: 800px) {
+            .process-flex {
+                flex-direction: column;
+            }
+
+            .process-left {
+                width: 100%;
+            }
+
+            .process-left p {
+                width: 100%;
+            }
+
+            .process-image {
+                max-width: 800px;
+                width: 100%;
+                height: 150px;
+            }
+        }
     </style>
 </head>
 
@@ -906,7 +912,7 @@ width: 100%;
                     <p> We analyze your audience, competitors, and goals to shape the foundation.</p>
                 </div>
                 <div class="process-image">
-                    <img src="https://a4ari72izk.ufs.sh/f/HNbj1JW7mNRdr7LcET3VuIdNO3HjpaPCUt4BqTlWnGLM50De" alt="img"
+                    <img src="https://a4ari72izk.ufs.sh/f/HNbj1JW7mNRdVCgI246kLYTJdS0G2c3QANbgHDWyZh6aufje" alt="img"
                         class="process-img">
                 </div>
             </div>
@@ -915,13 +921,13 @@ width: 100%;
                 <div class="process-left">
                     <h5>Step 1</h5>
                     <div class="arrow">
-                        <h3>Discovery & Research</h3>
+                        <h3>Wireframes & Prototypes</h3>
                         <i class="ri-arrow-right-up-line ri-xl"></i>
                     </div>
-                    <p> We analyze your audience, competitors, and goals to shape the foundation.</p>
+                    <p> Transforming ideas into interactive blueprints before moving to final design.</p>
                 </div>
                 <div class="process-image">
-                    <img src="https://a4ari72izk.ufs.sh/f/HNbj1JW7mNRdr7LcET3VuIdNO3HjpaPCUt4BqTlWnGLM50De" alt="img"
+                    <img src="https://a4ari72izk.ufs.sh/f/HNbj1JW7mNRdRPPi6AHSqFGvkeViDjPJK48c6p9CnHsxZzWw" alt="img"
                         class="process-img">
                 </div>
             </div>
@@ -930,13 +936,14 @@ width: 100%;
                 <div class="process-left">
                     <h5>Step 1</h5>
                     <div class="arrow">
-                        <h3>Discovery & Research</h3>
+                        <h3>Testing & Refinement</h3>
                         <i class="ri-arrow-right-up-line ri-xl"></i>
                     </div>
-                    <p> We analyze your audience, competitors, and goals to shape the foundation.</p>
+                    <p> Gathering feedback, optimizing usability, and delivering polished, high-performing interfaces.
+                    </p>
                 </div>
                 <div class="process-image">
-                    <img src="https://a4ari72izk.ufs.sh/f/HNbj1JW7mNRdr7LcET3VuIdNO3HjpaPCUt4BqTlWnGLM50De" alt="img"
+                    <img src="https://a4ari72izk.ufs.sh/f/HNbj1JW7mNRdRPPi6AHSqFGvkeViDjPJK48c6p9CnHsxZzWw" alt="img"
                         class="process-img">
                 </div>
             </div>
@@ -954,13 +961,13 @@ width: 100%;
                     <button class="cta-btn padding-wrapper">Get started it's free</button>
                 </div>
                 <div class="cta-image">
-                    <img src="https://a4ari72izk.ufs.sh/f/HNbj1JW7mNRdVPLRHP16kLYTJdS0G2c3QANbgHDWyZh6aufj" alt="img" class="cta-img">
+                    <img src="https://a4ari72izk.ufs.sh/f/HNbj1JW7mNRdVPLRHP16kLYTJdS0G2c3QANbgHDWyZh6aufj" alt="img"
+                        class="cta-img">
                 </div>
             </div>
         </div>
     </div>
-      <!-- footer-sec -->
-
+    <!-- footer-sec -->
     <div class="footer-main padding-top-bottom ">
         <div class="app-container">
             <div class="footer-list-flex">
