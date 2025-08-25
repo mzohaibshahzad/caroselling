@@ -38,14 +38,13 @@
         }
 
         /* Hero section start */
-     .heroleft {
-            max-width: 850px;
+        .hero-left {
+            max-width: 900px;
         }
 
         .hero-para {
             font-size: 110px;
             font-weight: 400;
-            
         }
 
         .hero-sec-para {
@@ -70,13 +69,11 @@
             color: white;
         }
 
-        .hero-btn a {
-            color: white;
-            text-decoration: none;
-
-
+        .hero-btn:hover {
+            background-color: white;
+            color: black;
+            cursor: pointer;
         }
-
 
         .hero-main {
             display: flex;
@@ -89,8 +86,7 @@
         .right-para {
             color: white;
             font-weight: 300;
-            font-size: 30px;
-         
+            font-size: 25px;
         }
 
         .heroright {
@@ -101,145 +97,144 @@
         /* Hero section end */
 
 
-      
-     /* ===== CONTACT SECTION ===== */
-.contact-section {
-  display: flex;
-  flex-wrap: wrap;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
-  margin: 120px 0;
-  background: #fff;
-}
 
-/* Left Side */
-.contact-left {
-  flex: 1 1 40%;
-  background: #0a0a0a;
-  color: white;
-  padding: 3rem 2.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
+        /* ===== CONTACT SECTION ===== */
+        .contact-section {
+            display: flex;
+            flex-wrap: wrap;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+            margin: 120px 0;
+            background: #fff;
+        }
 
-.contact-left h2 {
-  font-size: 2rem;
-  font-weight: 800;
-  margin-bottom: 1rem;
-  border-left: 5px solid blue;
-  padding-left: 12px;
-}
+        /* Left Side */
+        .contact-left {
+            flex: 1 1 40%;
+            background: #0a0a0a;
+            color: white;
+            padding: 3rem 2.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
 
-.contact-left p {
-  font-size: 1rem;
-  margin-bottom: 1.5rem;
-  opacity: 0.9;
-  line-height: 1.6;
-}
+        .contact-left h2 {
+            font-size: 2rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            border-left: 5px solid blue;
+            padding-left: 12px;
+        }
 
-.contact-details {
-  list-style: none;
-  padding: 0;
-}
+        .contact-left p {
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+            opacity: 0.9;
+            line-height: 1.6;
+        }
 
-.contact-details li {
-  margin-bottom: 1rem;
-  font-size: 16px;
-  line-height: 1.5;
-}
+        .contact-details {
+            list-style: none;
+            padding: 0;
+        }
 
-.contact-details strong {
-  color: white;
-  font-weight: 700;
-  font-size: 20px;
-}
+        .contact-details li {
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
 
-/* Right Side */
-.contact-right {
-  flex: 1 1 60%;
-  background: #fff;
-  padding: 3rem 2.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
+        .contact-details strong {
+            color: blue;
+            font-weight: bold;
+        }
 
-.contact-right h3 {
-  margin-bottom: 1.5rem;
-  font-weight: bold;
-  font-size: 1.4rem;
-  color: #0a0a0a;
-}
+        /* Right Side */
+        .contact-right {
+            flex: 1 1 60%;
+            background: #fff;
+            padding: 3rem 2.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
 
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1.2rem;
-}
+        .contact-right h3 {
+            margin-bottom: 1.5rem;
+            font-weight: bold;
+            font-size: 1.4rem;
+            color: #0a0a0a;
+        }
 
-.form-group {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+        }
 
-input,
-textarea {
-  flex: 1;
-  padding: 1rem;
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  font-size: 1rem;
-  transition: border-color 0.3s, box-shadow 0.3s;
-}
+        .form-group {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
 
-input:focus,
-textarea:focus {
-  border-color: blue;
-  outline: none;
-  box-shadow: 0 0 6px rgba(57, 152, 139, 0.3);
-}
+        input,
+        textarea {
+            flex: 1;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 1rem;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
 
-textarea {
-  resize: vertical;
-  min-height: 120px;
-}
+        input:focus,
+        textarea:focus {
+            border-color: blue;
+            outline: none;
+            box-shadow: 0 0 6px rgba(57, 152, 139, 0.3);
+        }
 
-button {
-  padding: 1rem;
-  background: blue;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  font-weight: bold;
-  font-size: 1.1rem;
-  transition: background 0.3s, transform 0.2s;
-}
+        textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
 
-button:hover {
-  background: rgb(17, 55, 221);
-  transform: translateY(-2px);
-}
+        button {
+            padding: 1rem;
+            background: blue;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: background 0.3s, transform 0.2s;
+        }
 
-/* Responsive */
-@media(max-width: 900px) {
-  .contact-section {
-    flex-direction: column;
-  }
+        button:hover {
+            background: rgb(17, 55, 221);
+            transform: translateY(-2px);
+        }
 
-  .contact-left,
-  .contact-right {
-    flex: 1 1 100%;
-    padding: 2rem;
-  }
+        /* Responsive */
+        @media(max-width: 900px) {
+            .contact-section {
+                flex-direction: column;
+            }
 
-  .form-group {
-    flex-direction: column;
-  }
-}
+            .contact-left,
+            .contact-right {
+                flex: 1 1 100%;
+                padding: 2rem;
+            }
+
+            .form-group {
+                flex-direction: column;
+            }
+        }
 
         /* faq-section */
         .faq-section {
@@ -515,7 +510,7 @@ button:hover {
                 <div class="hero-main  padding-top-bottom">
                     <div class="heroleft">
                         <h1 class="hero-para">Get In Touch </h1>
-                        <h1 class="hero-sec-para">With Our <span>Team</span></h1>
+                        <h1 class="hero-sec-para">With Our<span> Team</span> </h1>
                         <button class="hero-btn">Learn more</button>
                     </div>
                     <div class="heroright">
@@ -533,44 +528,44 @@ button:hover {
     <section>
         <div class="app-container">
 
-           <section class="contact-section">
-  <!-- Left: Contact Information -->
-  <div class="contact-left">
-    <h2>Get in Touch</h2>
-    <p>We’d love to hear from you! Reach out using the details below or send us a message.</p>
+            <section class="contact-section">
+                <!-- Left: Contact Information -->
+                <div class="contact-left">
+                    <h2>Get in Touch</h2>
+                    <p>We’d love to hear from you! Reach out using the details below or send us a message.</p>
 
-    <ul class="contact-details">
-      <li><strong>Address:</strong> 123 Business Street, City, Country</li>
-      <li><strong>Phone:</strong> +123 456 7890</li>
-      <li><strong>Email:</strong> info@yourcompany.com</li>
-      <li><strong>Working Hours:</strong> Mon – Fri: 9:00 AM – 6:00 PM</li>
-    </ul>
-  </div>
+                    <ul class="contact-details">
+                        <li><strong>📍 Address:</strong> 123 Business Street, City, Country</li>
+                        <li><strong>📞 Phone:</strong> +123 456 7890</li>
+                        <li><strong>✉️ Email:</strong> info@yourcompany.com</li>
+                        <li><strong>⏰ Working Hours:</strong> Mon – Fri: 9:00 AM – 6:00 PM</li>
+                    </ul>
+                </div>
 
-  <!-- Right: Contact Form -->
-  <div class="contact-right">
-    <h3>Send Us a Message</h3>
-    <form>
-      <div class="form-group">
-        <input type="text" placeholder="Full Name" required>
-        <input type="email" placeholder="Email Address" required>
-      </div>
+                <!-- Right: Contact Form -->
+                <div class="contact-right">
+                    <h3>Send Us a Message</h3>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Full Name" required>
+                            <input type="email" placeholder="Email Address" required>
+                        </div>
 
-      <div class="form-group">
-        <input type="tel" placeholder="Phone Number">
-        <input type="text" placeholder="Subject">
-      </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Phone Number">
+                            <input type="text" placeholder="Subject">
+                        </div>
 
-      <textarea placeholder="Your Message" required></textarea>
+                        <textarea placeholder="Your Message" required></textarea>
 
-      <button type="submit">Submit</button>
-    </form>
-  </div>
-</section>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </section>
 
         </div>
     </section>
- 
+    <!-- faq-section -->
     <!-- FAQ SECTION -->
     <div class="app-container">
         <section class="faq-section">
