@@ -1,0 +1,368 @@
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: white;
+      color: black;
+    }
+
+    /* Global container class for entire site */
+    .app-container {
+      max-width: 1640px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* ================= HERO SECTION ================= */
+    .hero {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      background: url("https://cdn.pixabay.com/photo/2018/02/08/10/22/desk-3139127_1280.jpg") center/cover no-repeat;
+      display: flex;
+      align-items: center;
+    }
+
+    /* Gradient overlay (left fade) */
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 70%;
+      /* Adjust fade area */
+      height: 100%;
+      background: linear-gradient(to right,
+          rgba(0, 0, 0, 1) 0%,
+          /* full black at start */
+          rgba(0, 0, 0, 1) 30%,
+          /* keep half area solid black */
+          rgba(0, 0, 0, 0.6) 80%,
+          /* darker fade */
+          rgba(0, 0, 0, 0) 100%
+          /* fully transparent at end */
+        );
+      z-index: 1;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 800px;
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 55px;
+      font-weight: 500;
+      line-height: 1.2;
+    }
+
+    .hero h1 span {
+      color: #ffe252;
+    }
+
+    .hero p {
+      margin-top: 1rem;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #ddd;
+    }
+
+    /* Responsive */
+    @media (max-width: 1024px) {
+      .hero h1 {
+        font-size: 2.2rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        justify-content: center;
+        text-align: center;
+      }
+
+      .hero::before {
+        width: 100%;
+      }
+
+      .hero-content {
+        max-width: 100%;
+      }
+
+      .hero h1 {
+        font-size: 1.8rem;
+      }
+    }
+
+    /* tools section */
+   .tool-section {
+  background-color: #f3f1e6;
+  padding: 70px 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main-heading {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 400;
+  text-align: center;
+  color: black;
+  margin-bottom: 30px;
+  max-width: 1200px;
+  margin-inline: auto;
+  line-height: 1.2;
+}
+
+.description {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  text-align: center;
+  color: black;
+  margin-bottom: 40px;
+  max-width: 1000px;
+  margin-inline: auto;
+  line-height: 1.6;
+}
+
+.logos-container {
+  position: relative;
+  height: 600px;
+}
+
+.logo-item {
+  position: absolute;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+}
+
+.logo-item img {
+  width: 100%;
+  height: auto;
+  max-width: 160px;
+}
+
+.drupal {
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.wordpress {
+  top: 150px;
+  left: 16%;
+}
+
+.joomla {
+  top: 150px;
+  right: 16%;
+}
+
+.umbraco {
+  bottom: 150px;
+  left: 16%;
+}
+
+.figma {
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.xd {
+  bottom: 150px;
+  right: 16%;
+}
+
+.center-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  color: #2c2c2c;
+  max-width: 500px;
+  text-align: center;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .tool-section {
+    padding: 50px 15px;
+  }
+
+  .logos-container {
+    height: 500px;
+    margin: 40px 0;
+  }
+
+  .logo-item {
+    padding: 15px 18px;
+  }
+
+  .drupal {
+    top: 20px;
+  }
+
+  .wordpress {
+    top: 110px;
+    left: 8%;
+  }
+
+  .joomla {
+    top: 110px;
+    right: 8%;
+  }
+
+  .umbraco {
+    bottom: 100px;
+    left: 8%;
+  }
+
+  .figma {
+    bottom: 20px;
+  }
+
+  .xd {
+    bottom: 100px;
+    right: 8%;
+  }
+
+  .center-text {
+    font-size: 0.95rem;
+    max-width: 280px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .logos-container {
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    justify-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .logo-item {
+    position: static;
+    transform: none;
+    width: 100px;
+    height: auto;
+    padding: 10px;
+  }
+
+  .logo-item img {
+    max-width: 80px;
+  }
+
+  .center-text {
+    position: static;
+    transform: none;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    max-width: 100%;
+  }
+}
+
+
+        /* Challegnges section */
+        .challenge-section {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 60px;
+            align-items: start;
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
+        .heading {
+            font-size: 3.5rem;
+            font-weight: 500;
+            line-height: 1.1;
+            color: black;
+        }
+
+        .highlight {
+        
+            text-shadow: 0 0 20px rgba(248, 197, 12, 0.6),
+                         0 0 40px rgba(233, 185, 13, 0.4),
+                         0 0 60px rgba(243, 194, 15, 0.877);
+        }
+
+    
+
+        .challenges-list {
+         
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .challenge-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            font-size: 20px;
+            line-height: 1.5;
+            border-bottom: 1px solid #e4e2d8;
+            padding-bottom: 16px;
+            
+        }
+
+        .bullet {
+            width: 8px;
+            height: 8px;
+            background-color: #f6d55c;
+            border-radius: 50%;
+            margin-top: 12px;
+            flex-shrink: 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .challenge-section {
+                grid-template-columns: 1fr;
+                gap: 40px;
+                text-align: center;
+            }
+
+            .heading {
+                font-size: 2.5rem;
+            }
+
+            .challenge-item {
+                font-size: 1rem;
+                text-align: left;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .heading {
+                font-size: 2rem;
+            }
+
+            .challenge-section {
+                gap: 30px;
+            }
+
+            .challenges-list {
+                gap: 20px;
+            }
+        }
