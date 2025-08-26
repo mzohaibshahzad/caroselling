@@ -45,7 +45,7 @@
         .hero-para {
             font-size: 110px;
             font-weight: 400;
-            
+
         }
 
         .hero-sec-para {
@@ -90,7 +90,7 @@
             color: white;
             font-weight: 300;
             font-size: 30px;
-         
+
         }
 
         .heroright {
@@ -119,7 +119,7 @@
             max-width: 690px;
             padding-bottom: 15px;
             font-size: 22px;
-             line-height: 30px;
+            line-height: 30px;
             letter-spacing: 0.3px;
         }
 
@@ -183,7 +183,7 @@
             font-weight: 400;
             font-size: 22px;
             padding-bottom: 20px;
-             line-height: 30px;
+            line-height: 30px;
             letter-spacing: 0.3px;
         }
 
@@ -251,7 +251,7 @@
             font-size: 30px;
             font-weight: 400;
             padding-bottom: 20px;
-            
+
         }
 
         .link-ank {
@@ -287,32 +287,99 @@
             font-weight: 500;
         }
 
-        .choose-btn {
+        .scroll-container {
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 15px;
+            padding: 40px 0;
+        }
 
-            padding: 10px 12px;
+        /* Fade shadow left + right */
+        .scroll-container::before,
+        .scroll-container::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            width: 120px;
+            height: 100%;
+            z-index: 5;
+            pointer-events: none;
+        }
+
+        .scroll-container::before {
+            left: 0;
+            background: linear-gradient(to right, white, transparent);
+        }
+
+        .scroll-container::after {
+            right: 0;
+            background: linear-gradient(to left, white, transparent);
+        }
+
+        .scroll-row {
+            display: flex;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .scroll-content {
+            display: inline-flex;
+            gap: 12px;
+            padding-right: 15px;
+            /* small spacing between duplicate sets */
+        }
+
+        /* Button style */
+        .choose-btn {
+            padding: 10px 16px;
             border-radius: 8px;
             font-size: 14px;
-            font-weight: 400;
+            font-weight: 500;
             background-color: #f1eeee;
             border: 1px solid lightgrey;
-
-            text-decoration: none;
-            color: black
-        }
-
-        .button-section a {
             text-decoration: none;
             color: black;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+            white-space: nowrap;
         }
 
-        .button-sec-flex {
-            max-width: 2500px;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-            padding: 10px;
-
+        /* Animations */
+        .left-to-right .scroll-content {
+            animation: scroll-left 25s linear infinite;
         }
+
+        .right-to-left .scroll-content {
+            animation: scroll-right 35s linear infinite;
+        }
+
+        .scroll-row:nth-child(3) .scroll-content {
+            animation-duration: 45s;
+            /* third row slower */
+        }
+
+        @keyframes scroll-left {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(-100%);
+            }
+        }
+
+        @keyframes scroll-right {
+            from {
+                transform: translateX(-100%);
+            }
+
+            to {
+                transform: translateX(0);
+            }
+        }
+
 
 
         .choose-head {
@@ -325,7 +392,7 @@
         .choose-para {
             font-size: 22px;
             font-weight: 400;
-             line-height: 30px;
+            line-height: 30px;
             letter-spacing: 0.3px;
             max-width: 824px;
             padding: 40px 0px;
@@ -946,38 +1013,94 @@
                 real impact. Every strategy is rooted in creativity, expertise, and technology, ensuring your brand
                 stays ahead in a fast-changing digital world.</p>
         </div>
-        <div class="button-sec-flex">
-            <span class="choose-btn">Built for your success</span>
-            <span class="choose-btn">Results that truly matter</span>
-            <span class="choose-btn">Growth beyond boundaries</span>
-            <span class="choose-btn">Why settle for less?</span>
-            <span class="choose-btn">Powered by innovation</span>
-            <span class="choose-btn">Designed for impact</span>
-            <span class="choose-btn">Future starts here</span>
-            <span class="choose-btn">Solutions that scale</span>
-            <span class="choose-btn">Driven by creativity</span>
-            <span class="choose-btn">Lasting partnerships, proven results</span>
-            <span class="choose-btn">Where ideas take flight</span>
-            <span class="choose-btn">Data meets creativity</span>
-            <span class="choose-btn">Success isn’t optional</span>
-            <span class="choose-btn">We think long-term</span>
-            <span class="choose-btn">Not just projects, results</span>
-            <span class="choose-btn">Built to adapt</span>
-            <span class="choose-btn">Ready for what’s next?</span>
-            <span class="choose-btn">From vision to reality</span>
-            <span class="choose-btn">Smart, simple, effective</span>
-            <span class="choose-btn">Let’s grow together</span>
-            <span class="choose-btn">Your goals, our mission</span>
-            <span class="choose-btn">Innovation is our fuel</span>
-            <span class="choose-btn">Focused on lasting value</span>
-            <span class="choose-btn">Growth with purpose</span>
-            <span class="choose-btn">Challenges create opportunities</span>
-            <span class="choose-btn">Imagine. Build. Scale.</span>
-            <span class="choose-btn">Why choose ordinary?</span>
-            <span class="choose-btn">Your success is ours</span>
-            <span class="choose-btn">Excellence by design</span>
-            <span class="choose-btn">Dream big, achieve more</span>
+        <div class="scroll-container">
+            <!-- Row 1 -->
+            <div class="scroll-row left-to-right">
+                <div class="scroll-content">
+                    <span class="choose-btn">Built for your success</span>
+                    <span class="choose-btn">Results that truly matter</span>
+                    <span class="choose-btn">Growth beyond boundaries</span>
+                    <span class="choose-btn">Why settle for less?</span>
+                    <span class="choose-btn">Powered by innovation</span>
+                    <span class="choose-btn">Designed for impact</span>
+                    <span class="choose-btn">Future starts here</span>
+                    <span class="choose-btn">Smart, simple, effective</span>
+                    <span class="choose-btn">Challenges create opportunities</span>
+                    <span class="choose-btn">Imagine. Build. Scale.</span>
+                </div>
+                <!-- duplicate for seamless loop -->
+                <div class="scroll-content">
+                    <span class="choose-btn">Built for your success</span>
+                    <span class="choose-btn">Results that truly matter</span>
+                    <span class="choose-btn">Growth beyond boundaries</span>
+                    <span class="choose-btn">Why settle for less?</span>
+                    <span class="choose-btn">Powered by innovation</span>
+                    <span class="choose-btn">Designed for impact</span>
+                    <span class="choose-btn">Future starts here</span>
+                    <span class="choose-btn">Smart, simple, effective</span>
+                    <span class="choose-btn">Challenges create opportunities</span>
+                    <span class="choose-btn">Imagine. Build. Scale.</span>
+                </div>
+            </div>
+
+            <!-- Row 2 -->
+            <div class="scroll-row right-to-left">
+                <div class="scroll-content">
+                    <span class="choose-btn">Solutions that scale</span>
+                    <span class="choose-btn">Driven by creativity</span>
+                    <span class="choose-btn">Lasting partnerships, proven results</span>
+                    <span class="choose-btn">Where ideas take flight</span>
+                    <span class="choose-btn">Data meets creativity</span>
+                    <span class="choose-btn">Success isn’t optional</span>
+                    <span class="choose-btn">We think long-term</span>
+                    <span class="choose-btn">Your success is ours</span>
+                    <span class="choose-btn">Excellence by design</span>
+                    <span class="choose-btn">Dream big, achieve more</span>
+                </div>
+                <div class="scroll-content">
+                    <span class="choose-btn">Solutions that scale</span>
+                    <span class="choose-btn">Driven by creativity</span>
+                    <span class="choose-btn">Lasting partnerships, proven results</span>
+                    <span class="choose-btn">Where ideas take flight</span>
+                    <span class="choose-btn">Data meets creativity</span>
+                    <span class="choose-btn">Success isn’t optional</span>
+                    <span class="choose-btn">We think long-term</span>
+                    <span class="choose-btn">Your success is ours</span>
+                    <span class="choose-btn">Excellence by design</span>
+                    <span class="choose-btn">Dream big, achieve more</span>
+                </div>
+            </div>
+
+            <!-- Row 3 -->
+            <div class="scroll-row left-to-right">
+                <div class="scroll-content">
+                    <span class="choose-btn">Not just projects, results</span>
+                    <span class="choose-btn">Built to adapt</span>
+                    <span class="choose-btn">Ready for what’s next?</span>
+                    <span class="choose-btn">From vision to reality</span>
+                    <span class="choose-btn">Let’s grow together</span>
+                    <span class="choose-btn">Your goals, our mission</span>
+                    <span class="choose-btn">Innovation is our fuel</span>
+                    <span class="choose-btn">Focused on lasting value</span>
+                    <span class="choose-btn">Growth with purpose</span>
+                    <span class="choose-btn">Excellence by design</span>
+                </div>
+                <div class="scroll-content">
+                    <span class="choose-btn">Not just projects, results</span>
+                    <span class="choose-btn">Built to adapt</span>
+                    <span class="choose-btn">Ready for what’s next?</span>
+                    <span class="choose-btn">From vision to reality</span>
+                    <span class="choose-btn">Let’s grow together</span>
+                    <span class="choose-btn">Your goals, our mission</span>
+                    <span class="choose-btn">Innovation is our fuel</span>
+                    <span class="choose-btn">Focused on lasting value</span>
+                    <span class="choose-btn">Growth with purpose</span>
+                    <span class="choose-btn">Excellence by design</span>
+                </div>
+            </div>
         </div>
+
+
 
 
     </div>
