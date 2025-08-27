@@ -140,8 +140,8 @@ body {
     justify-content: center;
 }
 
-.main-heading {
-    font-size: clamp(2rem, 4vw, 3rem);
+.tools-heading {
+    font-size: 45px;
     font-weight: 500;
     text-align: center;
     margin-bottom: 30px;
@@ -318,7 +318,7 @@ body {
 }
 
 .heading {
-    font-size: 3.5rem;
+    font-size: 45px;
     font-weight: 500;
     line-height: 1.1;
     color: black;
@@ -395,7 +395,7 @@ body {
 /* CTA section */
 .cta-section {
     position: relative;
-    height: 60vh;
+    height: 70vh;
     background: url("https://a4ari72izk.ufs.sh/f/HNbj1JW7mNRdGtIFV9EPuHQFMBAlTyLDJmUcbCj7iX0wWhZk") center/cover no-repeat;
     background-size: cover;
     background-position: center;
@@ -452,8 +452,8 @@ body {
     gap: 0.5rem;
     padding: 10px 20px;
     background: transparent;
-    color: var(--primary-color);
-    border: 2px solid var(--primary-color);
+    color: white;
+    border: 2px solid white;
     text-decoration: none;
     font-size: 1.1rem;
     font-weight: 500;
@@ -469,6 +469,7 @@ body {
     width: 100%;
     height: 100%;
     background: var(--primary-color);
+    
     transition: left 0.3s ease;
     z-index: -1;
 }
@@ -479,6 +480,7 @@ body {
 
 .cta-button:hover {
     color: white;
+    border: 2px solid var(--primary-color);
 }
 
 .cta-button .arrow {
@@ -771,7 +773,8 @@ background-color: var(--light-grey-background);
       background: none;
       border: none;
       font-size: 35px;
-      font-weight: 500;
+      font-family: var(--font-secondary);
+      font-weight: 400;
       cursor: pointer;
       display: flex;
       justify-content: flex-start;
@@ -786,6 +789,7 @@ background-color: var(--light-grey-background);
     .faq-item.active .question-text {
       text-decoration: underline;
     }
+  
 
     .faq-arrow {
       width: 30px;
