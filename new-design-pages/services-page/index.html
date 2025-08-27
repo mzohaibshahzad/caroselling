@@ -1,12 +1,11 @@
-<!-- hero image url -->
-<!-- <img src="https://cdn.pixabay.com/photo/2018/02/08/10/22/desk-3139127_1280.jpg" alt=""> -->
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>New Design Page</title>
+  <title>Service Page</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -211,7 +210,8 @@
     <div class="app-container hosting-section">
       <!-- Left Side Image -->
       <div class="section-left">
-        <img src="https://cdn.pixabay.com/photo/2016/02/10/19/34/wikimedia-community-logo-lgbt-1192365_1280.png" alt="Hosting Support">
+        <img src="https://a4ari72izk.ufs.sh/f/HNbj1JW7mNRdweJTLda61Rt8mxwo72CXHyrcjKPeEIudgSQ3"
+          alt="Hosting Support">
       </div>
 
       <!-- Right Side Text -->
@@ -233,6 +233,109 @@
       </div>
     </div>
   </section>
+  <!-- image section -->
+  <section class="big-image-bg">
+    <div class="big-image">
+      <img src="https://a4ari72izk.ufs.sh/f/HNbj1JW7mNRdMTvef400QDpak6nFtSNBIycxzAwKMJfibsZ9" alt="Showcase image"
+        class="Showcase-img">
+    </div>
+    <div class="text-section app-container">
+      <span class="left-text">Our Approach</span>
+      <p class="right-text">We approach website design and development from a business first perspective with prospects
+        of providing
+        lasting return on investment and brand recognition, as well as process simplification and automation.</p>
+    </div>
+  </section>
+
+  <!-- FAQ section -->
+ <section class="faq-section">
+
+  <div class="faq-item">
+    <div class="faq-bg">
+      <div class="app-container">
+        <button class="faq-question">
+          <svg class="faq-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m7 7 10 10"/>
+            <path d="M17 7v10H7"/>
+          </svg>
+          <span class="question-text">Evaluation, User Personas & Workshopping</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-content">
+            We begin every project with a comprehensive evaluation phase where we dive deep into understanding your business goals, target audience, and market positioning. Through collaborative workshopping sessions, we develop detailed user personas that guide our design and development decisions.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-bg">
+      <div class="app-container">
+        <button class="faq-question">
+          <svg class="faq-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m7 7 10 10"/>
+            <path d="M17 7v10H7"/>
+          </svg>
+          <span class="question-text">Keyword Research & Content Planning</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-content">
+            To ensure your website attracts the right audience, we place a strong emphasis on SEO during our planning phase. We analyse your website's current ranking (or that of your competitors) and identify opportunities for improvement. Our keyword research guides your content strategy.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-bg">
+      <div class="app-container">
+        <button class="faq-question">
+          <svg class="faq-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m7 7 10 10"/>
+            <path d="M17 7v10H7"/>
+          </svg>
+          <span class="question-text">Wireframe & UI/UX Design</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-content">
+            Our design process starts with detailed wireframes that map out the user journey and information architecture. We then create stunning UI/UX designs that not only look beautiful but also provide an intuitive and engaging user experience.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
 </body>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach(item => {
+      const question = item.querySelector('.faq-question');
+
+      question.addEventListener('click', () => {
+        const isActive = item.classList.contains('active');
+
+        // Close all other items
+        faqItems.forEach(otherItem => {
+          otherItem.classList.remove('active');
+        });
+
+        // Toggle current item
+        if (!isActive) {
+          item.classList.add('active');
+        }
+      });
+    });
+  });
+</script>
 
 </html>
