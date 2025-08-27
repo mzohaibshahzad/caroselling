@@ -2,11 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-   font-family: "Oswald", sans-serif;
 }
 
 
 :root {
+    /* fonts  */
+    --font-primary: 'Inter', sans-serif;
+  --font-secondary: 'Oswald', sans-serif;
+
+
+  /* colors */
     --primary-color: #0000ff;
     --light-grey-background: #f1eeee;
     --black-text: #000000;
@@ -19,6 +24,12 @@
 body {
     background: white;
     color: var(--black-text);
+}
+body p{
+    font-family: var(--font-primary);
+}
+body {
+    font-family: var(--font-secondary);
 }
 
 /* Global container class for entire site */
@@ -72,10 +83,13 @@ body {
     font-size: 55px;
     font-weight: 500;
     line-height: 1.2;
+
 }
 
 .hero h1 span {
     color: var(--primary-color);
+    
+    
 }
 
 .hero p {
