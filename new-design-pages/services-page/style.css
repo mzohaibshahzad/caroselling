@@ -814,7 +814,7 @@ background-color: var(--light-grey-background);
         max-width: 1120px;
         margin-left: auto;
       padding-top: 0.5rem;
-      color: #555;
+      font-size: 22px;
       line-height: 1.7;
     }
 
