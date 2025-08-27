@@ -114,6 +114,7 @@ body {
     .hero {
         justify-content: center;
         text-align: center;
+        height: 70vh;
     }
 
     .hero::before {
@@ -226,10 +227,12 @@ body {
     .tool-section {
         padding: 50px 15px;
     }
-
+.center-text{
+    visibility:hidden ;
+}
     .logos-container {
         height: 500px;
-        margin: 40px 0;
+   
     }
 
     .logo-item {
@@ -279,7 +282,7 @@ body {
         gap: 15px;
         justify-items: center;
         padding-top: 30px;
-        padding-bottom: 30px;
+       
     }
 
     .logo-item {
@@ -376,7 +379,8 @@ body {
 
 @media (max-width: 480px) {
     .heading {
-        font-size: 2rem;
+        font-size: 34px;
+        line-height: 1.3;
     }
 
     .challenge-section {
@@ -391,7 +395,7 @@ body {
 /* CTA section */
 .cta-section {
     position: relative;
-    height: 70vh;
+    height: 60vh;
     background: url("https://a4ari72izk.ufs.sh/f/HNbj1JW7mNRdGtIFV9EPuHQFMBAlTyLDJmUcbCj7iX0wWhZk") center/cover no-repeat;
     background-size: cover;
     background-position: center;
@@ -486,7 +490,8 @@ body {
     }
 
     .main-heading {
-        font-size: 2rem;
+        font-size: 28px;
+        line-height: 1.7;
     }
 
 
@@ -536,7 +541,10 @@ body {
     }
 
     .number {
-        font-size: 18px;
+        font-size: 38px;
+    }
+    .card p{
+        font-size: 20px;
     }
 }
 
@@ -597,6 +605,12 @@ body {
     .right h2 {
         font-size: 34px;
     }
+    .left p {
+    font-size: 22px;
+
+    line-height: 1.4;
+
+}
 }
 
 /* Hosting section */
@@ -650,7 +664,10 @@ body {
     }
 
     .section-right h2 {
-        font-size: 1.8rem;
+        font-size: 34px;
+    }
+    .section-right p {
+        font-size: 18px;
     }
 
     .section-left img {
@@ -707,8 +724,16 @@ background-color: var(--light-grey-background);
     .big-image,
     .text-section {
         flex-direction: column;
+         padding-top: 60px;
+    padding-bottom: 60px;
 
     }
+    .right-text {
+    font-size: 25px;
+    line-height: 1.3;
+
+
+}
 }
 
 
@@ -923,6 +948,15 @@ background-color: var(--light-grey-background);
             max-width: 824px;
             padding: 40px 0px;
         }
+        @media screen and (max-width: 700px) {
+        .choose-head {
+            font-size: 31px;
+     
+        }
+        .choose-para{
+            font-size: 18px;
+        }
+        }
 
         /* cta and footer */
         
@@ -1080,8 +1114,7 @@ background-color: var(--light-grey-background);
             }
 
             .footer-right {
-                display: flex;
-                flex-direction: column;
+              justify-content: start;
             }
         }
 
