@@ -35,6 +35,32 @@ body {
   font-family: var(--font-secondary);
 }
 
+body h1 {
+  font-size: 55px;
+  @media (max-width: 1024px) {
+    font-size: 45px;
+  }
+  @media (max-width: 768px) {
+    font-size: 40px;
+  }
+}
+
+body h2 {
+  font-size: 45px;
+  @media (max-width: 1024px) {
+    font-size: 35px;
+  }
+  @media (max-width: 768px) {
+    font-size: 35px;
+  }
+}
+
+body h3 {
+  font-size: 35px;
+  @media (max-width: 1024px) {
+    font-size: 30px;
+  }
+}
 /* Global container class for entire site */
 .app-container {
   max-width: 1640px;
@@ -112,10 +138,6 @@ body {
 
 /* Responsive */
 @media (max-width: 1024px) {
-  .hero h1 {
-    font-size: 2.2rem;
-  }
-
   .hero p {
     font-size: 1rem;
   }
@@ -133,10 +155,6 @@ body {
 
   .hero-content {
     max-width: 100%;
-  }
-
-  .hero h1 {
-    font-size: 1.8rem;
   }
 }
 
@@ -202,7 +220,7 @@ body {
   flex-direction: column;
   gap: 60px;
   align-items: center;
-  padding: 60px 0px;
+  padding: 80px 0px;
 }
 
 .reviews-google-pill {
@@ -214,15 +232,15 @@ body {
 .about-us-txt {
   display: flex;
   flex-direction: column;
-  gap: 60px;
+  gap: 40px;
   text-align: center;
   align-items: center;
   justify-content: center;
 }
 
 .heading {
-  font-size: 3.5rem;
-  font-weight: 200;
+  font-size: 55px;
+  font-weight: 400;
   line-height: 1.1;
   color: black;
 }
@@ -236,12 +254,24 @@ body {
 .about-txt {
   max-width: 50%;
   display: flex;
-  font-size: 1.5rem;
+  font-size: 20px;
   font-weight: 300;
   flex-direction: column;
   align-items: center;
-  gap: 16px;
+  gap: 10px;
   text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .heading {
+    font-size: 45px;
+  }
+}
+
+@media (max-width: 768px) {
+  .heading {
+    font-size: 35px;
+  }
 }
 /* cta action */
 
@@ -322,7 +352,8 @@ body {
 /* CASE STUDY */
 .case-study-section {
   background-color: var(--light-grey-background);
-  padding: 60px 20px;
+  padding: 80px 20px;
+  margin-top: 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -330,13 +361,12 @@ body {
   text-align: center;
 }
 .case-study-section h3 {
-  font-size: 41px;
-  font-weight: normal;
+  font-weight: 400;
   text-align: center;
 }
 .case-study-section p {
   font-size: 18px;
-  font-weight: normal;
+  font-weight: 400;
 }
 
 /*  Grid Layout */
@@ -423,7 +453,7 @@ body {
 }
 
 .case-title {
-  font-size: 26px;
+  font-size: 25px;
   margin-bottom: 15px;
   font-weight: 400;
 }
@@ -468,15 +498,25 @@ body {
 
 /*  Responsive for mobile arrow */
 @media (max-width: 675px) {
+  .case-study-card {
+    gap: 10px;
+  }
+  .case-details {
+    padding: 25px 10px;
+  }
   .case-icon {
     position: static;
     margin-top: 15px;
     align-self: flex-start;
   }
+  .case-title {
+    font-size: 20px;
+  }
 }
 /* google review cards scroll*/
 .review-card-section {
-  padding: 60px 20px;
+  padding: 80px 20px;
+  margin-top: 80px;
   display: flex;
   flex-direction: column;
 }
@@ -490,7 +530,6 @@ body {
 }
 
 .review-header h1 {
-  font-size: 41px;
   font-weight: normal;
   max-width: 50%;
   margin-bottom: 50px;
@@ -848,7 +887,6 @@ body {
 }
 
 .right h2 {
-  font-size: 48px;
   font-weight: 500;
   margin-bottom: 20px;
 }
@@ -882,10 +920,6 @@ body {
   .point-section {
     grid-template-columns: 1fr;
   }
-
-  .right h2 {
-    font-size: 34px;
-  }
 }
 
 /* Wbsite expert section */
@@ -917,7 +951,6 @@ body {
 }
 
 .section-right h2 {
-  font-size: 50px;
   margin-bottom: 20px;
   font-weight: 500;
 }
@@ -937,11 +970,7 @@ body {
     padding: 40px 20px;
   }
 
-  .section-right h2 {
-    font-size: 1.8rem;
-  }
-
-  .section-left img {
+  .section-left {
     max-width: 100%;
   }
 }
@@ -950,14 +979,12 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 60px 20px;
+  padding: 80px 20px;
   gap: 40px;
   border-top: 1px solid var(--lightgrey-border-color);
   background-color: var(--light-grey-background);
 }
-.services-section h1 {
-  font-size: 41px;
-}
+
 .service-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -970,9 +997,9 @@ body {
 .service-card-heading {
   padding-bottom: 5px;
   border-bottom: 1px solid black;
+  margin-bottom: 20px;
 }
 .service-card-heading h3 {
-  font-size: 26px;
   font-weight: normal;
 }
 .service-card p {
@@ -1021,10 +1048,9 @@ body {
 .building-header p {
   font-size: 18px;
 }
-.building-header h1 {
+.building-header h2 {
   max-width: 50%;
   width: 100%;
-  font-size: 41px;
 }
 .building-header span {
   line-height: 1.6;
@@ -1086,10 +1112,9 @@ body {
     justify-content: center;
     gap: 40px;
   }
-  .building-header h1 {
+  .building-header h2 {
     max-width: 100%;
     width: 100%;
-    font-size: 31px;
   }
 }
 @media (max-width: 675px) {
@@ -1099,6 +1124,11 @@ body {
     grid-template-rows: 4;
     overflow: hidden;
   }
+  .building-header h2 {
+    max-width: 100%;
+    width: 100%;
+    line-height: 1.2;
+  }
 }
 /* <!-- FAQ section --> */
 
@@ -1107,7 +1137,6 @@ body {
 }
 
 .faq-section h1 {
-  font-size: 41px;
   text-align: center;
   margin-bottom: 40px;
 }
@@ -1176,7 +1205,11 @@ body {
   color: #555;
   line-height: 1.7;
 }
-
+@media (max-width: 1024px) {
+  .faq-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 @media (max-width: 768px) {
   .faq-section {
     padding: 60px 0;
