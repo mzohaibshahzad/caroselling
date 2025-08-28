@@ -45,7 +45,7 @@ body {
     position: relative;
     width: 100%;
     height: 100vh;
-    background: url("https://a4ari72izk.ufs.sh/f/HNbj1JW7mNRdEar1lfxTUsC5LJmj4x0lDnizdSGy3k1fE7tp") center/cover no-repeat;
+    background: url("https://a4ari72izk.ufs.sh/f/HNbj1JW7mNRds4GAy3c5DWTzN3Hkb1dMem7EKa6ISRQiuxJP") center/cover no-repeat;
     display: flex;
     align-items: center;
 }
@@ -102,7 +102,7 @@ body {
 /* Responsive */
 @media (max-width: 1024px) {
     .hero h1 {
-        font-size: 2.2rem;
+        font-size: 45px;
     }
 
     .hero p {
@@ -114,7 +114,7 @@ body {
     .hero {
         justify-content: center;
         text-align: center;
-        height: 70vh;
+        height: 50vh;
     }
 
     .hero::before {
@@ -126,7 +126,7 @@ body {
     }
 
     .hero h1 {
-        font-size: 1.8rem;
+        font-size: 35px;
     }
 }
 
@@ -224,14 +224,18 @@ body {
 
 /* Tablet */
 @media (max-width: 768px) {
+    .tools-heading{
+        font-size: 30px;
+    }
     .tool-section {
-        padding: 50px 15px;
+        padding-top: 60px;
+        padding-bottom: 0px;
     }
 .center-text{
     visibility:hidden ;
 }
     .logos-container {
-        height: 500px;
+        height: 100%;
    
     }
 
@@ -275,36 +279,38 @@ body {
 
 /* Mobile */
 @media (max-width: 480px) {
+    
     .logos-container {
-        height: auto;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        display: flex;
+        flex-direction: column;
         gap: 15px;
-        justify-items: center;
+        align-items: center; 
         padding-top: 30px;
-       
     }
 
     .logo-item {
         position: static;
         transform: none;
-        width: 100px;
-        height: auto;
-        padding: 10px;
+        width: 100%;   
+        max-width: 200px; 
+        padding: 20px; 
     }
 
     .logo-item img {
-        max-width: 80px;
+        width: 100%;   
+        height: auto;
+        max-width: none; 
     }
 
     .center-text {
         position: static;
         transform: none;
         margin-top: 20px;
-        font-size: 0.9rem;
+        font-size: 1rem;
         max-width: 100%;
     }
 }
+
 
 
 /* Challegnges section */
@@ -379,7 +385,7 @@ body {
 
 @media (max-width: 480px) {
     .heading {
-        font-size: 34px;
+        font-size: 30px;
         line-height: 1.3;
     }
 
@@ -492,6 +498,9 @@ body {
 }
 
 @media (max-width: 768px) {
+    .cta-section{
+        height: 50vh;
+    }
     .content-wrapper {
         flex-direction: column;
         text-align: center;
@@ -545,6 +554,11 @@ body {
 
 /* Responsive padding */
 @media (max-width: 600px) {
+    .section-bg {
+
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
     .card {
         padding: 15px;
     }
@@ -564,7 +578,7 @@ body {
     grid-template-columns: 1fr 1fr;
     gap: 40px;
     align-items: start;
-    margin: 80px auto;
+    margin: 60px auto;
 }
 
 .left p {
@@ -612,7 +626,7 @@ body {
     }
 
     .right h2 {
-        font-size: 34px;
+        font-size: 30px;
     }
     .left p {
     font-size: 22px;
@@ -633,7 +647,7 @@ body {
 }
 
 .section-left {
-    max-width: 600px;
+    max-width: 700px;
 
 }
 
@@ -673,7 +687,7 @@ body {
     }
 
     .section-right h2 {
-        font-size: 34px;
+        font-size: 30px;
     }
     .section-right p {
         font-size: 18px;
@@ -708,10 +722,10 @@ background-color: var(--light-grey-background);
 
 .big-image,
 .text-section {
+    padding-top: 60px;
     display: flex;
     justify-content: space-between;
-    padding-top: 80px;
-    padding-bottom: 80px;
+  
 
 }
 
@@ -740,8 +754,9 @@ background-color: var(--light-grey-background);
     .right-text {
     font-size: 25px;
     line-height: 1.3;
-
-
+}
+.big-image{
+    height: 200px;
 }
 }
 
@@ -830,7 +845,8 @@ background-color: var(--light-grey-background);
 
       .faq-question {
         padding: 1rem;
-        font-size: 1rem;
+        font-size: 20px;
+        font-weight: 300;
         gap: 0px;
       }
 
@@ -1009,6 +1025,7 @@ background-color: var(--light-grey-background);
 
         .cta-flex {
             display: flex;
+            gap: 50px;
             justify-content: space-between;
             align-items: center;
         }
@@ -1019,7 +1036,7 @@ background-color: var(--light-grey-background);
 
         .cta-image {
             max-width: 640px;
-            padding-bottom: 70px;
+         
         }
 
         @media screen and (max-width: 700px) {
@@ -1048,7 +1065,7 @@ background-color: var(--light-grey-background);
         }
 
         .footer-main {
-            padding-top: 50px;
+        
             background-color: black;
             color: white;
         }
