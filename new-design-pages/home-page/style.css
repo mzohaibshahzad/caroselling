@@ -37,6 +37,7 @@ body {
 
 body h1 {
   font-size: 55px;
+  font-weight: 600;
   @media (max-width: 1024px) {
     font-size: 45px;
   }
@@ -47,6 +48,7 @@ body h1 {
 
 body h2 {
   font-size: 45px;
+  font-weight: 500;
   @media (max-width: 1024px) {
     font-size: 35px;
   }
@@ -57,6 +59,7 @@ body h2 {
 
 body h3 {
   font-size: 35px;
+  font-weight: 500;
   @media (max-width: 1024px) {
     font-size: 30px;
   }
@@ -1048,7 +1051,7 @@ body h3 {
 .building-header p {
   font-size: 18px;
 }
-.building-header h2 {
+.building-header h3 {
   max-width: 50%;
   width: 100%;
 }
@@ -1112,7 +1115,7 @@ body h3 {
     justify-content: center;
     gap: 40px;
   }
-  .building-header h2 {
+  .building-header h3 {
     max-width: 100%;
     width: 100%;
   }
@@ -1124,7 +1127,7 @@ body h3 {
     grid-template-rows: 4;
     overflow: hidden;
   }
-  .building-header h2 {
+  .building-header h3 {
     max-width: 100%;
     width: 100%;
     line-height: 1.2;
