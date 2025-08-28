@@ -398,29 +398,17 @@ body {
 }
 
 /*  Image Styling */
+
 .case-image {
-  flex-shrink: 0;
-  width: 100%;
+  width: 40%;
   height: 400px;
-}
-
-.case-image img {
-  width: 100%;
-  height: 200px;
   object-fit: cover;
-  display: block;
 }
 
-@media (min-width: 675px) {
+@media (max-width: 675px) {
   .case-image {
-    width: 35%; /* control width of image on horizontal layout */
-    max-width: 300px; /* limit width */
-  }
-
-  .case-image img {
-    width: 100%;
-    height: 100%; /* Take full height of container */
-    object-fit: cover;
+    width: 100%; /* control width of image on horizontal layout */
+    max-width: 100%; /* limit width */
   }
 }
 
