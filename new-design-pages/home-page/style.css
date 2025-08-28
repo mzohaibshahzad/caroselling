@@ -1,3 +1,10 @@
+/* 
+
+h1 55px
+h2 45px
+p  25 22 18 16
+*/
+
 * {
   margin: 0;
   padding: 0;
@@ -6,16 +13,26 @@
 }
 
 :root {
+  /* fonts  */
+  --font-primary: "Inter", sans-serif;
+  --font-secondary: "Oswald", sans-serif;
+
+  /* colors */
   --primary-color: #0000ff;
   --light-grey-background: #f1eeee;
   --black-text: #000000;
   --background-color: #ffffff;
   --lightgrey-border-color: #d3d3d3;
 }
-
 body {
   background: white;
   color: var(--black-text);
+}
+body p {
+  font-family: var(--font-primary);
+}
+body {
+  font-family: var(--font-secondary);
 }
 
 /* Global container class for entire site */
@@ -185,7 +202,7 @@ body {
   flex-direction: column;
   gap: 60px;
   align-items: center;
-  padding: 40px 0px;
+  padding: 60px 0px;
 }
 
 .reviews-google-pill {
@@ -208,7 +225,6 @@ body {
   font-weight: 200;
   line-height: 1.1;
   color: black;
-  max-width: 900px;
 }
 
 .text-glow {
@@ -227,34 +243,91 @@ body {
   gap: 16px;
   text-align: center;
 }
-.btn-anchor {
-  text-decoration: none;
-  display: flex;
-  width: fit-content;
+/* cta action */
+
+.cta-button {
+  display: inline-flex;
+  margin: 20px 0px;
   align-items: center;
   justify-content: center;
-  column-gap: 8px;
-  padding: 8px 18px 8px 10px;
+
+  gap: 0.5rem;
+  padding: 10px 20px;
+  background: transparent;
   color: white;
-  background-color: var(--primary-color);
-  border: 1px solid var(--primary-color);
-  cursor: pointer;
-  text-transform: capitalize;
+  border: 2px solid white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  position: relative;
+  overflow: hidden;
 }
-.btn-anchor:hover {
-  color: #000000;
-  background-color: white;
-  border: 1px solid var(--primary-color);
-  cursor: pointer;
+
+.cta-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: var(--primary-color);
+
+  transition: left 0.3s ease;
+  z-index: -1;
 }
+
+.cta-button:hover::before {
+  left: 0;
+}
+
+.cta-button:hover {
+  color: white;
+  border: 2px solid var(--primary-color);
+}
+
+.cta-button .arrow {
+  transition: transform 0.3s ease;
+}
+
+.cta-button:hover .arrow {
+  transform: translateX(3px);
+}
+
+.cta-button-light {
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+}
+
+.cta-button-light::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: var(--primary-color);
+  transition: left 0.3s ease;
+  z-index: -1;
+}
+
+.cta-button-light:hover::before {
+  left: 0;
+}
+
+.cta-button-light:hover {
+  color: white;
+  border: 2px solid var(--primary-color);
+}
+
 /* CASE STUDY */
 .case-study-section {
   background-color: var(--light-grey-background);
-  padding: 40px 20px;
+  padding: 60px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 30px;
+  text-align: center;
 }
 .case-study-section h3 {
   font-size: 41px;
@@ -297,6 +370,8 @@ body {
   border: 1px solid var(--card-border);
   gap: 20px;
   overflow: hidden;
+  max-width: 720px;
+  width: 100%;
   padding: 10px;
   background-color: white;
   transition: background-color 0.3s ease;
@@ -352,18 +427,22 @@ body {
 /*  Case Details */
 .case-details {
   flex: 1;
-  padding: 20px;
+  padding: 45px 20px;
   position: relative;
   display: flex;
   flex-direction: column;
+  text-align: start;
 }
 
 .case-title {
-  font-size: 24px;
+  font-size: 26px;
   margin-bottom: 15px;
+  font-weight: 400;
 }
 
 .case-features {
+  font-size: 18px;
+  font-weight: 300;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -379,7 +458,6 @@ body {
 
 .case-features li::before {
   content: "•";
-  color: var(--primary-color);
   font-weight: bold;
   position: absolute;
   left: 0;
@@ -410,7 +488,7 @@ body {
 }
 /* google review cards scroll*/
 .review-card-section {
-  padding: 40px 20px;
+  padding: 60px 20px;
   display: flex;
   flex-direction: column;
 }
@@ -560,6 +638,7 @@ body {
 /* Stats section */
 .stats-section {
   background: var(--light-grey-background);
+  padding: 60px 0px;
 }
 
 .stats-container {
@@ -709,53 +788,6 @@ body {
   font-weight: 300;
 }
 
-.cta-button {
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  align-items: center;
-  justify-content: center;
-  max-width: 200px;
-  gap: 0.5rem;
-  padding: 10px 20px;
-  background: transparent;
-  color: var(--primary-color);
-  border: 2px solid var(--primary-color);
-  text-decoration: none;
-  font-size: 1.1rem;
-  font-weight: 500;
-  position: relative;
-  overflow: hidden;
-}
-
-.cta-button::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: var(--primary-color);
-  transition: left 0.3s ease;
-  z-index: -1;
-}
-
-.cta-button:hover::before {
-  left: 0;
-}
-
-.cta-button:hover {
-  color: white;
-}
-
-.cta-button .arrow {
-  transition: transform 0.3s ease;
-}
-
-.cta-button:hover .arrow {
-  transform: translateX(3px);
-}
-
 @media (max-width: 768px) {
   .content-wrapper {
     flex-direction: column;
@@ -884,6 +916,7 @@ body {
 
 .website-section-bg {
   background-color: var(--light-grey-background);
+  padding: 60px 0px;
 }
 
 .section-left img {
@@ -929,7 +962,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 80px 20px;
+  padding: 60px 20px;
   gap: 40px;
   border-top: 1px solid var(--lightgrey-border-color);
   background-color: var(--light-grey-background);
@@ -990,6 +1023,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 60px 0px;
 }
 .building-header {
   display: flex;
@@ -1157,7 +1191,7 @@ body {
 
 @media (max-width: 768px) {
   .faq-section {
-    padding: 1rem 0;
+    padding: 60px 0;
   }
 
   .faq-question {
@@ -1246,6 +1280,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 60px 0px;
 }
 .home-circle-cta {
   text-align: center;
