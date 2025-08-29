@@ -41,35 +41,30 @@ body h1 {
   font-size: 55px;
   font-weight: 600;
   max-width: 1000px;
-  margin: 0 auto;
 }
 
 body h2 {
   font-size: 45px;
   font-weight: 500;
   max-width: 1000px;
-  margin: 0 auto;
 }
 
 body h3 {
   font-size: 35px;
   font-weight: 400;
   max-width: 1000px;
-  margin: 0 auto;
 }
 
 body h4 {
   font-size: 30px;
   font-weight: 400;
   max-width: 1000px;
-  margin: 0 auto;
 }
 
 body h5 {
   font-size: 25px;
   font-weight: 400;
   max-width: 1000px;
-  margin: 0 auto;
 }
 
 /* Responsive Typography */
@@ -317,6 +312,7 @@ body h5 {
 /* cta action */
 
 .cta-button {
+  max-width: fit-content;
   display: inline-flex;
   margin-top: 20px;
   align-items: center;
@@ -565,8 +561,10 @@ body h5 {
   padding: 60px 0px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   font-size: 18px;
-  gap: 40px;
+  gap: 0px;
 }
 
 .review-header {
@@ -680,7 +678,7 @@ body h5 {
     flex-direction: column;
     gap: 40px;
   }
-  .review-header h3 {
+  .review-header h2 {
     max-width: 100%;
   }
 }
@@ -699,9 +697,10 @@ body h5 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 0px 40px;
 }
 /* Responsive image hero */
-.stats-hero {
+¡ .stats-hero {
   position: relative;
   padding: 60px 0px;
   padding-top: 0px;
@@ -794,6 +793,7 @@ body h5 {
 @media (min-width: 1024px) {
   .stats {
     grid-template-columns: 1fr 1fr;
+    text-align: start;
   }
 
   .row {
