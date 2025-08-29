@@ -28,66 +28,77 @@ body {
   background: white;
   color: var(--black-text);
 }
-body p {
-  font-family: var(--font-primary);
-}
 body {
   font-family: var(--font-secondary);
+}
+
+body p {
+  font-family: var(--font-primary);
 }
 
 body h1 {
   font-size: 55px;
   font-weight: 600;
   max-width: 1000px;
-  margin: 0px auto;
-  @media (max-width: 1024px) {
-    font-size: 45px;
-  }
-  @media (max-width: 768px) {
-    font-size: 40px;
-  }
+  margin: 0 auto;
 }
 
 body h2 {
   font-size: 45px;
   font-weight: 500;
   max-width: 1000px;
-  margin: 0px auto;
-  @media (max-width: 1024px) {
-    font-size: 35px;
-  }
-  @media (max-width: 768px) {
-    font-size: 35px;
-  }
+  margin: 0 auto;
 }
 
 body h3 {
   font-size: 35px;
   font-weight: 500;
   max-width: 1000px;
-  margin: 0px auto;
-  @media (max-width: 1024px) {
-    font-size: 30px;
-  }
+  margin: 0 auto;
 }
+
 body h4 {
   font-size: 30px;
   font-weight: 500;
   max-width: 1000px;
-  margin: 0px auto;
-  @media (max-width: 1024px) {
-    font-size: 25px;
-  }
+  margin: 0 auto;
 }
+
 body h5 {
   font-size: 25px;
   font-weight: 400;
   max-width: 1000px;
-  margin: 0px auto;
-  @media (max-width: 1024px) {
+  margin: 0 auto;
+}
+
+/* Responsive Typography */
+@media (max-width: 1024px) {
+  body h1 {
+    font-size: 45px;
+  }
+  body h2 {
+    font-size: 35px;
+  }
+  body h3 {
+    font-size: 30px;
+  }
+  body h4 {
+    font-size: 25px;
+  }
+  body h5 {
     font-size: 20px;
   }
 }
+
+@media (max-width: 768px) {
+  body h1 {
+    font-size: 40px;
+  }
+  body h2 {
+    font-size: 35px;
+  }
+}
+
 /* Global container class for entire site */
 .app-container {
   max-width: 1640px;
@@ -136,7 +147,6 @@ body h5 {
 }
 
 .hero h1 {
-  font-size: 55px;
   font-weight: 400;
   line-height: 1.2;
 }
@@ -174,10 +184,11 @@ body h5 {
   .hero {
     justify-content: center;
     text-align: center;
+    height: 60vh;
   }
 
   .hero::before {
-    width: 100%;
+    width: 80%;
   }
 
   .hero-content {
@@ -186,6 +197,9 @@ body h5 {
 }
 
 /* trusted by section */
+.trusted-logo-section {
+  margin: 80px 0px;
+}
 .logo-container {
   position: relative;
   padding-bottom: calc((117px * 4) + (20px * 3) + 40px);
@@ -965,12 +979,12 @@ body h5 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 60px;
+  gap: 80px;
   padding: 20px;
 }
 
 .section-left {
-  max-width: 50%;
+  max-width: 40%;
   width: 100%;
 }
 
@@ -1387,7 +1401,7 @@ body h5 {
   width: 45px;
 }
 .footer-main {
-  padding-top: 50px;
+  padding-top: 30px;
   background-color: black;
   color: white;
 }
