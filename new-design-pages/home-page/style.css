@@ -720,14 +720,14 @@ body h5 {
 
 .stats-container {
   max-width: 100%;
-  padding: 50px 20px;
+  padding: 50px 60px;
 }
 .stats-div {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0px 70px;
+  padding: 0px 30px;
 }
 /* Responsive image hero */
 ¡ .stats-hero {
@@ -767,6 +767,10 @@ body h5 {
   .stats-div{
     padding: 0px 10px;
   }
+  .stats-container {
+  max-width: 100%;
+  padding: 50px 20px;
+}
 }
 
 .stat-book-btn {
@@ -1111,7 +1115,7 @@ body h5 {
 }
 @media (max-width: 1350px) {
    .services-section{
-    padding: 70px 20px;
+    padding: 70px 60px;
   }
   
 }
@@ -1125,6 +1129,9 @@ body h5 {
   }
 }
 @media (max-width: 678px) {
+   .services-section{
+    padding: 70px 20px;
+  }
  
   .service-card p {
   font-size: 17px;
