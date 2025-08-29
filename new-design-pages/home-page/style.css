@@ -41,30 +41,35 @@ body h1 {
   font-size: 55px;
   font-weight: 600;
   max-width: 1000px;
+  text-transform: capitalize;
 }
 
 body h2 {
   font-size: 45px;
   font-weight: 500;
   max-width: 1000px;
+  text-transform: capitalize;
 }
 
 body h3 {
   font-size: 35px;
   font-weight: 400;
   max-width: 1000px;
+  text-transform: capitalize;
 }
 
 body h4 {
   font-size: 30px;
   font-weight: 400;
   max-width: 1000px;
+  text-transform: capitalize;
 }
 
 body h5 {
   font-size: 25px;
   font-weight: 400;
   max-width: 1000px;
+  text-transform: capitalize;
 }
 
 /* Responsive Typography */
@@ -225,7 +230,7 @@ body h5 {
   gap: 20px;
   padding: 20px;
   background-color: var(--light-grey-background);
-  border-radius: 10px;
+  border-radius: 20px;
   overflow: hidden;
   height: calc((117px * 4) + (20px * 3) + 40px);
   z-index: 10;
@@ -238,18 +243,22 @@ body h5 {
   height: 117px;
   padding: 10px;
   background-color: white;
-  border-radius: 5px;
+  border-radius: 20px;
 }
 
 @media (max-width: 1024px) {
   .logo-container {
     padding-bottom: 0;
+    border-radius: 0;
+  }
+  .trusted-logos {
+    padding: 0px;
   }
 
   .logos-div {
     position: static;
     transform: none;
-
+    border-radius: 0;
     grid-template-columns: repeat(3, 1fr);
     height: calc((117px * 3) + (20px * 2) + 40px);
   }
@@ -268,7 +277,7 @@ body h5 {
   flex-direction: column;
   gap: 60px;
   align-items: center;
-  padding: 60px 0px;
+  padding: 120px 0px;
 }
 
 .reviews-google-pill {
@@ -389,7 +398,7 @@ body h5 {
 /* CASE STUDY */
 .case-study-section {
   background-color: var(--light-grey-background);
-  padding: 60px 0px;
+  padding: 120px 0px;
   text-align: center;
 }
 .study-section {
@@ -401,6 +410,7 @@ body h5 {
 .study-head {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 10px;
 }
 .case-study-section h2 {
@@ -558,7 +568,7 @@ body h5 {
 }
 /* google review cards scroll*/
 .review-card-section {
-  padding: 60px 0px;
+  padding: 120px 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -702,13 +712,13 @@ body h5 {
 /* Responsive image hero */
 ¡ .stats-hero {
   position: relative;
-  padding: 60px 0px;
+  padding: 120px 0px;
   padding-top: 0px;
 }
 .stats-hero img {
   display: block;
   width: 100%;
-  height: clamp(320px, 55vw, 70vh);
+  height: clamp(320px, 55vw, 75vh);
   object-fit: cover;
 }
 
@@ -718,7 +728,7 @@ body h5 {
   margin: -150px auto 0;
   background: #fff;
   border-radius: 20px;
-  padding: clamp(35px, 4vw, 80px) 20px;
+  padding: clamp(40px, 4vw, 80px) 20px;
   display: flex;
   max-width: 1540px;
   width: 100%;
@@ -815,7 +825,7 @@ body h5 {
 /* CTA section */
 .cta-section {
   position: relative;
-  height: 70vh;
+  height: 0vh;
   background: url("https://a4ari72izk.ufs.sh/f/HNbj1JW7mNRdGtIFV9EPuHQFMBAlTyLDJmUcbCj7iX0wWhZk")
     center/cover no-repeat;
   background-size: cover;
@@ -972,7 +982,7 @@ body h5 {
 
 .website-section-bg {
   background: var(--light-grey-background);
-  padding: 60px 0px;
+  padding: 120px 0px;
 }
 
 .section-left img {
@@ -1013,7 +1023,7 @@ body h5 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 60px 0px;
+  padding: 120px 0px;
   padding-top: 60px;
   gap: 40px;
   border-top: 1px solid var(--lightgrey-border-color);
@@ -1028,11 +1038,11 @@ body h5 {
   display: grid;
   width: 100%;
   grid-template-columns: repeat(2, 1fr);
-  gap: 40px;
+  gap: 70px;
   background-color: white;
   text-align: start;
   border-radius: 20px;
-  padding: 20px;
+  padding: 60px 40px;
 }
 .service-card-heading {
   display: flex;
@@ -1059,6 +1069,7 @@ body h5 {
 @media (max-width: 1024px) {
   .service-grid {
     grid-template-columns: repeat(1, 1fr);
+    padding: 40px 20px;
   }
 }
 /* considrations */
@@ -1070,7 +1081,14 @@ body h5 {
   padding: 30px 20px;
   text-align: center;
 }
+.cond-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .cond-heading h2 {
+  margin: 0px auto;
   font-weight: 400;
 }
 .considration-features h4 {
@@ -1091,7 +1109,7 @@ body h5 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 60px 0px;
+  padding: 120px 0px;
   border-top: 1px solid var(--lightgrey-border-color);
   text-align: center;
 }
@@ -1193,6 +1211,7 @@ body h5 {
 }
 
 .faq-section h2 {
+  margin: 0px auto;
   text-align: center;
   margin-bottom: 40px;
   font-weight: 400;
@@ -1364,11 +1383,11 @@ body h5 {
   background-image: url(https://a4ari72izk.ufs.sh/f/HNbj1JW7mNRdGtIFV9EPuHQFMBAlTyLDJmUcbCj7iX0wWhZk);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 65vh;
+  height: 70vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 60px 0px;
+  padding: 120px 0px;
 }
 .home-circle-cta {
   text-align: center;
@@ -1393,6 +1412,67 @@ body h5 {
   height: 45px;
   width: 45px;
 }
+
+.cta-main {
+  padding-bottom: 80px;
+}
+
+.cta-btn {
+  font-size: 20px;
+  padding: 15px 20px;
+  margin-top: 50px;
+  text-align: center;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 100px;
+  color: white;
+}
+
+.cta-btn a {
+  color: white;
+  text-decoration: none;
+}
+
+.cta-flex {
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cta-img {
+  width: 100%;
+}
+
+.cta-image {
+  max-width: 640px;
+}
+
+@media screen and (max-width: 700px) {
+  .cta-flex {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .cta-head {
+    font-size: 50px;
+  }
+
+  .cta-para {
+    font-size: 20px;
+  }
+
+  .cta-btn {
+    padding: 10px 20px;
+    font-size: 15px;
+  }
+
+  .cta-image {
+    padding-right: 30px;
+  }
+}
+
 .footer-main {
   padding-top: 30px;
   background-color: black;
