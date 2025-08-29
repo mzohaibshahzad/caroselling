@@ -53,14 +53,14 @@ body h2 {
 
 body h3 {
   font-size: 35px;
-  font-weight: 500;
+  font-weight: 400;
   max-width: 1000px;
   margin: 0 auto;
 }
 
 body h4 {
   font-size: 30px;
-  font-weight: 500;
+  font-weight: 400;
   max-width: 1000px;
   margin: 0 auto;
 }
@@ -273,7 +273,7 @@ body h5 {
   flex-direction: column;
   gap: 60px;
   align-items: center;
-  padding: 30px 0px;
+  padding: 60px 0px;
 }
 
 .reviews-google-pill {
@@ -291,7 +291,7 @@ body h5 {
   justify-content: center;
 }
 
-.heading {
+.about-us-txt h2 {
   font-weight: 400;
   line-height: 1.1;
   color: black;
@@ -314,22 +314,11 @@ body h5 {
   text-align: center;
 }
 
-@media (max-width: 1024px) {
-  .heading {
-    font-size: 45px;
-  }
-}
-
-@media (max-width: 768px) {
-  .heading {
-    font-size: 35px;
-  }
-}
 /* cta action */
 
 .cta-button {
   display: inline-flex;
-  margin: 20px 0px;
+  margin-top: 20px;
   align-items: center;
   justify-content: center;
   z-index: 10000;
@@ -418,7 +407,7 @@ body h5 {
   flex-direction: column;
   gap: 10px;
 }
-.case-study-section h3 {
+.case-study-section h2 {
   font-weight: 400;
   text-align: center;
 }
@@ -573,10 +562,11 @@ body h5 {
 }
 /* google review cards scroll*/
 .review-card-section {
-  padding: 80px 0px;
+  padding: 60px 0px;
   display: flex;
   flex-direction: column;
   font-size: 18px;
+  gap: 40px;
 }
 
 .review-header {
@@ -585,7 +575,7 @@ body h5 {
   align-items: start;
 }
 
-.review-header h3 {
+.review-header h2 {
   font-weight: normal;
   max-width: 50%;
   margin-bottom: 50px;
@@ -713,7 +703,7 @@ body h5 {
 /* Responsive image hero */
 .stats-hero {
   position: relative;
-  padding: 80px 0px;
+  padding: 60px 0px;
   padding-top: 0px;
 }
 .stats-hero img {
@@ -729,7 +719,7 @@ body h5 {
   margin: -150px auto 0;
   background: #fff;
   border-radius: 20px;
-  padding: clamp(28px, 4vw, 30px) 20px;
+  padding: clamp(35px, 4vw, 80px) 20px;
   display: flex;
   max-width: 1540px;
   width: 100%;
@@ -746,6 +736,9 @@ body h5 {
   border-radius: 15px;
 }
 /* Heading & intro */
+.intro {
+  font-weight: 400;
+}
 .stat-numbers-section h2 {
   font-weight: 500;
   line-height: 1.15;
@@ -979,7 +972,7 @@ body h5 {
 
 .website-section-bg {
   background: var(--light-grey-background);
-  padding: 40px 0px;
+  padding: 60px 0px;
 }
 
 .section-left img {
@@ -993,7 +986,7 @@ body h5 {
 
 .section-right h2 {
   margin-bottom: 20px;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .section-right p {
@@ -1020,12 +1013,15 @@ body h5 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 40px 20px;
+  padding: 60px 0px;
   padding-top: 60px;
   gap: 40px;
   border-top: 1px solid var(--lightgrey-border-color);
   background-color: var(--light-grey-background);
   text-align: center;
+}
+.services-section h2 {
+  font-weight: 400;
 }
 
 .service-grid {
@@ -1074,7 +1070,9 @@ body h5 {
   padding: 30px 20px;
   text-align: center;
 }
-
+.cond-heading h2 {
+  font-weight: 400;
+}
 .considration-features h4 {
   font-size: 26px;
   font-weight: normal;
@@ -1093,7 +1091,8 @@ body h5 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 30px 0px;
+  padding: 60px 0px;
+  border-top: 1px solid var(--lightgrey-border-color);
   text-align: center;
 }
 .building-header {
@@ -1101,12 +1100,9 @@ body h5 {
   justify-content: center;
   gap: 60px;
 }
-.building-header p {
-  font-size: 18px;
-}
-.building-header h3 {
-  max-width: 50%;
-  width: 100%;
+
+.building-steps-section h2 {
+  font-weight: 400;
 }
 .building-header span {
   line-height: 1.6;
@@ -1199,6 +1195,7 @@ body h5 {
 .faq-section h2 {
   text-align: center;
   margin-bottom: 40px;
+  font-weight: 400;
   text-align: center;
 }
 /* wrapper for background */
@@ -1232,6 +1229,9 @@ body h5 {
   gap: 0px 20px;
 }
 /* underline only when open */
+.question-text {
+  font-weight: 400;
+}
 .faq-item.active .question-text {
   text-decoration: underline;
 }
@@ -1282,6 +1282,7 @@ body h5 {
 
   .faq-question {
     font-size: 1rem;
+    font-weight: 300;
   }
 
   .faq-item.active .faq-answer {
