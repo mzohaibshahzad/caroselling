@@ -5,271 +5,158 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pricing</title>
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
 
+
     <style>
         * {
-            font-family: "Inter", sans-serif;
-            padding: 0;
             margin: 0;
+            padding: 0;
             box-sizing: border-box;
         }
 
-        .app-container {
-            max-width: 1440px;
-            margin: 0 auto;
-            padding-left: 16px;
-            padding-right: 16px;
+
+        :root {
+            /* fonts  */
+            --font-primary: 'Inter', sans-serif;
+            --font-secondary: 'Oswald', sans-serif;
+
+
+            /* colors */
+            --primary-color: #0000ff;
+            --light-grey-background: #f1eeee;
+            --black-text: #000000;
+            --background-color: #ffffff;
+            --lightgrey-border-color: #d3d3d3;
         }
 
-        .padding-top-bottom {
-            padding: 60px 0px;
-        }
 
 
-        .main {
-            background-color: black;
-            color: white;
-        }
-
-        /* Hero section start */
-        .hero-left {
-            max-width: 900px;
-        }
-
-        .hero-para {
-            font-size: 110px;
-            font-weight: 400;
-        }
-
-        .hero-sec-para {
-            font-size: 100px;
-
-            font-weight: 400;
-        }
-
-        .hero-sec-para span {
-            background-color: blue;
-        }
-
-        .hero-btn {
-
-            font-size: 20px;
-            padding: 15px 20px;
-            margin: 50px 0px;
-            text-align: center;
-            background-color: blue;
-            border: none;
-            border-radius: 100px;
-            color: white;
-        }
-
-        .hero-btn:hover {
-            background-color: white;
-            color: black;
-            cursor: pointer;
-        }
-
-        .hero-main {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 20px;
-
-        }
-
-        .right-para {
-            color: white;
-            font-weight: 300;
-            font-size: 25px;
-        }
-
-        .heroright {
-            max-width: 500px;
-            width: 100%;
-        }
-
-        /* Hero section end */
-
-
-        /* faq-section */
-        .faq-section {
-            margin: 4rem auto;
-        }
-
-        .faq-title {
-            font-size: 7rem;
-            font-weight: 900;
-            margin-bottom: 2rem;
-            line-height: 1.2;
-            color: #0a0a0a;
-        }
-
-        .faq-item {
+        body {
             background: white;
-            margin-bottom: 1rem;
-            padding: 1.2rem 1rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.09);
-            cursor: pointer;
-            transition: background 0.2s;
+            color: var(--black-text);
         }
 
-        .faq-item:hover {
-            background: #f5f9ff;
+        body p {
+            font-family: var(--font-primary);
         }
 
-        .faq-question {
-            display: flex;
-            justify-content: space-between;
-            font-weight: bold;
-            font-size: 1rem;
-            color: #111;
+        body {
+            font-family: var(--font-secondary);
         }
 
-        .faq-question span {
-            color: black;
-            font-size: 1.2rem;
-            font-weight: bold;
-            transition: transform 0.3s;
+        /* Global container class for entire site */
+        .app-container {
+            max-width: 1585px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 80px;
         }
 
-        .faq-answer {
-            margin-top: 0.7rem;
-            display: none;
-            font-size: 0.95rem;
-            color: #444;
-            line-height: 1.5;
+        @media (max-width: 786px) {
+            .app-container {
+                padding: 0 20px;
+            }
         }
 
-        .faq-item.active .faq-answer {
-            display: block;
-        }
-
-        .faq-item.active .faq-question span {
-            content: "–";
-            transform: rotate(180deg);
-        }
-
-
-        /* footer section */
-        .footer-main {
-            padding-top: 50px;
-            background-color: black;
-            color: white;
-        }
-
-        .footer-logo {
-            font-size: 40px;
-            font-weight: 500;
-            cursor: pointer;
-
-        }
-
-        .footer-links {
-            display: flex;
-            gap: 50px;
-            padding: 0 15px;
-        }
-
-        .footer-links a {
-            text-decoration: none;
-            color: white;
-            font-weight: 500;
-            font-size: 19px;
-            padding-bottom: 4px;
-            cursor: pointer;
-        }
-
-        .footer-top {
+        /* ================= HERO SECTION ================= */
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background: url("https://a4ari72izk.ufs.sh/f/HNbj1JW7mNRdhf6gFWuQqPZltk5KsWmAnveGzF9ibuBJ7LVj") center/cover no-repeat;
             display: flex;
             align-items: center;
-            gap: 60px;
-            /* border-bottom: 1px solid white; */
-            padding: 10px 0;
         }
 
-        .footer-list {
-            list-style: none;
+        /* Gradient overlay (left fade) */
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 70%;
+            /* Adjust fade area */
+            height: 100%;
+            background: linear-gradient(to right,
+                    rgba(0, 0, 0, 1) 0%,
+                    /* full black at start */
+                    rgba(0, 0, 0, 1) 30%,
+                    /* keep half area solid black */
+                    rgba(0, 0, 0, 0.6) 80%,
+                    /* darker fade */
+                    rgba(0, 0, 0, 0) 100%
+                    /* fully transparent at end */
+                );
+            z-index: 1;
         }
 
-        .footer-list a {
-            text-decoration: none;
-            color: lightgray;
-        }
-
-        .footer-list-head {
-            font-weight: 400;
-            margin-bottom: 10px;
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
             color: white;
-            font-size: 25px;
         }
 
-        .footer-list li {
-            padding: 6px 0;
-            font-size: 18px;
-            color: lightgrey;
-            cursor: pointer;
+        .hero h1 {
+            font-size: 55px;
+            font-weight: 500;
+            line-height: 1.2;
+
         }
 
-        .footer-list-flex {
-            display: flex;
-            justify-content: space-between;
-            padding: 60px 0;
-            gap: 30px;
+        .hero h1 span {
+            color: var(--primary-color);
+
+
         }
 
-        @media screen and (max-width: 700px) {
-            .footer-list-flex {
-                flex-direction: column;
+        .hero p {
+            margin-top: 1rem;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #ddd;
+        }
 
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .hero h1 {
+                font-size: 45px;
             }
 
-            .footer-links {
-                flex-direction: column;
-            }
-
-            .footer-right {
-                display: flex;
-                flex-direction: column;
+            .hero p {
+                font-size: 1rem;
             }
         }
 
-        .footer-right a {
-            text-decoration: none;
-            color: lightgrey;
-            font-weight: 300;
-            font-size: 16px;
-            cursor: pointer;
-            padding: 0 10px;
+        @media (max-width: 768px) {
+            .hero {
+                justify-content: center;
+                text-align: center;
+                height: 60vh;
+            }
+
+            .hero::before {
+                width: 100%;
+            }
+
+            .hero-content {
+                max-width: 100%;
+            }
+
+            .hero h1 {
+                font-size: 35px;
+            }
         }
 
-        .footer-top-flex {
-            display: flex;
-            flex-direction: row;
-            justify-content: end;
-            align-items: center;
-            padding: 20px 0;
-        }
-
-        .ftr-spn {
-            border-bottom: 1px solid white;
-            padding-bottom: 5px;
-            color: blue;
-            cursor: pointer;
-        }
-
-        .footer-end {
-            padding: 20px 0;
-            text-align: center;
-        }
-
-        /* Updated color scheme to use blue, black, white, light grey */
         .pricing-section {
             padding: 60px 0;
         }
@@ -598,123 +485,239 @@
             }
         }
 
-        /* Media quries for responsive desing  */
+        /* <!-- FAQ section --> */
 
-        @media screen and (max-width: 1280px) {
 
-            /* Hero section responsive */
-            .hero-main {
-                flex-direction: column;
-            }
+        .faq-section {
+            background-color: var(--light-grey-background);
+            padding: 120px 0;
         }
 
-        @media screen and (max-width:850px) {
-            .our-para {
-                font-size: 30px;
-
-            }
-
+        /* wrapper for background */
+        .faq-bg {
+            background: var(--light-grey-background);
+            border-top: 1px solid var(--lightgrey-border-color);
+            margin-bottom: 2px;
+            transition: background 0.3s ease;
         }
 
-        @media screen and (max-width: 710px) {
-            /* Hero section responsive */
-
-            .hero-para {
-                font-size: 80px;
-            }
-
-            .hero-sec-para {
-                font-size: 80px;
-            }
-
-            .hero-btn {
-                padding: 15px 30px;
-                margin-bottom: 20px;
-
-            }
-
-
-
+        /* active = white full width */
+        .faq-item.active .faq-bg {
+            background: white;
         }
 
-        @media screen and (max-width: 582px) {
-
-            /* Hero section responsive */
-            .hero-para {
-                font-size: 60px;
-            }
-
-            .hero-sec-para {
-                font-size: 60px;
-            }
-
-
+        .faq-question {
+            width: 100%;
+            padding: 2rem;
+            background: none;
+            border: none;
+            font-size: 35px;
+            font-family: var(--font-secondary);
+            font-weight: 400;
+            cursor: pointer;
+            display: flex;
+            justify-content: flex-start;
+            gap: 400px;
+            align-items: center;
         }
 
-        @media screen and (max-width: 453px) {
-
-            /* Hero section responsive */
-            .hero-para {
-                font-size: 50px;
-            }
-
-            .hero-sec-para {
-                font-size: 50px;
-            }
-
-            .right-para {
-
-                font-size: 15px;
-            }
-
-
+        .faq-question :hover {
+            text-decoration: underline;
         }
 
-        @media screen and (max-width: 389px) {
+        /* underline only when open */
+        .faq-item.active .question-text {
+            text-decoration: underline;
+        }
 
-            .hero-main {
+
+        .faq-arrow {
+            width: 30px;
+            height: 30px;
+            transition: transform 0.3s ease;
+            flex-shrink: 0;
+            margin-right: 1rem;
+        }
+
+        .faq-item.active .faq-arrow {
+            transform: rotate(-90deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, padding 0.4s ease;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+            padding: 0 0 1.5rem 0;
+        }
+
+        .faq-content {
+            max-width: 960px;
+            margin-left: auto;
+            padding-top: 0.5rem;
+            font-size: 22px;
+            line-height: 1.7;
+        }
+
+
+        @media (max-width: 768px) {
+            .faq-section {
+                padding: 1rem 0;
+            }
+
+            .faq-question {
+                padding: 1rem;
+                font-size: 20px;
+                font-weight: 300;
                 gap: 0px;
             }
 
-            .hero-para {
-                font-size: 40px;
+            .faq-item.active .faq-answer {
+                padding: 0 0 1rem 0;
             }
+        }
 
-            .hero-sec-para {
-                font-size: 40px;
-            }
 
+        /*footer */
+
+
+        .footer-main {
+
+            background-color: black;
+            color: white;
+        }
+
+        .footer-logo {
+            font-size: 40px;
+            font-weight: 500;
+            cursor: pointer;
 
         }
+
+        .footer-links {
+            display: flex;
+            gap: 50px;
+            padding: 0 15px;
+        }
+
+        .footer-links a {
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            font-size: 19px;
+            padding-bottom: 4px;
+            cursor: pointer;
+        }
+
+        .footer-top {
+            display: flex;
+            align-items: center;
+            gap: 60px;
+            /* border-bottom: 1px solid white; */
+            padding: 10px 0;
+        }
+
+        .footer-list {
+            list-style: none;
+        }
+
+        .footer-list a {
+            text-decoration: none;
+            color: var(--light-grey-background);
+        }
+
+        .footer-list-head {
+            font-weight: 400;
+            margin-bottom: 10px;
+            color: white;
+            font-size: 25px;
+        }
+
+        .footer-list li {
+            padding: 6px 0;
+            font-size: 18px;
+            color: var(--light-grey-background);
+            cursor: pointer;
+        }
+
+        .footer-list-flex {
+            display: flex;
+            justify-content: space-between;
+            padding: 60px 0;
+            gap: 30px;
+        }
+
+        @media screen and (max-width: 700px) {
+            .footer-list-flex {
+                flex-direction: column;
+
+            }
+
+            .footer-links {
+                flex-direction: column;
+            }
+
+            .footer-right {
+                justify-content: start;
+            }
+        }
+
+        .footer-right a {
+            text-decoration: none;
+            color: var(--light-grey-background);
+            font-weight: 300;
+            font-size: 16px;
+            cursor: pointer;
+            padding: 0 10px;
+        }
+
+        .footer-top-flex {
+            display: flex;
+            flex-direction: row;
+            justify-content: end;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .ftr-spn {
+            border-bottom: 1px solid white;
+            padding-bottom: 5px;
+            color: var(--primary-color);
+            cursor: pointer;
+        }
+
+        .footer-end {
+            padding: 20px 0;
+            text-align: center;
+        }
     </style>
+
 </head>
 
 <body>
-    <!-- hero-sec -->
-    <section>
-        <div class="main">
-            <div class="app-container">
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="app-container">
+            <div class="hero-content">
+                <h1>
+                    Smart Solutions, <span>Transparent Pricing,</span>
+                    Real Results
+                </h1>
+                <p>
+                    We believe in clear, upfront pricing with no hidden costs.
+                    Our service packages are designed to suit businesses of all sizes.
+                    From startups to enterprises, we tailor solutions to your needs.
+                    Whether it’s design, development, automation, or AI — we’ve got you covered.
 
-                <!-- hero-sec -->
-                <div class="hero-main  padding-top-bottom">
-                    <div class="heroleft">
-                        <h1 class="hero-para">Smart Solutions</h1>
-                        <h1 class="hero-sec-para">Transparent Pricing <span> Real Results
-                            </span> </h1>
-                        <button class="hero-btn">Learn more</button>
-                    </div>
-                    <div class="heroright">
-                        <p class="right-para"> We believe in clear, upfront pricing with no hidden costs.
-                            Our service packages are designed to suit businesses of all sizes.
-                            From startups to enterprises, we tailor solutions to your needs.
-                            Whether it’s design, development, automation, or AI — we’ve got you covered.
-                            Choose a plan that aligns with your goals and scale as you grow.
-                            Let’s turn your investment into measurable business success.</p>
-                    </div>
-                </div>
+                </p>
             </div>
         </div>
     </section>
+
+
     <!-- Pricing  section -->
     <section class="pricing-section">
         <div class="app-container">
@@ -722,7 +725,7 @@
             <div class="service-category">
                 <div class="category-header">
                     <h2 class="category-title">
-                     
+
                         Website Services
                     </h2>
                     <p class="category-description">Build your digital presence with professional web solutions</p>
@@ -818,7 +821,7 @@
             <div class="service-category">
                 <div class="category-header">
                     <h2 class="category-title">
-                   
+
                         Software Services
                     </h2>
                     <p class="category-description">Custom software solutions tailored to your business needs</p>
@@ -885,7 +888,7 @@
             <div class="service-category">
                 <div class="category-header">
                     <h2 class="category-title">
-                  
+
                         AI & Data Services
                     </h2>
                     <p class="category-description">Intelligent automation and AI solutions for modern businesses</p>
@@ -950,65 +953,138 @@
         </div>
     </section>
 
-    <!-- FAQ SECTION -->
-    <div class="app-container">
-        <section class="faq-section">
-            <h1 class="faq-title">What.<br>The.<br>FAQ?</h1>
+    <!-- FAQ section -->
+   <section class="faq-section">
 
-            <div class="faq-item">
-                <div class="faq-question">Do you offer custom packages? <span>+</span></div>
-                <div class="faq-answer">Yes, all our packages can be customized to fit your business goals.</div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question">What’s included in ongoing support? <span>+</span></div>
-                <div class="faq-answer">We provide technical maintenance, performance monitoring, and updates.</div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question">Can I start with one service and expand later? <span>+</span></div>
-                <div class="faq-answer">Absolutely. Many clients start small and scale as they grow.</div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question">Are prices fixed or flexible? <span>+</span></div>
-                <div class="faq-answer">The listed prices are starting points. Final costs depend on project scope.
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question">Do you offer discounts for long-term contracts? <span>+</span></div>
-                <div class="faq-answer">Yes, we provide special pricing for long-term collaborations and bundled
-                    services.</div>
-            </div>
-        </section>
+  <div class="faq-item">
+    <div class="faq-bg">
+      <div class="app-container">
+        <button class="faq-question">
+          <svg class="faq-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m7 7 10 10" />
+            <path d="M17 7v10H7" />
+          </svg>
+          <h4 class="question-text">Do you offer custom packages?</h4>
+        </button>
+        <div class="faq-answer">
+          <p class="faq-content">
+            Yes, all our packages can be customized to fit your business goals.
+          </p>
+        </div>
+      </div>
     </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-bg">
+      <div class="app-container">
+        <button class="faq-question">
+          <svg class="faq-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m7 7 10 10" />
+            <path d="M17 7v10H7" />
+          </svg>
+          <h4 class="question-text">What’s included in ongoing support?</h4>
+        </button>
+        <div class="faq-answer">
+          <p class="faq-content">
+            We provide technical maintenance, performance monitoring, and updates.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-bg">
+      <div class="app-container">
+        <button class="faq-question">
+          <svg class="faq-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m7 7 10 10" />
+            <path d="M17 7v10H7" />
+          </svg>
+          <h4 class="question-text">Can I start with one service and expand later?</h4>
+        </button>
+        <div class="faq-answer">
+          <p class="faq-content">
+            Absolutely. Many clients start small and scale as they grow.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-bg">
+      <div class="app-container">
+        <button class="faq-question">
+          <svg class="faq-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m7 7 10 10" />
+            <path d="M17 7v10H7" />
+          </svg>
+          <h4 class="question-text">Are prices fixed or flexible?</h4>
+        </button>
+        <div class="faq-answer">
+          <p class="faq-content">
+            The listed prices are starting points. Final costs depend on project scope.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-bg">
+      <div class="app-container">
+        <button class="faq-question">
+          <svg class="faq-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m7 7 10 10" />
+            <path d="M17 7v10H7" />
+          </svg>
+          <h4 class="question-text">Do you offer discounts for long-term contracts?</h4>
+        </button>
+        <div class="faq-answer">
+          <p class="faq-content">
+            Yes, we provide special pricing for long-term collaborations and bundled services.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
 
     <!-- footer-sec -->
 
-    <div class="footer-main padding-top-bottom ">
+    <div class="footer-main ">
         <div class="app-container">
             <div class="footer-list-flex">
 
                 <ul class="footer-list">
-                    <p class="footer-list-head">Website</p>
+                    <h5 class="footer-list-head">Website</h5>
                     <li><a href="/website/uiux-design">UI/UX Design</a></li>
                     <li><a href="/website/website-design">Website Design</a></li>
                     <li><a href="/website/seo">SEO</a></li>
                     <li><a href="/website/web-apps">Web Apps</a></li>
                 </ul>
                 <ul class="footer-list">
-                    <p class="footer-list-head">Software</p>
+                    <h5 class="footer-list-head">Software</h5>
                     <li><a href="/software/custom-software">Custom Software</a></li>
                     <li><a href="/software/saas-development">SaaS Development</a></li>
                 </ul>
                 <ul class="footer-list">
-                    <p class="footer-list-head">AI & Data</p>
+                    <h5 class="footer-list-head">AI & Data</h5>
                     <li><a href="/ai-data/business-automation">Business Automation</a></li>
                     <li><a href="/ai-data/ai-setup">AI Setup</a></li>
                 </ul>
                 <ul class="footer-list">
-                    <p class="footer-list-head">Information</p>
+                    <h5 class="footer-list-head">Information</h5>
                     <li><a href="#">Home</a></li>
                     <li><a href="/e-commerce">E commerce</a></li>
                     <li><a href="/pricing">Pricing</a></li>
@@ -1017,7 +1093,7 @@
                 </ul>
             </div>
             <div class="footer-top-flex">
-               
+
                 <div class="footer-right">
                     <a href="#">Term</a>
                     <a href="#">Privacy</a>
@@ -1028,12 +1104,25 @@
     </div>
 </body>
 <script>
-    // FAQ toggle
-    document.querySelectorAll('.faq-item').forEach(item => {
-        item.addEventListener('click', () => {
-            item.classList.toggle('active');
-            const symbol = item.querySelector('span');
-            symbol.textContent = item.classList.contains('active') ? "–" : "+";
+    document.addEventListener('DOMContentLoaded', function () {
+        const faqItems = document.querySelectorAll('.faq-item');
+
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+
+            question.addEventListener('click', () => {
+                const isActive = item.classList.contains('active');
+
+                // Close all other items
+                faqItems.forEach(otherItem => {
+                    otherItem.classList.remove('active');
+                });
+
+                // Toggle current item
+                if (!isActive) {
+                    item.classList.add('active');
+                }
+            });
         });
     });
 </script>
