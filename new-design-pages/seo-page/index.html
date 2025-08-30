@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Service Page</title>
+  <title>SEO</title>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,805 +16,824 @@
     rel="stylesheet">
 
 
-    <style>
-      * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
-:root {
-    /* fonts  */
-    --font-primary: 'Inter', sans-serif;
-  --font-secondary: 'Oswald', sans-serif;
-
-
-  /* colors */
-    --primary-color: #0000ff;
-    --light-grey-background: #f1eeee;
-    --black-text: #000000;
-    --background-color: #ffffff;
-    --lightgrey-border-color: #d3d3d3;
-}
-
-
-
-body {
-    background: white;
-    color: var(--black-text);
-}
-body p{
-    font-family: var(--font-primary);
-}
-body {
-    font-family: var(--font-secondary);
-}
-
-/* Global container class for entire site */
-.app-container {
-    max-width: 1585px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 80px;
-}
-@media (max-width: 786px) {
-  .app-container {
-    padding: 0 20px;
-  }
-}
-/* ================= HERO SECTION ================= */
-.hero {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background: url("https://a4ari72izk.ufs.sh/f/HNbj1JW7mNRds4GAy3c5DWTzN3Hkb1dMem7EKa6ISRQiuxJP") center/cover no-repeat;
-    display: flex;
-    align-items: center;
-}
-
-/* Gradient overlay (left fade) */
-.hero::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 70%;
-    /* Adjust fade area */
-    height: 100%;
-    background: linear-gradient(to right,
-            rgba(0, 0, 0, 1) 0%,
-            /* full black at start */
-            rgba(0, 0, 0, 1) 30%,
-            /* keep half area solid black */
-            rgba(0, 0, 0, 0.6) 80%,
-            /* darker fade */
-            rgba(0, 0, 0, 0) 100%
-            /* fully transparent at end */
-        );
-    z-index: 1;
-}
-
-.hero-content {
-    position: relative;
-    z-index: 2;
-    max-width: 800px;
-    color: white;
-}
-
-.hero h1 {
-    font-size: 55px;
-    font-weight: 500;
-    line-height: 1.2;
-
-}
-
-.hero h1 span {
-    color: var(--primary-color);
-    
-    
-}
-
-.hero p {
-    margin-top: 1rem;
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #ddd;
-}
-
-/* Responsive */
-@media (max-width: 1024px) {
-    .hero h1 {
-        font-size: 45px;
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
 
-    .hero p {
-        font-size: 1rem;
-    }
-}
 
-@media (max-width: 768px) {
+    :root {
+      /* fonts  */
+      --font-primary: 'Inter', sans-serif;
+      --font-secondary: 'Oswald', sans-serif;
+
+
+      /* colors */
+      --primary-color: #0000ff;
+      --light-grey-background: #f1eeee;
+      --black-text: #000000;
+      --background-color: #ffffff;
+      --lightgrey-border-color: #d3d3d3;
+    }
+
+
+
+    body {
+      background: white;
+      color: var(--black-text);
+    }
+
+    body p {
+      font-family: var(--font-primary);
+    }
+
+    body {
+      font-family: var(--font-secondary);
+    }
+
+    /* Global container class for entire site */
+    .app-container {
+      max-width: 1585px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 80px;
+    }
+
+    @media (max-width: 786px) {
+      .app-container {
+        padding: 0 20px;
+      }
+    }
+
+    /* ================= HERO SECTION ================= */
     .hero {
-        justify-content: center;
-        text-align: center;
-        height: 60vh;
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      background: url("https://a4ari72izk.ufs.sh/f/HNbj1JW7mNRdLXKRVnIuirTdLjOhIg68s0P7mBxVvltfJNqW") center/cover no-repeat;
+      display: flex;
+      align-items: center;
     }
 
+    /* Gradient overlay (left fade) */
     .hero::before {
-        width: 100%;
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 70%;
+      /* Adjust fade area */
+      height: 100%;
+      background: linear-gradient(to right,
+          rgba(0, 0, 0, 1) 0%,
+          /* full black at start */
+          rgba(0, 0, 0, 1) 30%,
+          /* keep half area solid black */
+          rgba(0, 0, 0, 0.6) 80%,
+          /* darker fade */
+          rgba(0, 0, 0, 0) 100%
+          /* fully transparent at end */
+        );
+      z-index: 1;
     }
 
     .hero-content {
-        max-width: 100%;
+      position: relative;
+      z-index: 2;
+      max-width: 800px;
+      color: white;
     }
 
     .hero h1 {
+      font-size: 55px;
+      font-weight: 500;
+      line-height: 1.2;
+
+    }
+
+    .hero h1 span {
+      color: var(--primary-color);
+
+
+    }
+
+    .hero p {
+      margin-top: 1rem;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #ddd;
+    }
+
+    /* Responsive */
+    @media (max-width: 1024px) {
+      .hero h1 {
+        font-size: 45px;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        justify-content: center;
+        text-align: center;
+        height: 60vh;
+      }
+
+      .hero::before {
+        width: 100%;
+      }
+
+      .hero-content {
+        max-width: 100%;
+      }
+
+      .hero h1 {
         font-size: 35px;
+      }
     }
-}
 
-/* tools section */
-.tool-section {
-    background-color: var(--light-grey-background);
-    padding: 120px 20px;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.tools-heading {
-    font-size: 45px;
-    font-weight: 500;
-    text-align: center;
-    margin-bottom: 30px;
-    max-width: 1200px;
-    margin-inline: auto;
-    line-height: 1.2;
-}
-
-.description {
-    font-size: clamp(22px, 2vw, 1.2rem);
-    text-align: center;
-    margin-bottom: 40px;
-    max-width: 1000px;
-    margin-inline: auto;
-    line-height: 1.6;
-}
-
-.logos-container {
-    position: relative;
-    height: 600px;
-}
-
-.logo-item {
-    position: absolute;
-    background: white;
-    border-radius: 16px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-    padding: 20px;
-}
-
-.logo-item img {
-    width: 100%;
-    height: auto;
-    max-width: 160px;
-}
-
-.drupal {
-    top: 50px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.wordpress {
-    top: 150px;
-    left: 18%;
-}
-
-.joomla {
-    top: 150px;
-    right: 18%;
-}
-
-.umbraco {
-    bottom: 150px;
-    left: 18%;
-}
-
-.figma {
-    bottom: 50px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.xd {
-    bottom: 150px;
-    right: 18%;
-}
-
-.center-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: clamp(1rem, 2vw, 1.2rem);
-    max-width: 500px;
-    text-align: center;
-    line-height: 1.4;
-    font-weight: 500;
-}
-
-/* Tablet */
-@media (max-width: 768px) {
-    .tools-heading{
-        font-size: 30px;
-    }
+    /* tools section */
     .tool-section {
-        padding-top: 70px;
-        padding-bottom: 0px;
+      background-color: var(--light-grey-background);
+      padding: 120px 20px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
-.center-text{
-    visibility:hidden ;
-}
+
+    .tools-heading {
+      font-size: 45px;
+      font-weight: 500;
+      text-align: center;
+      margin-bottom: 30px;
+      max-width: 1200px;
+      margin-inline: auto;
+      line-height: 1.2;
+    }
+
+    .description {
+      font-size: clamp(22px, 2vw, 1.2rem);
+      text-align: center;
+      margin-bottom: 40px;
+      max-width: 1000px;
+      margin-inline: auto;
+      line-height: 1.6;
+    }
+
     .logos-container {
-        height: 100%;
-   
+      position: relative;
+      height: 600px;
     }
 
     .logo-item {
-        padding: 15px 18px;
-    }
-
-    .drupal {
-        top: 20px;
-    }
-
-    .wordpress {
-        top: 110px;
-        left: 8%;
-    }
-
-    .joomla {
-        top: 110px;
-        right: 8%;
-    }
-
-    .umbraco {
-        bottom: 100px;
-        left: 8%;
-    }
-
-    .figma {
-        bottom: 20px;
-    }
-
-    .xd {
-        bottom: 100px;
-        right: 8%;
-    }
-
-    .center-text {
-        font-size: 0.95rem;
-        max-width: 280px;
-    }
-}
-
-/* Mobile */
-@media (max-width: 480px) {
-    
-    .logos-container {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        align-items: center; 
-        padding-top: 30px;
-    }
-
-    .logo-item {
-        position: static;
-        transform: none;
-        width: 100%;   
-        max-width: 200px; 
-        padding: 20px; 
+      position: absolute;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      padding: 20px;
     }
 
     .logo-item img {
-        width: 100%;   
-        height: auto;
-        max-width: none; 
+      width: 100%;
+      height: auto;
+      max-width: 160px;
+    }
+
+    .drupal {
+      top: 50px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .wordpress {
+      top: 150px;
+      left: 18%;
+    }
+
+    .joomla {
+      top: 150px;
+      right: 18%;
+    }
+
+    .umbraco {
+      bottom: 150px;
+      left: 18%;
+    }
+
+    .figma {
+      bottom: 50px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .xd {
+      bottom: 150px;
+      right: 18%;
     }
 
     .center-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: clamp(1rem, 2vw, 1.2rem);
+      max-width: 500px;
+      text-align: center;
+      line-height: 1.4;
+      font-weight: 500;
+    }
+
+    /* Tablet */
+    @media (max-width: 768px) {
+      .tools-heading {
+        font-size: 30px;
+      }
+
+      .tool-section {
+        padding-top: 70px;
+        padding-bottom: 0px;
+      }
+
+      .center-text {
+        visibility: hidden;
+      }
+
+      .logos-container {
+        height: 100%;
+
+      }
+
+      .logo-item {
+        padding: 15px 18px;
+      }
+
+      .drupal {
+        top: 20px;
+      }
+
+      .wordpress {
+        top: 110px;
+        left: 8%;
+      }
+
+      .joomla {
+        top: 110px;
+        right: 8%;
+      }
+
+      .umbraco {
+        bottom: 100px;
+        left: 8%;
+      }
+
+      .figma {
+        bottom: 20px;
+      }
+
+      .xd {
+        bottom: 100px;
+        right: 8%;
+      }
+
+      .center-text {
+        font-size: 0.95rem;
+        max-width: 280px;
+      }
+    }
+
+    /* Mobile */
+    @media (max-width: 480px) {
+
+      .logos-container {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+        padding-top: 30px;
+      }
+
+      .logo-item {
+        position: static;
+        transform: none;
+        width: 100%;
+        max-width: 200px;
+        padding: 20px;
+      }
+
+      .logo-item img {
+        width: 100%;
+        height: auto;
+        max-width: none;
+      }
+
+      .center-text {
         position: static;
         transform: none;
         margin-top: 20px;
         font-size: 1rem;
         max-width: 100%;
+      }
     }
-}
 
 
 
-/* Challegnges section */
-.challenge-section {
-    display: grid;
-    grid-template-columns: 1fr 1.5fr;
-    gap: 60px;
-    align-items: start;
-    padding-top: 120px;
-    padding-bottom: 120px;
-}
-
-.heading {
-    font-size: 45px;
-    font-weight: 500;
-    line-height: 1.1;
-    color: black;
-}
-
-.highlight {
-
-    background-color: var(--primary-color);
-    color: white;
-}
-
-
-
-.challenges-list {
-
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-
-.challenge-item {
-    display: flex;
-    align-items: flex-start;
-    gap: 16px;
-    font-size: 20px;
-    line-height: 1.5;
-    border-bottom: 1px solid #e4e2d8;
-    padding-bottom: 16px;
-
-}
-
-.bullet {
-    width: 8px;
-    height: 8px;
-    background-color: var(--primary-color);
-    border-radius: 50%;
-    margin-top: 12px;
-    flex-shrink: 0;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
+    /* Challegnges section */
     .challenge-section {
-        grid-template-columns: 1fr;
-        gap: 40px;
-        text-align: center;
+      display: grid;
+      grid-template-columns: 1fr 1.5fr;
+      gap: 60px;
+      align-items: start;
+      padding-top: 120px;
+      padding-bottom: 120px;
     }
 
     .heading {
-        font-size: 2.5rem;
+      font-size: 45px;
+      font-weight: 500;
+      line-height: 1.1;
+      color: black;
+    }
+
+    .highlight {
+
+      background-color: var(--primary-color);
+      color: white;
+    }
+
+
+
+    .challenges-list {
+
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
     }
 
     .challenge-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      font-size: 20px;
+      line-height: 1.5;
+      border-bottom: 1px solid #e4e2d8;
+      padding-bottom: 16px;
+
+    }
+
+    .bullet {
+      width: 8px;
+      height: 8px;
+      background-color: var(--primary-color);
+      border-radius: 50%;
+      margin-top: 12px;
+      flex-shrink: 0;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .challenge-section {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+      }
+
+      .heading {
+        font-size: 2.5rem;
+      }
+
+      .challenge-item {
         font-size: 1rem;
         text-align: left;
+      }
     }
-}
 
-@media (max-width: 480px) {
-    .heading {
+    @media (max-width: 480px) {
+      .heading {
         font-size: 30px;
         line-height: 1.3;
-    }
+      }
 
-    .challenge-section {
+      .challenge-section {
         gap: 30px;
         padding-top: 70px;
         padding-bottom: 70px;
-    }
+      }
 
-    .challenges-list {
+      .challenges-list {
         gap: 20px;
+      }
     }
-}
 
-/* CTA section */
-.cta-section {
-    position: relative;
-    height: 70vh;
-    background: url("https://a4ari72izk.ufs.sh/f/HNbj1JW7mNRdGtIFV9EPuHQFMBAlTyLDJmUcbCj7iX0wWhZk") center/cover no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-}
-
-/* black overlay */
-.cta-section::after {
-    content: "";
-    position: absolute;
-    inset: 0; /* shorthand for top:0; right:0; bottom:0; left:0 */
-    background: rgba(0, 0, 0, 0.5); /* adjust opacity here */
-    z-index: 1;
-}
-
-.content-wrapper {
-    display: flex;
-    align-items: center;
-    max-width: 1200px;
-    width: 100%;
-    padding: 0 2rem;
-    gap: 4rem;
-    z-index: 2; /* keep content above overlay */
-    position: relative;
-}
-
-
-
-
-.main-content {
-    flex: 1;
-    color: white;
-}
-
-.main-heading {
-    font-size: 3.5rem;
-    line-height: 1.2;
-    margin-bottom: 2rem;
-    font-weight: 300;
-}
-
-
-
-.cta-button {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
-    justify-content: center;
-    max-width: 250px;
-    gap: 0.5rem;
-    padding: 10px 20px;
-    background: transparent;
-    color: white;
-    border: 2px solid white;
-    text-decoration: none;
-    font-size: 1.1rem;
-    font-weight: 500;
-    position: relative;
-    overflow: hidden;
-}
-
-.cta-button::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: var(--primary-color);
-    
-    transition: left 0.3s ease;
-    z-index: -1;
-}
-
-.cta-button:hover::before {
-    left: 0;
-}
-
-.cta-button:hover {
-    color: white;
-    border: 2px solid var(--primary-color);
-}
-
-.cta-button .arrow {
-    transition: transform 0.3s ease;
-}
-
-.cta-button:hover .arrow {
-    transform: translateX(3px);
-}
-.cta-button-light {
-  color: var(--primary-color);
-  border: 2px solid var(--primary-color);
-}
-
-.cta-button-light::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: var(--primary-color);
-  transition: left 0.3s ease;
-  z-index: -1;
-}
-
-.cta-button-light:hover::before {
-  left: 0;
-}
-
-.cta-button-light:hover {
-  color: white;
-  border: 2px solid var(--primary-color);
-}
-
-@media (max-width: 768px) {
-    .cta-section{
-        height: 50vh;
+    /* CTA section */
+    .cta-section {
+      position: relative;
+      height: 70vh;
+      background: url("https://a4ari72izk.ufs.sh/f/HNbj1JW7mNRdGtIFV9EPuHQFMBAlTyLDJmUcbCj7iX0wWhZk") center/cover no-repeat;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
     }
+
+    /* black overlay */
+    .cta-section::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      /* shorthand for top:0; right:0; bottom:0; left:0 */
+      background: rgba(0, 0, 0, 0.5);
+      /* adjust opacity here */
+      z-index: 1;
+    }
+
     .content-wrapper {
-        flex-direction: column;
-        text-align: center;
-        gap: 2rem;
+      display: flex;
+      align-items: center;
+      max-width: 1200px;
+      width: 100%;
+      padding: 0 2rem;
+      gap: 4rem;
+      z-index: 2;
+      /* keep content above overlay */
+      position: relative;
+    }
+
+
+
+
+    .main-content {
+      flex: 1;
+      color: white;
     }
 
     .main-heading {
-        font-size: 28px;
-        line-height: 1.7;
+      font-size: 3.5rem;
+      line-height: 1.2;
+      margin-bottom: 2rem;
+      font-weight: 300;
     }
 
 
-}
 
-/* card section */
+    .cta-button {
+      display: flex;
+      margin-left: auto;
+      margin-right: auto;
+      align-items: center;
+      justify-content: center;
+      max-width: 250px;
+      gap: 0.5rem;
+      padding: 10px 20px;
+      background: transparent;
+      color: white;
+      border: 2px solid white;
+      text-decoration: none;
+      font-size: 1.1rem;
+      font-weight: 500;
+      position: relative;
+      overflow: hidden;
+    }
 
-.card-section {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    .cta-button::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: var(--primary-color);
 
-}
+      transition: left 0.3s ease;
+      z-index: -1;
+    }
 
-.section-bg {
-    background-color: var(--light-grey-background);
-    padding-top: 120px;
-    padding-bottom: 120px;
-}
+    .cta-button:hover::before {
+      left: 0;
+    }
 
-.card {
-    border: 1px solid var(--lightgrey-border-color);
-    padding: 50px;
-    background-color: var(--light-grey-background);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 15px;
-}
+    .cta-button:hover {
+      color: white;
+      border: 2px solid var(--primary-color);
+    }
 
-.number {
-    font-size: 50px;
-    font-weight: 500;
-    color: var(--primary-color);
-}
+    .cta-button .arrow {
+      transition: transform 0.3s ease;
+    }
 
-.card p {
-    margin: 0;
-    font-size: 25px;
-    line-height: 1.4;
-    color: #333;
-}
+    .cta-button:hover .arrow {
+      transform: translateX(3px);
+    }
 
-/* Responsive padding */
-@media (max-width: 600px) {
+    .cta-button-light {
+      color: var(--primary-color);
+      border: 2px solid var(--primary-color);
+    }
+
+    .cta-button-light::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: var(--primary-color);
+      transition: left 0.3s ease;
+      z-index: -1;
+    }
+
+    .cta-button-light:hover::before {
+      left: 0;
+    }
+
+    .cta-button-light:hover {
+      color: white;
+      border: 2px solid var(--primary-color);
+    }
+
+    @media (max-width: 768px) {
+      .cta-section {
+        height: 50vh;
+      }
+
+      .content-wrapper {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+      }
+
+      .main-heading {
+        font-size: 28px;
+        line-height: 1.7;
+      }
+
+
+    }
+
+    /* card section */
+
+    .card-section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+
+    }
+
     .section-bg {
+      background-color: var(--light-grey-background);
+      padding-top: 120px;
+      padding-bottom: 120px;
+    }
 
-    padding-top: 70px;
-    padding-bottom: 70px;
-}
     .card {
-        padding: 15px;
+      border: 1px solid var(--lightgrey-border-color);
+      padding: 50px;
+      background-color: var(--light-grey-background);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 15px;
     }
 
     .number {
+      font-size: 50px;
+      font-weight: 500;
+      color: var(--primary-color);
+    }
+
+    .card p {
+      margin: 0;
+      font-size: 25px;
+      line-height: 1.4;
+      color: #333;
+    }
+
+    /* Responsive padding */
+    @media (max-width: 600px) {
+      .section-bg {
+
+        padding-top: 70px;
+        padding-bottom: 70px;
+      }
+
+      .card {
+        padding: 15px;
+      }
+
+      .number {
         font-size: 38px;
-    }
-    .card p{
+      }
+
+      .card p {
         font-size: 20px;
+      }
     }
-}
 
-/* points section */
+    /* points section */
 
-.point-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    align-items: start;
-    margin: 120px auto;
-}
-
-.left p {
-    font-size: 25px;
-    font-weight: 400;
-    max-width: 600px;
-    line-height: 1.5;
-
-}
-
-.right h2 {
-    font-size: 45px;
-    font-weight: 500;
-    margin-bottom: 20px;
-}
-
-.list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.list li {
-    border-bottom: 1px solid #ddd;
-    padding: 12px 0;
-    position: relative;
-    padding-left: 20px;
-    font-size: 25px;
-    font-weight: 300;
-}
-
-.list li::before {
-    content: "•";
-    color: var(--primary-color);
-    font-size: 30px;
-    position: absolute;
-    left: 0;
-    top: 8px;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
     .point-section {
-        grid-template-columns: 1fr;
-        margin: 70px auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: start;
+      margin: 120px auto;
+    }
+
+    .left p {
+      font-size: 25px;
+      font-weight: 400;
+      max-width: 600px;
+      line-height: 1.5;
+
     }
 
     .right h2 {
-        font-size: 30px;
+      font-size: 45px;
+      font-weight: 500;
+      margin-bottom: 20px;
     }
-    .left p {
-    font-size: 22px;
 
-    line-height: 1.4;
+    .list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
 
-}
-}
+    .list li {
+      border-bottom: 1px solid #ddd;
+      padding: 12px 0;
+      position: relative;
+      padding-left: 20px;
+      font-size: 25px;
+      font-weight: 300;
+    }
 
-/* Hosting section */
-.hosting-section {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 60px;
-    padding-top: 120px;
-    padding-bottom: 120px;
+    .list li::before {
+      content: "•";
+      color: var(--primary-color);
+      font-size: 30px;
+      position: absolute;
+      left: 0;
+      top: 8px;
+    }
 
-}
+    /* Responsive */
+    @media (max-width: 768px) {
+      .point-section {
+        grid-template-columns: 1fr;
+        margin: 70px auto;
+      }
 
-.section-left {
-    max-width: 800px;
+      .right h2 {
+        font-size: 30px;
+      }
 
-}
+      .left p {
+        font-size: 22px;
 
-.hosting-section-bg {
-    background-color: var(--light-grey-background);
-}
+        line-height: 1.4;
 
-.section-left img {
-    width: 100%;
-    height: 100%;
+      }
+    }
 
-}
-
-
-.section-right {
-    max-width: 800px;
-}
-
-.section-right h2 {
-    font-size: 45px;
-    margin-bottom: 20px;
-    font-weight: 500;
-}
-
-.section-right p {
-    margin-bottom: 18px;
-    font-size: 22px;
-    line-height: 1.4;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
+    /* Hosting section */
     .hosting-section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 60px;
+      padding-top: 120px;
+      padding-bottom: 120px;
+
+    }
+
+    .section-left {
+      max-width: 800px;
+
+    }
+
+    .hosting-section-bg {
+      background-color: var(--light-grey-background);
+    }
+
+    .section-left img {
+      width: 100%;
+      height: 100%;
+
+    }
+
+
+    .section-right {
+      max-width: 800px;
+    }
+
+    .section-right h2 {
+      font-size: 45px;
+      margin-bottom: 20px;
+      font-weight: 500;
+    }
+
+    .section-right p {
+      margin-bottom: 18px;
+      font-size: 22px;
+      line-height: 1.4;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hosting-section {
         flex-direction: column;
         text-align: center;
         padding-top: 70px;
         padding-bottom: 70px;
-    }
+      }
 
-    .section-right h2 {
+      .section-right h2 {
         font-size: 30px;
-    }
-    .section-right p {
+      }
+
+      .section-right p {
         font-size: 18px;
-    }
+      }
 
-    .section-left img {
+      .section-left img {
         max-width: 100%;
+      }
     }
-}
 
-/* Image section */
-.big-image {
-    width: 100%;
-    max-width: 2000px;
-    margin: 0 auto;
-    height: 700px;
-    overflow: hidden;
-    position: relative;
-}
+    /* Image section */
+    .big-image {
+      width: 100%;
+      max-width: 2000px;
+      margin: 0 auto;
+      height: 700px;
+      overflow: hidden;
+      position: relative;
+    }
 
-.big-image-bg{
-background-color: var(--light-grey-background);
-}
-.Showcase-img {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-}
+    .big-image-bg {
+      background-color: var(--light-grey-background);
+    }
 
-.big-image,
-.text-section {
-    padding-top: 120px;
-    display: flex;
-    justify-content: space-between;
-  
-
-}
-
-.left-text {
-    font-size: 25px;
-    font-weight: 300;
-}
-
-.right-text {
-    font-size: 45px;
-    font-weight: 500;
-    line-height: 1.3;
-    max-width: 1000px;
-
-}
-
-@media (max-width: 768px) {
+    .Showcase-img {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+    }
 
     .big-image,
     .text-section {
-        flex-direction: column;
-         padding-top: 70px;
-    padding-bottom: 70px;
+      padding-top: 120px;
+      display: flex;
+      justify-content: space-between;
+
 
     }
+
+    .left-text {
+      font-size: 25px;
+      font-weight: 300;
+    }
+
     .right-text {
-    font-size: 25px;
-    line-height: 1.3;
-}
-.big-image{
-    height: 200px;
-}
-}
+      font-size: 45px;
+      font-weight: 500;
+      line-height: 1.3;
+      max-width: 1000px;
+
+    }
+
+    @media (max-width: 768px) {
+
+      .big-image,
+      .text-section {
+        flex-direction: column;
+        padding-top: 70px;
+        padding-bottom: 70px;
+
+      }
+
+      .right-text {
+        font-size: 25px;
+        line-height: 1.3;
+      }
+
+      .big-image {
+        height: 200px;
+      }
+    }
 
 
-/* <!-- FAQ section --> */
+    /* <!-- FAQ section --> */
 
 
     .faq-section {
@@ -849,15 +868,16 @@ background-color: var(--light-grey-background);
       gap: 400px;
       align-items: center;
     }
+
     .faq-question :hover {
-        text-decoration: underline;
+      text-decoration: underline;
     }
 
     /* underline only when open */
     .faq-item.active .question-text {
       text-decoration: underline;
     }
-  
+
 
     .faq-arrow {
       width: 30px;
@@ -883,8 +903,8 @@ background-color: var(--light-grey-background);
     }
 
     .faq-content {
-        max-width: 1120px;
-        margin-left: auto;
+      max-width: 1120px;
+      margin-left: auto;
       padding-top: 0.5rem;
       font-size: 22px;
       line-height: 1.7;
@@ -908,335 +928,337 @@ background-color: var(--light-grey-background);
       }
     }
 
-            /* choose us section */
-        .main-choose {
-            padding: 120px 0px;
-        }
+    /* choose us section */
+    .main-choose {
+      padding: 120px 0px;
+    }
 
-        .choose-done {
-            color: var(--primary-color);
-            font-weight: 500;
-        }
+    .choose-done {
+      color: var(--primary-color);
+      font-weight: 500;
+    }
 
-        .scroll-container {
-            position: relative;
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            gap: 15px;
-            padding: 40px 0;
-        }
+    .scroll-container {
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 15px;
+      padding: 40px 0;
+    }
 
-        /* Fade shadow left + right */
-        .scroll-container::before,
-        .scroll-container::after {
-            content: "";
-            position: absolute;
-            top: 0;
-            width: 120px;
-            height: 100%;
-            z-index: 5;
-            pointer-events: none;
-        }
+    /* Fade shadow left + right */
+    .scroll-container::before,
+    .scroll-container::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      width: 120px;
+      height: 100%;
+      z-index: 5;
+      pointer-events: none;
+    }
 
-        .scroll-container::before {
-            left: 0;
-            background: linear-gradient(to right, white, transparent);
-        }
+    .scroll-container::before {
+      left: 0;
+      background: linear-gradient(to right, white, transparent);
+    }
 
-        .scroll-container::after {
-            right: 0;
-            background: linear-gradient(to left, white, transparent);
-        }
+    .scroll-container::after {
+      right: 0;
+      background: linear-gradient(to left, white, transparent);
+    }
 
-        .scroll-row {
-            display: flex;
-            overflow: hidden;
-            white-space: nowrap;
-        }
+    .scroll-row {
+      display: flex;
+      overflow: hidden;
+      white-space: nowrap;
+    }
 
-        .scroll-content {
-            display: inline-flex;
-            gap: 12px;
-            padding-right: 15px;
-            /* small spacing between duplicate sets */
-        }
+    .scroll-content {
+      display: inline-flex;
+      gap: 12px;
+      padding-right: 15px;
+      /* small spacing between duplicate sets */
+    }
 
-        /* Button style */
-        .choose-btn {
-            padding: 10px 16px;
-            border-radius: 8px;
-            font-size: 14px;
-            font-weight: 500;
-            background-color: var(--light-grey-background);
-            border: 1px solid var(--lightgrey-border-color);
-            text-decoration: none;
-            color: black;
-            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
-            white-space: nowrap;
-        }
+    /* Button style */
+    .choose-btn {
+      padding: 10px 16px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 500;
+      background-color: var(--light-grey-background);
+      border: 1px solid var(--lightgrey-border-color);
+      text-decoration: none;
+      color: black;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+      white-space: nowrap;
+    }
 
-        /* Animations */
-        .left-to-right .scroll-content {
-            animation: scroll-left 25s linear infinite;
-        }
+    /* Animations */
+    .left-to-right .scroll-content {
+      animation: scroll-left 25s linear infinite;
+    }
 
-        .right-to-left .scroll-content {
-            animation: scroll-right 35s linear infinite;
-        }
+    .right-to-left .scroll-content {
+      animation: scroll-right 35s linear infinite;
+    }
 
-        .scroll-row:nth-child(3) .scroll-content {
-            animation-duration: 45s;
-            /* third row slower */
-        }
+    .scroll-row:nth-child(3) .scroll-content {
+      animation-duration: 45s;
+      /* third row slower */
+    }
 
-        @keyframes scroll-left {
-            from {
-                transform: translateX(0);
-            }
+    @keyframes scroll-left {
+      from {
+        transform: translateX(0);
+      }
 
-            to {
-                transform: translateX(-100%);
-            }
-        }
+      to {
+        transform: translateX(-100%);
+      }
+    }
 
-        @keyframes scroll-right {
-            from {
-                transform: translateX(-100%);
-            }
+    @keyframes scroll-right {
+      from {
+        transform: translateX(-100%);
+      }
 
-            to {
-                transform: translateX(0);
-            }
-        }
-
-
-
-        .choose-head {
-            font-size: 45px;
-            font-weight: 500;
-        }
+      to {
+        transform: translateX(0);
+      }
+    }
 
 
 
-        .choose-para {
-            font-size: 22px;
-            font-weight: 400;
-            line-height: 30px;
-            letter-spacing: 0.3px;
-            max-width: 824px;
-            padding: 40px 0px;
-        }
-        @media screen and (max-width: 700px) {
-        .choose-head {
-            font-size: 31px;
-     
-        }
-         .main-choose {
-            padding-top: 70px;
-            padding-bottom: 70px;
-        }
-        .choose-para{
-            font-size: 18px;
-        }
-        }
-
-        /* cta and footer */
-        
-        .cta-head {
-            font-weight: 400;
-            font-size: 70px;
-            max-width: 526px;
-        }
-
-        .cta-para {
-            font-weight: 400;
-            font-size: 20px;
-            line-height: 30px;
-            letter-spacing: 0.3px;
-            max-width: 500px;
-            padding-top: 20px;
-            padding-bottom: 20px;
-        }
-
-        .cta-main {
-            padding-bottom: 120px;
-        }
-
-        .cta-btn {
-            font-size: 20px;
-            padding: 15px 20px;
-            margin-top: 50px;
-            text-align: center;
-            background-color: var(--primary-color);
-            border: none;
-            border-radius: 100px;
-            color: white;
-        }
-
-        .cta-btn a {
-            color: white;
-            text-decoration: none;
-        }
-
-        .cta-flex {
-            display: flex;
-            gap: 50px;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .cta-img {
-            width: 100%;
-        }
-
-        .cta-image {
-            max-width: 640px;
-         
-        }
-
-        @media screen and (max-width: 700px) {
-            .cta-main {
-            padding-bottom: 70px;
-        }
-            .cta-flex {
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-            }
-
-            .cta-head {
-                font-size: 50px;
-            }
-
-            .cta-para {
-                font-size: 20px;
-            }
-
-            .cta-btn {
-                padding: 10px 20px;
-                font-size: 15px;
-            }
-
-            .cta-image {
-                padding-right: 30px;
-            }
-        }
-
-        .footer-main {
-        
-            background-color: black;
-            color: white;
-        }
-
-        .footer-logo {
-            font-size: 40px;
-            font-weight: 500;
-            cursor: pointer;
-
-        }
-
-        .footer-links {
-            display: flex;
-            gap: 50px;
-            padding: 0 15px;
-        }
-
-        .footer-links a {
-            text-decoration: none;
-            color: white;
-            font-weight: 500;
-            font-size: 19px;
-            padding-bottom: 4px;
-            cursor: pointer;
-        }
-
-        .footer-top {
-            display: flex;
-            align-items: center;
-            gap: 60px;
-            /* border-bottom: 1px solid white; */
-            padding: 10px 0;
-        }
-
-        .footer-list {
-            list-style: none;
-        }
-
-        .footer-list a {
-            text-decoration: none;
-             color: var(--light-grey-background);
-        }
-
-        .footer-list-head {
-            font-weight: 400;
-            margin-bottom: 10px;
-            color: white;
-            font-size: 25px;
-        }
-
-        .footer-list li {
-            padding: 6px 0;
-            font-size: 18px;
-            color: var(--light-grey-background);
-            cursor: pointer;
-        }
-
-        .footer-list-flex {
-            display: flex;
-            justify-content: space-between;
-            padding: 60px 0;
-            gap: 30px;
-        }
-
-        @media screen and (max-width: 700px) {
-            .footer-list-flex {
-                flex-direction: column;
-
-            }
-
-            .footer-links {
-                flex-direction: column;
-            }
-
-            .footer-right {
-              justify-content: start;
-            }
-        }
-
-        .footer-right a {
-            text-decoration: none;
-            color: var(--light-grey-background);
-            font-weight: 300;
-            font-size: 16px;
-            cursor: pointer;
-            padding: 0 10px;
-        }
-
-        .footer-top-flex {
-            display: flex;
-            flex-direction: row;
-            justify-content: end;
-            align-items: center;
-            padding: 20px 0;
-        }
-
-        .ftr-spn {
-            border-bottom: 1px solid white;
-            padding-bottom: 5px;
-            color: var(--primary-color);
-            cursor: pointer;
-        }
-
-        .footer-end {
-            padding: 20px 0;
-            text-align: center;
-        }
+    .choose-head {
+      font-size: 45px;
+      font-weight: 500;
+    }
 
 
-    </style>
-    
+
+    .choose-para {
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 30px;
+      letter-spacing: 0.3px;
+      max-width: 824px;
+      padding: 40px 0px;
+    }
+
+    @media screen and (max-width: 700px) {
+      .choose-head {
+        font-size: 31px;
+
+      }
+
+      .main-choose {
+        padding-top: 70px;
+        padding-bottom: 70px;
+      }
+
+      .choose-para {
+        font-size: 18px;
+      }
+    }
+
+    /* cta and footer */
+
+    .cta-head {
+      font-weight: 400;
+      font-size: 70px;
+      max-width: 526px;
+    }
+
+    .cta-para {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 30px;
+      letter-spacing: 0.3px;
+      max-width: 500px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    .cta-main {
+      padding-bottom: 120px;
+    }
+
+    .cta-btn {
+      font-size: 20px;
+      padding: 15px 20px;
+      margin-top: 50px;
+      text-align: center;
+      background-color: var(--primary-color);
+      border: none;
+      border-radius: 100px;
+      color: white;
+    }
+
+    .cta-btn a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .cta-flex {
+      display: flex;
+      gap: 50px;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .cta-img {
+      width: 100%;
+    }
+
+    .cta-image {
+      max-width: 640px;
+
+    }
+
+    @media screen and (max-width: 700px) {
+      .cta-main {
+        padding-bottom: 70px;
+      }
+
+      .cta-flex {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .cta-head {
+        font-size: 50px;
+      }
+
+      .cta-para {
+        font-size: 20px;
+      }
+
+      .cta-btn {
+        padding: 10px 20px;
+        font-size: 15px;
+      }
+
+      .cta-image {
+        padding-right: 30px;
+      }
+    }
+
+    .footer-main {
+
+      background-color: black;
+      color: white;
+    }
+
+    .footer-logo {
+      font-size: 40px;
+      font-weight: 500;
+      cursor: pointer;
+
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 50px;
+      padding: 0 15px;
+    }
+
+    .footer-links a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      font-size: 19px;
+      padding-bottom: 4px;
+      cursor: pointer;
+    }
+
+    .footer-top {
+      display: flex;
+      align-items: center;
+      gap: 60px;
+      /* border-bottom: 1px solid white; */
+      padding: 10px 0;
+    }
+
+    .footer-list {
+      list-style: none;
+    }
+
+    .footer-list a {
+      text-decoration: none;
+      color: var(--light-grey-background);
+    }
+
+    .footer-list-head {
+      font-weight: 400;
+      margin-bottom: 10px;
+      color: white;
+      font-size: 25px;
+    }
+
+    .footer-list li {
+      padding: 6px 0;
+      font-size: 18px;
+      color: var(--light-grey-background);
+      cursor: pointer;
+    }
+
+    .footer-list-flex {
+      display: flex;
+      justify-content: space-between;
+      padding: 60px 0;
+      gap: 30px;
+    }
+
+    @media screen and (max-width: 700px) {
+      .footer-list-flex {
+        flex-direction: column;
+
+      }
+
+      .footer-links {
+        flex-direction: column;
+      }
+
+      .footer-right {
+        justify-content: start;
+      }
+    }
+
+    .footer-right a {
+      text-decoration: none;
+      color: var(--light-grey-background);
+      font-weight: 300;
+      font-size: 16px;
+      cursor: pointer;
+      padding: 0 10px;
+    }
+
+    .footer-top-flex {
+      display: flex;
+      flex-direction: row;
+      justify-content: end;
+      align-items: center;
+      padding: 20px 0;
+    }
+
+    .ftr-spn {
+      border-bottom: 1px solid white;
+      padding-bottom: 5px;
+      color: var(--primary-color);
+      cursor: pointer;
+    }
+
+    .footer-end {
+      padding: 20px 0;
+      text-align: center;
+    }
+  </style>
+
 </head>
 
 <body>
@@ -1245,12 +1267,12 @@ background-color: var(--light-grey-background);
     <div class="app-container">
       <div class="hero-content">
         <h1>
-          Business <span>Focused & Brand Empowering</span>
-          Websites Designed For Growth
+          Drive Traffic, <span>ankings, And Business</span>
+          And Business
         </h1>
         <p>
-          Portray your business as the benchmark amongst its competitors through concise planning,
-          meticulous implementation and modern design.
+          Your website deserves more than just visibility — it deserves measurable growth. Our SEO strategies are
+          designed to attract qualified traffic, boost your search rankings, and turn visitors into loyal customers.
         </p>
       </div>
     </div>
@@ -1263,9 +1285,7 @@ background-color: var(--light-grey-background);
       </h2>
 
       <p class="description">
-        Many businesses settle for websites that look fine but fail to perform.
-        From outdated designs to poor navigation, these issues cost opportunities.
-        We fix the problems that hold you back online.
+        Many businesses struggle to stand out online because their websites aren’t optimized for search. Without SEO, even the best designs fail to bring results. Here’s what’s holding you back:
       </p>
 
       <div class="logos-container">
@@ -1302,48 +1322,45 @@ background-color: var(--light-grey-background);
     </div>
   </section>
   <!-- Challenges section -->
-  <section>
-    <div class="challenge-section app-container">
-      <h2 class="heading">
-        <span class="highlight">Challenges</span> That Your Business Is Facing Without A Premium Website
-      </h2>
+ <section>
+  <div class="challenge-section app-container">
+    <h2 class="heading">
+      <span class="highlight">SEO Challenges</span> Your Business Faces Without an Optimized Website
+    </h2>
 
-      <ul class="challenges-list">
-        <li class="challenge-item">
-          <span class="bullet"></span>
-          <p>Your website is outdated and includes old information, such as projects, services and more, damaging the
-            depiction of your business.</p>
-        </li>
-        <li class="challenge-item">
-          <span class="bullet"></span>
-          <p>Your website is not mobile or tablet optimised, loads slowly, is broken and not user friendly.</p>
-        </li>
-        <li class="challenge-item">
-          <span class="bullet"></span>
-          <p>Branding fundamentals are not implemented in your website which creates a disconnect between other
-            collaterals.</p>
-        </li>
-        <li class="challenge-item">
-          <span class="bullet"></span>
-          <p>Your website is not process and automation focused which creates mundane administrative tasks and
-            potential for data entry errors. You lose leads because of poor technical infrastructure.</p>
-        </li>
-        <li class="challenge-item">
-          <span class="bullet"></span>
-          <p>Your website is not used as a marketing, sales or lead generation tool as effectively as it
-            could.</p>
-        </li>
-        <li class="challenge-item">
-          <span class="bullet"></span>
-          <p>You do not have a website at all or it was cheaply developed over five (5) years ago.</p>
-        </li>
-        <li class="challenge-item">
-          <span class="bullet"></span>
-          <p>Your website is not optimised for Search Engines (SEO).</p>
-        </li>
-      </ul>
-    </div>
-  </section>
+    <ul class="challenges-list">
+      <li class="challenge-item">
+        <span class="bullet"></span>
+        <p>Your website has outdated content that hurts credibility and prevents you from ranking for relevant keywords.</p>
+      </li>
+      <li class="challenge-item">
+        <span class="bullet"></span>
+        <p>Your site is not mobile-friendly or fast-loading, both of which are critical Google ranking factors.</p>
+      </li>
+      <li class="challenge-item">
+        <span class="bullet"></span>
+        <p>Core branding and messaging are inconsistent, making it harder for search engines to understand and trust your business.</p>
+      </li>
+      <li class="challenge-item">
+        <span class="bullet"></span>
+        <p>You miss out on lead generation opportunities because your website is not structured with SEO and conversion in mind.</p>
+      </li>
+      <li class="challenge-item">
+        <span class="bullet"></span>
+        <p>Poor technical SEO—such as broken links, missing meta tags, or duplicate content—lowers your search visibility.</p>
+      </li>
+      <li class="challenge-item">
+        <span class="bullet"></span>
+        <p>Your competitors with optimized websites outrank you, capturing the traffic and leads that should be yours.</p>
+      </li>
+      <li class="challenge-item">
+        <span class="bullet"></span>
+        <p>You either have no website or rely on an outdated one built years ago, which fails to meet modern SEO standards.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
 
   <!-- CTA greyscale Section -->
   <section class="cta-section">
@@ -1351,9 +1368,9 @@ background-color: var(--light-grey-background);
 
       <div class="main-content">
         <h1 class="main-heading">
-          Develop a <span class="highlight">beautiful, SEO focused and brand driven website</span> which represents your
-          organisation and drives user engagement.
-        </h1>
+  Build a <span class="highlight">powerful, SEO-optimized and brand-driven website</span> that boosts visibility, engages your audience, and grows your business.
+</h1>
+
 
         <a href="#" class="cta-button">
           Get Started
@@ -1367,73 +1384,72 @@ background-color: var(--light-grey-background);
     </div>
   </section>
   <!-- card section -->
-  <section class="section-bg">
-    <div class="app-container card-section">
+ <section class="section-bg">
+  <div class="app-container card-section">
 
-
-      <div class="card">
-        <div class="number">01</div>
-        <p>Gives your business visibility online and a place for your audience to learn more and make contact.</p>
-      </div>
-
-      <div class="card">
-        <div class="number">02</div>
-        <p>Provides a hub for communication with existing and potential clients.</p>
-      </div>
-
-      <div class="card">
-        <div class="number">03</div>
-        <p>Drives brand awareness and supports different marketing strategies including Google Ads, Social Media and
-          SEO.</p>
-      </div>
-
-      <div class="card">
-        <div class="number">04</div>
-        <p>Support analytics and insights through different tools such as Google Analytics which helps gauge the
-          relevance and popularity of your brand.</p>
-      </div>
-
-      <div class="card">
-        <div class="number">05</div>
-        <p>Increases potential for value leads through 24/7 communication channels.</p>
-      </div>
-
-      <div class="card">
-        <div class="number">06</div>
-        <p>Can provide important documents and other supporting information to clients in a constantly available medium.
-        </p>
-      </div>
-
-      <div class="card">
-        <div class="number">07</div>
-        <p>Garner a competitive edge over your competitors with a unique and custom designed website which boosts your
-          brand perception.</p>
-      </div>
+    <div class="card">
+      <div class="number">01</div>
+      <p>Boosts your online visibility and ensures potential customers can easily find and connect with you.</p>
     </div>
-  </section>
+
+    <div class="card">
+      <div class="number">02</div>
+      <p>Acts as a central hub for engaging with both new and existing clients effectively.</p>
+    </div>
+
+    <div class="card">
+      <div class="number">03</div>
+      <p>Strengthens brand awareness and supports digital marketing strategies like SEO, Google Ads, and Social Media.</p>
+    </div>
+
+    <div class="card">
+      <div class="number">04</div>
+      <p>Delivers valuable insights with analytics tools like Google Analytics to track traffic, engagement, and ROI.</p>
+    </div>
+
+    <div class="card">
+      <div class="number">05</div>
+      <p>Generates quality leads through 24/7 availability and optimized communication channels.</p>
+    </div>
+
+    <div class="card">
+      <div class="number">06</div>
+      <p>Provides clients with instant access to resources, documents, and essential business information.</p>
+    </div>
+
+    <div class="card">
+      <div class="number">07</div>
+      <p>Gives you a competitive edge with a modern, SEO-friendly website that elevates brand perception and trust.</p>
+    </div>
+
+  </div>
+</section>
+
+
   <!-- points section -->
   <section class="point-section app-container">
-    <div class="left">
-      <p>
-        Our process keeps you involved at every stage while ensuring a stress-free experience.
-        Here’s how we bring your vision to life:
-      </p>
-    </div>
+  <div class="left">
+    <p>
+      We combine strategy, creativity, and technology to deliver SEO-focused solutions that drive results. 
+      Every step of the process is collaborative, keeping you involved while ensuring a smooth, stress-free experience.
+    </p>
+  </div>
 
-    <div class="right">
-      <h2>Who Makes It Happen?</h2>
-      <ul class="list">
-        <li>Project Managers & Business Analysts</li>
-        <li>Brand Designers</li>
-        <li>UI/UX Designers</li>
-        <li>Web Developers</li>
-        <li>Software Developers</li>
-        <li>Cloud Architects</li>
-        <li>Software Testers</li>
-        <li>SEO & Digital Marketing Specialists</li>
-      </ul>
-    </div>
-  </section>
+  <div class="right">
+    <h2>The Experts Behind Your Success</h2>
+    <ul class="list">
+      <li>SEO Specialists & Digital Marketing Experts</li>
+      <li>Project Managers & Business Analysts</li>
+      <li>Brand & Graphic Designers</li>
+      <li>UI/UX Designers</li>
+      <li>Web & Software Developers</li>
+      <li>Cloud & Infrastructure Architects</li>
+      <li>QA Engineers & Software Testers</li>
+      <li>Content Writers & Strategists</li>
+    </ul>
+  </div>
+</section>
+
   <!-- Hosting section -->
   <section class="hosting-section-bg">
     <div class="app-container hosting-section">
@@ -1444,20 +1460,28 @@ background-color: var(--light-grey-background);
 
       <!-- Right Side Text -->
       <div class="section-right">
-        <h2>Hosting, Maintenance & Support</h2>
-        <p>We follow a streamlined approach that takes your ideas and transforms them into a fully functional,
-          results-driven website.</p>
-        <p>We host our websites in Amazon Web Services (AWS) to ensure ultra-fast load times and a seamless user
-          experience. Our hosting package includes backups, SSL certificates, geolocation-appropriate servers, and
-          99.99% uptime.</p>
-        <p>We provide ongoing maintenance to keep your website’s software updated and to monitor security, forms,
-          integrations and more.</p>
-        <p>With our support service, you can simply email or call us with any changes you’d like, and we’ll handle them
-          promptly. Support covers a wide range of services including content updates, form data dumps, blog or news
-          post uploads, graphic design, page updates and more.</p>
-        <p>We provide a simple and reliable support service to help keep your website up to date with new content,
-          images, blog or news posts and SEO ranking reports.</p>
-      </div>
+  <h2>Hosting, Maintenance & SEO Support</h2>
+  <p>
+    We provide a streamlined, reliable approach to keep your website secure, fast, and SEO-ready at all times.
+  </p>
+  <p>
+    Our hosting is powered by Amazon Web Services (AWS), delivering lightning-fast load times, SSL certificates, 
+    automated backups, geo-targeted servers, and 99.99% uptime — all essential for strong search rankings.
+  </p>
+  <p>
+    Regular maintenance ensures your site’s software, security, and integrations are always up to date, 
+    minimizing downtime and improving overall performance.
+  </p>
+  <p>
+    Our dedicated support team makes content updates, blog uploads, design changes, and form management simple — 
+    just send us your request, and we’ll handle it quickly and effectively.
+  </p>
+  <p>
+    Beyond updates, we provide SEO-focused support with ranking reports, performance monitoring, and 
+    optimization recommendations to help your website stay competitive.
+  </p>
+</div>
+
     </div>
   </section>
   <!-- image section -->
@@ -1466,373 +1490,153 @@ background-color: var(--light-grey-background);
       <img src="https://a4ari72izk.ufs.sh/f/HNbj1JW7mNRdMTvef400QDpak6nFtSNBIycxzAwKMJfibsZ9" alt="Showcase image"
         class="Showcase-img">
     </div>
-    <div class="text-section app-container">
-      <span class="left-text">Our Approach</span>
-      <p class="right-text">We approach website design and development from a business first perspective with prospects
-        of providing
-        lasting return on investment and brand recognition, as well as process simplification and automation.</p>
-    </div>
+   <div class="text-section app-container">
+  <span class="left-text">Our Approach</span>
+  <p class="right-text">
+    We take an SEO-first approach to digital strategy — designing and optimizing your website 
+    to attract the right audience, boost visibility on search engines, and deliver long-term 
+    growth. Our focus is on measurable results, brand authority, and sustainable online performance.
+  </p>
+</div>
+
   </section>
 
   <!-- FAQ section -->
   <section class="faq-section">
 
-    <div class="faq-item">
-      <div class="faq-bg">
-        <div class="app-container">
-          <button class="faq-question">
-            <svg class="faq-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="m7 7 10 10" />
-              <path d="M17 7v10H7" />
-            </svg>
-            <h4 class="question-text">Evaluation, User Personas & Workshopping</h4>
-          </button>
-          <div class="faq-answer">
-            <p class="faq-content">
-              We begin every project with a comprehensive evaluation phase where we dive deep into understanding your
-              business goals, target audience, and market positioning. Through collaborative workshopping sessions, we
-              develop detailed user personas that guide our design and development decisions.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="faq-item">
-      <div class="faq-bg">
-        <div class="app-container">
-          <button class="faq-question">
-            <svg class="faq-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="m7 7 10 10" />
-              <path d="M17 7v10H7" />
-            </svg>
-            <h4 class="question-text">Keyword Research & Content Planning</h4>
-          </button>
-          <div class="faq-answer">
-            <p class="faq-content">
-              To ensure your website attracts the right audience, we place a strong emphasis on SEO during our planning
-              phase. We analyse your website's current ranking (or that of your competitors) and identify opportunities
-              for improvement. Our keyword research guides your content strategy.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="faq-item">
-      <div class="faq-bg">
-        <div class="app-container">
-          <button class="faq-question">
-            <svg class="faq-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="m7 7 10 10" />
-              <path d="M17 7v10H7" />
-            </svg>
-            <h4 class="question-text">Wireframe & UI/UX Design & Workshopping</h4>
-          </button>
-          <div class="faq-answer">
-            <p class="faq-content">
-              Our design process starts with detailed wireframes that map out the user journey and information
-              architecture. We then create stunning UI/UX designs that not only look beautiful but also provide an
-              intuitive and engaging user experience.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-bg">
-        <div class="app-container">
-          <button class="faq-question">
-            <svg class="faq-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="m7 7 10 10" />
-              <path d="M17 7v10H7" />
-            </svg>
-            <h4 class="question-text">Workshopping ,Wireframe & UI/UX Design</h4>
-          </button>
-          <div class="faq-answer">
-            <p class="faq-content">
-              Our design process starts with detailed wireframes that map out the user journey and information
-              architecture. We then create stunning UI/UX designs that not only look beautiful but also provide an
-              intuitive and engaging user experience.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-bg">
-        <div class="app-container">
-          <button class="faq-question">
-            <svg class="faq-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="m7 7 10 10" />
-              <path d="M17 7v10H7" />
-            </svg>
-            <h4 class="question-text">Workshopping Wireframe & UI/UX Design</h4>
-          </button>
-          <div class="faq-answer">
-            <p class="faq-content">
-              Our design process starts with detailed wireframes that map out the user journey and information
-              architecture. We then create stunning UI/UX designs that not only look beautiful but also provide an
-              intuitive and engaging user experience.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-bg">
-        <div class="app-container">
-          <button class="faq-question">
-            <svg class="faq-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="m7 7 10 10" />
-              <path d="M17 7v10H7" />
-            </svg>
-            <h4 class="question-text">Wireframe & UI/UX & Workshopping Design</h4>
-          </button>
-          <div class="faq-answer">
-            <p class="faq-content">
-              Our design process starts with detailed wireframes that map out the user journey and information
-              architecture. We then create stunning UI/UX designs that not only look beautiful but also provide an
-              intuitive and engaging user experience.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </section>
-  <!-- choose-use-sec -->
-  <section>
-    <div class="main-choose padding-top-bottom">
+  <div class="faq-item">
+    <div class="faq-bg">
       <div class="app-container">
-        <h2 class="choose-head">
-          Built for Your Success
-          <span class="choose-done">"Powered by Innovation"</span>
-        </h2>
-        <p class="choose-para">
-          We don’t just complete projects—we craft solutions that create measurable growth and
-          real impact. Every strategy is rooted in creativity, expertise, and technology, ensuring your brand
-          stays ahead in a fast-changing digital world.
-        </p>
-      </div>
-
-      <div class="scroll-container">
-        <!-- Row 1 -->
-        <div class="scroll-row left-to-right">
-          <div class="scroll-content">
-            <span class="choose-btn">
-              <p>Built for your success</p>
-            </span>
-            <span class="choose-btn">
-              <p>Results that truly matter</p>
-            </span>
-            <span class="choose-btn">
-              <p>Growth beyond boundaries</p>
-            </span>
-            <span class="choose-btn">
-              <p>Why settle for less?</p>
-            </span>
-            <span class="choose-btn">
-              <p>Powered by innovation</p>
-            </span>
-            <span class="choose-btn">
-              <p>Designed for impact</p>
-            </span>
-            <span class="choose-btn">
-              <p>Future starts here</p>
-            </span>
-            <span class="choose-btn">
-              <p>Smart, simple, effective</p>
-            </span>
-            <span class="choose-btn">
-              <p>Challenges create opportunities</p>
-            </span>
-            <span class="choose-btn">
-              <p>Imagine. Build. Scale.</p>
-            </span>
-          </div>
-
-          <!-- duplicate for seamless loop -->
-          <div class="scroll-content">
-            <span class="choose-btn">
-              <p>Built for your success</p>
-            </span>
-            <span class="choose-btn">
-              <p>Results that truly matter</p>
-            </span>
-            <span class="choose-btn">
-              <p>Growth beyond boundaries</p>
-            </span>
-            <span class="choose-btn">
-              <p>Why settle for less?</p>
-            </span>
-            <span class="choose-btn">
-              <p>Powered by innovation</p>
-            </span>
-            <span class="choose-btn">
-              <p>Designed for impact</p>
-            </span>
-            <span class="choose-btn">
-              <p>Future starts here</p>
-            </span>
-            <span class="choose-btn">
-              <p>Smart, simple, effective</p>
-            </span>
-            <span class="choose-btn">
-              <p>Challenges create opportunities</p>
-            </span>
-            <span class="choose-btn">
-              <p>Imagine. Build. Scale.</p>
-            </span>
-          </div>
-        </div>
-
-        <!-- Row 2 -->
-        <div class="scroll-row right-to-left">
-          <div class="scroll-content">
-            <span class="choose-btn">
-              <p>Solutions that scale</p>
-            </span>
-            <span class="choose-btn">
-              <p>Driven by creativity</p>
-            </span>
-            <span class="choose-btn">
-              <p>Lasting partnerships, proven results</p>
-            </span>
-            <span class="choose-btn">
-              <p>Where ideas take flight</p>
-            </span>
-            <span class="choose-btn">
-              <p>Data meets creativity</p>
-            </span>
-            <span class="choose-btn">
-              <p>Success isn’t optional</p>
-            </span>
-            <span class="choose-btn">
-              <p>We think long-term</p>
-            </span>
-            <span class="choose-btn">
-              <p>Your success is ours</p>
-            </span>
-            <span class="choose-btn">
-              <p>Excellence by design</p>
-            </span>
-            <span class="choose-btn">
-              <p>Dream big, achieve more</p>
-            </span>
-          </div>
-
-          <div class="scroll-content">
-            <span class="choose-btn">
-              <p>Solutions that scale</p>
-            </span>
-            <span class="choose-btn">
-              <p>Driven by creativity</p>
-            </span>
-            <span class="choose-btn">
-              <p>Lasting partnerships, proven results</p>
-            </span>
-            <span class="choose-btn">
-              <p>Where ideas take flight</p>
-            </span>
-            <span class="choose-btn">
-              <p>Data meets creativity</p>
-            </span>
-            <span class="choose-btn">
-              <p>Success isn’t optional</p>
-            </span>
-            <span class="choose-btn">
-              <p>We think long-term</p>
-            </span>
-            <span class="choose-btn">
-              <p>Your success is ours</p>
-            </span>
-            <span class="choose-btn">
-              <p>Excellence by design</p>
-            </span>
-            <span class="choose-btn">
-              <p>Dream big, achieve more</p>
-            </span>
-          </div>
-        </div>
-
-        <!-- Row 3 -->
-        <div class="scroll-row left-to-right">
-          <div class="scroll-content">
-            <span class="choose-btn">
-              <p>Not just projects, results</p>
-            </span>
-            <span class="choose-btn">
-              <p>Built to adapt</p>
-            </span>
-            <span class="choose-btn">
-              <p>Ready for what’s next?</p>
-            </span>
-            <span class="choose-btn">
-              <p>From vision to reality</p>
-            </span>
-            <span class="choose-btn">
-              <p>Let’s grow together</p>
-            </span>
-            <span class="choose-btn">
-              <p>Your goals, our mission</p>
-            </span>
-            <span class="choose-btn">
-              <p>Innovation is our fuel</p>
-            </span>
-            <span class="choose-btn">
-              <p>Focused on lasting value</p>
-            </span>
-            <span class="choose-btn">
-              <p>Growth with purpose</p>
-            </span>
-            <span class="choose-btn">
-              <p>Excellence by design</p>
-            </span>
-          </div>
-
-          <div class="scroll-content">
-            <span class="choose-btn">
-              <p>Not just projects, results</p>
-            </span>
-            <span class="choose-btn">
-              <p>Built to adapt</p>
-            </span>
-            <span class="choose-btn">
-              <p>Ready for what’s next?</p>
-            </span>
-            <span class="choose-btn">
-              <p>From vision to reality</p>
-            </span>
-            <span class="choose-btn">
-              <p>Let’s grow together</p>
-            </span>
-            <span class="choose-btn">
-              <p>Your goals, our mission</p>
-            </span>
-            <span class="choose-btn">
-              <p>Innovation is our fuel</p>
-            </span>
-            <span class="choose-btn">
-              <p>Focused on lasting value</p>
-            </span>
-            <span class="choose-btn">
-              <p>Growth with purpose</p>
-            </span>
-            <span class="choose-btn">
-              <p>Excellence by design</p>
-            </span>
-          </div>
+        <button class="faq-question">
+          <svg class="faq-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m7 7 10 10" />
+            <path d="M17 7v10H7" />
+          </svg>
+          <h4 class="question-text">SEO Audit & Strategy Evaluation</h4>
+        </button>
+        <div class="faq-answer">
+          <p class="faq-content">
+            Every project starts with a full SEO audit of your website and competitors. We analyze 
+            technical setup, on-page elements, backlinks, and current rankings to build a 
+            data-driven strategy tailored to your business goals.
+          </p>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-bg">
+      <div class="app-container">
+        <button class="faq-question">
+          <svg class="faq-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m7 7 10 10" />
+            <path d="M17 7v10H7" />
+          </svg>
+          <h4 class="question-text">Keyword Research & Content Planning</h4>
+        </button>
+        <div class="faq-answer">
+          <p class="faq-content">
+            We identify high-value keywords that your audience is searching for and create 
+            a targeted content plan. This ensures your site ranks for the right terms, attracts 
+            qualified traffic, and aligns with your business objectives.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-bg">
+      <div class="app-container">
+        <button class="faq-question">
+          <svg class="faq-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m7 7 10 10" />
+            <path d="M17 7v10H7" />
+          </svg>
+          <h4 class="question-text">On-Page SEO & Technical Optimization</h4>
+        </button>
+        <div class="faq-answer">
+          <p class="faq-content">
+            From meta tags, headings, and internal linking to site speed and mobile 
+            responsiveness — we optimize every element to improve rankings and provide 
+            the best possible user experience.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-bg">
+      <div class="app-container">
+        <button class="faq-question">
+          <svg class="faq-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m7 7 10 10" />
+            <path d="M17 7v10H7" />
+          </svg>
+          <h4 class="question-text">Content Creation & Optimization</h4>
+        </button>
+        <div class="faq-answer">
+          <p class="faq-content">
+            We create SEO-friendly blogs, landing pages, and web copy designed to 
+            engage users and rank higher in search results. Existing content is optimized 
+            for maximum impact and better conversions.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-bg">
+      <div class="app-container">
+        <button class="faq-question">
+          <svg class="faq-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m7 7 10 10" />
+            <path d="M17 7v10H7" />
+          </svg>
+          <h4 class="question-text">Link Building & Off-Page SEO</h4>
+        </button>
+        <div class="faq-answer">
+          <p class="faq-content">
+            We build high-quality backlinks through ethical strategies like guest posting, 
+            digital PR, and outreach campaigns. Off-page SEO strengthens your domain 
+            authority and boosts organic rankings.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-bg">
+      <div class="app-container">
+        <button class="faq-question">
+          <svg class="faq-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m7 7 10 10" />
+            <path d="M17 7v10H7" />
+          </svg>
+          <h4 class="question-text">Performance Tracking & Reporting</h4>
+        </button>
+        <div class="faq-answer">
+          <p class="faq-content">
+            SEO is a continuous process. We provide transparent reports on keyword rankings, 
+            traffic growth, and ROI so you can see the real impact of your investment in search visibility.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
 
   <!-- cta-sec -->
   <div class="cta-main ">
