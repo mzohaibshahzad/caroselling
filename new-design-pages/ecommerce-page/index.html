@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Service Page</title>
+  <title>E-Commerce</title>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -564,6 +564,112 @@ body {
 
 
 }
+ /* services section */
+
+
+        .services-header {
+            font-size: 24px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: blue;
+        }
+
+        .accordion {
+            border-top: 1px solid #222;
+        }
+
+        .accordion-item {
+            border-bottom: 1px solid #222;
+            padding: 0px 4px;
+        }
+
+        .accordion-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 16px 0;
+            cursor: pointer;
+        }
+
+        .accordion-header-left {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .icon-shape {
+            width: 50px;
+            height: 24px;
+            border-radius: 20px;
+        }
+
+        .services-section {
+            padding-top: 100px;
+            padding-bottom: 80px;
+        }
+
+        /* gradient icons */
+        .shape-1 {
+            background: linear-gradient(135deg, #0052d4, #4364f7, #6fb1fc);
+        }
+
+        .shape-2 {
+            background: linear-gradient(135deg, #d4fc79, #96e6a1);
+        }
+
+        .shape-3 {
+            background: linear-gradient(135deg, #a18cd1, #fbc2eb);
+        }
+
+        .accordion-title {
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        .accordion-icon {
+            font-size: 40px;
+            font-weight: 300;
+            transition: transform 0.3s ease;
+        }
+
+        .accordion-item.active .accordion-icon {
+            transform: rotate(45deg);
+        }
+
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            padding-left: 65px;
+            color: black;
+            font-size: 15px;
+            line-height: 1.6;
+            opacity: 0;
+            transition: max-height 0.5s ease, opacity 0.5s ease;
+        }
+
+        .accordion-item.active .accordion-content {
+            max-height: 500px;
+            /* enough for content */
+            opacity: 1;
+            margin-bottom: 16px;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .accordion-header-left {
+                gap: 10px;
+            }
+
+            .accordion-title {
+                font-size: 16px;
+            }
+
+            .accordion-content {
+                padding-left: 20px;
+            }
+        }
 
 /* card section */
 
@@ -1245,105 +1351,116 @@ background-color: var(--light-grey-background);
     <div class="app-container">
       <div class="hero-content">
         <h1>
-          Business <span>Focused & Brand Empowering</span>
-          Websites Designed For Growth
+          Build Powerful <span>Online Stores That</span>
+          Sell
         </h1>
         <p>
-          Portray your business as the benchmark amongst its competitors through concise planning,
-          meticulous implementation and modern design.
+          Your eCommerce website should do more than just look good—it should sell.
+ We design and develop scalable eCommerce solutions that maximize conversions.
+ From startups to established brands, we create seamless online shopping experiences.
         </p>
       </div>
     </div>
   </section>
-  <!-- Tool section -->
-  <section class="tool-section">
-    <div class="app-container">
-      <h2 class="tools-heading">
-        Struggling With a Website That Falls Short?
-      </h2>
+  <!-- services section -->
+    <section class="services-section">
+        <div class="padding-top-bottom app-container">
+            <div class="services-header">↳ Our Services</div>
 
-      <p class="description">
-        Many businesses settle for websites that look fine but fail to perform.
-        From outdated designs to poor navigation, these issues cost opportunities.
-        We fix the problems that hold you back online.
-      </p>
+            <div class="accordion">
 
-      <div class="logos-container">
-        <div class="logo-item drupal">
-          <img src="https://www.designpluz.com.au/wp-content/uploads/2024/07/drupal-logo.svg" alt="Drupal CMS Platform">
+                <!-- Service 1 -->
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <div class="accordion-header-left">
+                            <div class="icon-shape shape-1"></div>
+                            <div class="accordion-title">eCommerce Development</div>
+                        </div>
+                        <div class="accordion-icon">+</div>
+                    </div>
+                    <p class="accordion-content">
+                        We create custom eCommerce websites tailored to your business goals.
+                        Whether you need a simple online shop or a full-scale enterprise platform,
+                        our solutions are designed for flexibility, scalability, and long-term growth.
+                    </p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <div class="accordion-header-left">
+                            <div class="icon-shape shape-2"></div>
+                            <div class="accordion-title">Shopify Websites</div>
+                        </div>
+                        <div class="accordion-icon">+</div>
+                    </div>
+                    <p class="accordion-content">
+                        We build and optimize Shopify websites that drive conversions. From store setup
+                        and custom themes to advanced integrations, we ensure your Shopify store is visually
+                        engaging, user-friendly, and conversion-focused.
+                    </p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <div class="accordion-header-left">
+                            <div class="icon-shape shape-3"></div>
+                            <div class="accordion-title">WooCommerce Websites</div>
+                        </div>
+                        <div class="accordion-icon">+</div>
+                    </div>
+                    <p class="accordion-content">
+                        For businesses using WordPress, we develop WooCommerce-powered stores with custom functionality.
+                        Our WooCommerce solutions are designed to handle product catalogs of any size while maintaining
+                        fast load times and easy checkout experiences.
+                    </p>
+                </div>
+
+            </div>
         </div>
-
-        <div class="logo-item wordpress">
-          <img src="https://www.designpluz.com.au/wp-content/uploads/2024/07/wordpress-logo.svg"
-            alt="WordPress CMS Platform">
-        </div>
-
-        <div class="logo-item joomla">
-          <img src="https://www.designpluz.com.au/wp-content/uploads/2024/07/joomla-logo.svg" alt="Joomla CMS Platform">
-        </div>
-
-        <div class="logo-item umbraco">
-          <img src="https://www.designpluz.com.au/wp-content/uploads/2024/06/ec-umbraco-logo.svg"
-            alt="Umbraco CMS Platform">
-        </div>
-
-        <div class="logo-item figma">
-          <img src="https://www.designpluz.com.au/wp-content/uploads/2024/07/figma-logo.svg" alt="Figma Design Tool">
-        </div>
-
-        <div class="logo-item xd">
-          <img src="https://www.designpluz.com.au/wp-content/uploads/2024/07/xd-logo.svg" alt="Adobe XD Design Tool">
-        </div>
-
-        <div class="center-text">
-          <p>We utilise popular CMS platforms & design software to deliver our website projects.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
+ 
   <!-- Challenges section -->
   <section>
-    <div class="challenge-section app-container">
-      <h2 class="heading">
-        <span class="highlight">Challenges</span> That Your Business Is Facing Without A Premium Website
-      </h2>
+  <div class="challenge-section app-container">
+    <h2 class="heading">
+      <span class="highlight">Challenges</span> Your Business Faces Without a Premium E-Commerce Website
+    </h2>
 
-      <ul class="challenges-list">
-        <li class="challenge-item">
-          <span class="bullet"></span>
-          <p>Your website is outdated and includes old information, such as projects, services and more, damaging the
-            depiction of your business.</p>
-        </li>
-        <li class="challenge-item">
-          <span class="bullet"></span>
-          <p>Your website is not mobile or tablet optimised, loads slowly, is broken and not user friendly.</p>
-        </li>
-        <li class="challenge-item">
-          <span class="bullet"></span>
-          <p>Branding fundamentals are not implemented in your website which creates a disconnect between other
-            collaterals.</p>
-        </li>
-        <li class="challenge-item">
-          <span class="bullet"></span>
-          <p>Your website is not process and automation focused which creates mundane administrative tasks and
-            potential for data entry errors. You lose leads because of poor technical infrastructure.</p>
-        </li>
-        <li class="challenge-item">
-          <span class="bullet"></span>
-          <p>Your website is not used as a marketing, sales or lead generation tool as effectively as it
-            could.</p>
-        </li>
-        <li class="challenge-item">
-          <span class="bullet"></span>
-          <p>You do not have a website at all or it was cheaply developed over five (5) years ago.</p>
-        </li>
-        <li class="challenge-item">
-          <span class="bullet"></span>
-          <p>Your website is not optimised for Search Engines (SEO).</p>
-        </li>
-      </ul>
-    </div>
-  </section>
+    <ul class="challenges-list">
+      <li class="challenge-item">
+        <span class="bullet"></span>
+        <p>Your online store looks outdated, untrustworthy, or lacks modern features—reducing customer confidence and conversions.</p>
+      </li>
+      <li class="challenge-item">
+        <span class="bullet"></span>
+        <p>Your website is not mobile-friendly, loads slowly, or breaks during checkout—leading to abandoned carts.</p>
+      </li>
+      <li class="challenge-item">
+        <span class="bullet"></span>
+        <p>Poor product categorisation and search functionality make it difficult for customers to find what they want.</p>
+      </li>
+      <li class="challenge-item">
+        <span class="bullet"></span>
+        <p>Lack of secure payment gateways and trust signals prevents customers from completing purchases confidently.</p>
+      </li>
+      <li class="challenge-item">
+        <span class="bullet"></span>
+        <p>No automation for inventory, shipping, or order management creates manual workload and costly errors.</p>
+      </li>
+      <li class="challenge-item">
+        <span class="bullet"></span>
+        <p>Your store is not optimised for SEO, meaning your products don’t appear in search results and you lose potential sales.</p>
+      </li>
+      <li class="challenge-item">
+        <span class="bullet"></span>
+        <p>You rely only on social media or marketplaces, missing out on building your own branded sales platform.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
 
   <!-- CTA greyscale Section -->
   <section class="cta-section">
@@ -1351,9 +1468,10 @@ background-color: var(--light-grey-background);
 
       <div class="main-content">
         <h1 class="main-heading">
-          Develop a <span class="highlight">beautiful, SEO focused and brand driven website</span> which represents your
-          organisation and drives user engagement.
-        </h1>
+  Build a <span class="highlight">beautiful, SEO-focused and sales-driven e-commerce website</span> 
+  that grows your business and delivers seamless shopping experiences.
+</h1>
+
 
         <a href="#" class="cta-button">
           Get Started
@@ -1367,99 +1485,95 @@ background-color: var(--light-grey-background);
     </div>
   </section>
   <!-- card section -->
-  <section class="section-bg">
-    <div class="app-container card-section">
+ <section class="section-bg">
+  <div class="app-container card-section">
 
-
-      <div class="card">
-        <div class="number">01</div>
-        <p>Gives your business visibility online and a place for your audience to learn more and make contact.</p>
-      </div>
-
-      <div class="card">
-        <div class="number">02</div>
-        <p>Provides a hub for communication with existing and potential clients.</p>
-      </div>
-
-      <div class="card">
-        <div class="number">03</div>
-        <p>Drives brand awareness and supports different marketing strategies including Google Ads, Social Media and
-          SEO.</p>
-      </div>
-
-      <div class="card">
-        <div class="number">04</div>
-        <p>Support analytics and insights through different tools such as Google Analytics which helps gauge the
-          relevance and popularity of your brand.</p>
-      </div>
-
-      <div class="card">
-        <div class="number">05</div>
-        <p>Increases potential for value leads through 24/7 communication channels.</p>
-      </div>
-
-      <div class="card">
-        <div class="number">06</div>
-        <p>Can provide important documents and other supporting information to clients in a constantly available medium.
-        </p>
-      </div>
-
-      <div class="card">
-        <div class="number">07</div>
-        <p>Garner a competitive edge over your competitors with a unique and custom designed website which boosts your
-          brand perception.</p>
-      </div>
+    <div class="card">
+      <div class="number">01</div>
+      <p>Expand your store online and reach customers beyond physical boundaries, available 24/7 worldwide.</p>
     </div>
-  </section>
+
+    <div class="card">
+      <div class="number">02</div>
+      <p>Create a seamless shopping experience with secure payments, user-friendly navigation, and responsive design.</p>
+    </div>
+
+    <div class="card">
+      <div class="number">03</div>
+      <p>Boost your sales through integrated marketing strategies such as Google Ads, Social Media, and SEO.</p>
+    </div>
+
+    <div class="card">
+      <div class="number">04</div>
+      <p>Track customer behavior with analytics to optimize products, pricing, and promotions for better results.</p>
+    </div>
+
+    <div class="card">
+      <div class="number">05</div>
+      <p>Automate order processing, inventory management, and customer communications to save time and reduce errors.</p>
+    </div>
+
+    <div class="card">
+      <div class="number">06</div>
+      <p>Provide detailed product information, reviews, and recommendations to build trust and increase conversions.</p>
+    </div>
+
+    <div class="card">
+      <div class="number">07</div>
+      <p>Stand out from competitors with a customized e-commerce platform that strengthens your brand identity.</p>
+    </div>
+
+  </div>
+</section>
+
   <!-- points section -->
   <section class="point-section app-container">
-    <div class="left">
-      <p>
-        Our process keeps you involved at every stage while ensuring a stress-free experience.
-        Here’s how we bring your vision to life:
-      </p>
-    </div>
+  <div class="left">
+    <p>
+      Building a successful e-commerce store requires expertise across multiple areas.  
+      Our team ensures your online business runs smoothly while driving growth and customer satisfaction:
+    </p>
+  </div>
 
-    <div class="right">
-      <h2>Who Makes It Happen?</h2>
-      <ul class="list">
-        <li>Project Managers & Business Analysts</li>
-        <li>Brand Designers</li>
-        <li>UI/UX Designers</li>
-        <li>Web Developers</li>
-        <li>Software Developers</li>
-        <li>Cloud Architects</li>
-        <li>Software Testers</li>
-        <li>SEO & Digital Marketing Specialists</li>
-      </ul>
-    </div>
-  </section>
+  <div class="right">
+    <h2>Who Makes It Happen?</h2>
+    <ul class="list">
+      <li>E-Commerce Project Managers & Business Analysts</li>
+      <li>Brand & Graphic Designers</li>
+      <li>UI/UX Designers (focused on shopping experience)</li>
+      <li>Front-End & Back-End Web Developers</li>
+      <li>Payment Gateway & API Integration Specialists</li>
+      <li>Cloud Architects & DevOps Engineers</li>
+      <li>Quality Assurance & Security Testers</li>
+      <li>SEO, Digital Marketing & Conversion Specialists</li>
+    </ul>
+  </div>
+</section>
+
   <!-- Hosting section -->
   <section class="hosting-section-bg">
-    <div class="app-container hosting-section">
-      <!-- Left Side Image -->
-      <div class="section-left">
-        <img src="https://a4ari72izk.ufs.sh/f/HNbj1JW7mNRdweJTLda61Rt8mxwo72CXHyrcjKPeEIudgSQ3" alt="Hosting Support">
-      </div>
-
-      <!-- Right Side Text -->
-      <div class="section-right">
-        <h2>Hosting, Maintenance & Support</h2>
-        <p>We follow a streamlined approach that takes your ideas and transforms them into a fully functional,
-          results-driven website.</p>
-        <p>We host our websites in Amazon Web Services (AWS) to ensure ultra-fast load times and a seamless user
-          experience. Our hosting package includes backups, SSL certificates, geolocation-appropriate servers, and
-          99.99% uptime.</p>
-        <p>We provide ongoing maintenance to keep your website’s software updated and to monitor security, forms,
-          integrations and more.</p>
-        <p>With our support service, you can simply email or call us with any changes you’d like, and we’ll handle them
-          promptly. Support covers a wide range of services including content updates, form data dumps, blog or news
-          post uploads, graphic design, page updates and more.</p>
-        <p>We provide a simple and reliable support service to help keep your website up to date with new content,
-          images, blog or news posts and SEO ranking reports.</p>
-      </div>
+  <div class="app-container hosting-section">
+    <!-- Left Side Image -->
+    <div class="section-left">
+      <img src="https://a4ari72izk.ufs.sh/f/HNbj1JW7mNRdweJTLda61Rt8mxwo72CXHyrcjKPeEIudgSQ3" alt="E-commerce Hosting & Support">
     </div>
-  </section>
+
+    <!-- Right Side Text -->
+    <div class="section-right">
+      <h2>E-Commerce Hosting, Maintenance & Support</h2>
+      <p>Running an online store requires more than just a website — it demands performance, security, and 24/7 reliability. We provide everything you need to keep your e-commerce business thriving.</p>
+      
+      <p>Our stores are hosted on Amazon Web Services (AWS) for lightning-fast load times and secure transactions. Hosting includes daily backups, SSL certificates, fraud protection, geolocation-appropriate servers, and 99.99% uptime.</p>
+      
+      <p>We provide ongoing maintenance to keep your store’s platform, plugins, and payment gateways updated, while monitoring security, checkout flows, and third-party integrations.</p>
+      
+      <p>Our support team is always available — simply email or call us for quick updates. Support covers product uploads, inventory adjustments, promotional banners, content changes, and more.</p>
+      
+      <p>With us, you get a reliable partner to handle technical operations while you focus on growing your sales.</p>
+    </div>
+  </div>
+</section>
+
   <!-- image section -->
   <section class="big-image-bg">
     <div class="big-image">
@@ -1467,372 +1581,125 @@ background-color: var(--light-grey-background);
         class="Showcase-img">
     </div>
     <div class="text-section app-container">
-      <span class="left-text">Our Approach</span>
-      <p class="right-text">We approach website design and development from a business first perspective with prospects
-        of providing
-        lasting return on investment and brand recognition, as well as process simplification and automation.</p>
-    </div>
+  <span class="left-text">Our E-Commerce Approach</span>
+  <p class="right-text">
+    We design and develop e-commerce stores with a business-first mindset — focusing on driving sales, 
+    improving customer experience, and delivering measurable ROI. Our approach ensures seamless 
+    integrations, process automation, and a strong brand presence that scales with your growth.
+  </p>
+</div>
+
   </section>
 
   <!-- FAQ section -->
-  <section class="faq-section">
-
-    <div class="faq-item">
-      <div class="faq-bg">
-        <div class="app-container">
-          <button class="faq-question">
-            <svg class="faq-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="m7 7 10 10" />
-              <path d="M17 7v10H7" />
-            </svg>
-            <h4 class="question-text">Evaluation, User Personas & Workshopping</h4>
-          </button>
-          <div class="faq-answer">
-            <p class="faq-content">
-              We begin every project with a comprehensive evaluation phase where we dive deep into understanding your
-              business goals, target audience, and market positioning. Through collaborative workshopping sessions, we
-              develop detailed user personas that guide our design and development decisions.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="faq-item">
-      <div class="faq-bg">
-        <div class="app-container">
-          <button class="faq-question">
-            <svg class="faq-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="m7 7 10 10" />
-              <path d="M17 7v10H7" />
-            </svg>
-            <h4 class="question-text">Keyword Research & Content Planning</h4>
-          </button>
-          <div class="faq-answer">
-            <p class="faq-content">
-              To ensure your website attracts the right audience, we place a strong emphasis on SEO during our planning
-              phase. We analyse your website's current ranking (or that of your competitors) and identify opportunities
-              for improvement. Our keyword research guides your content strategy.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="faq-item">
-      <div class="faq-bg">
-        <div class="app-container">
-          <button class="faq-question">
-            <svg class="faq-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="m7 7 10 10" />
-              <path d="M17 7v10H7" />
-            </svg>
-            <h4 class="question-text">Wireframe & UI/UX Design & Workshopping</h4>
-          </button>
-          <div class="faq-answer">
-            <p class="faq-content">
-              Our design process starts with detailed wireframes that map out the user journey and information
-              architecture. We then create stunning UI/UX designs that not only look beautiful but also provide an
-              intuitive and engaging user experience.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-bg">
-        <div class="app-container">
-          <button class="faq-question">
-            <svg class="faq-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="m7 7 10 10" />
-              <path d="M17 7v10H7" />
-            </svg>
-            <h4 class="question-text">Workshopping ,Wireframe & UI/UX Design</h4>
-          </button>
-          <div class="faq-answer">
-            <p class="faq-content">
-              Our design process starts with detailed wireframes that map out the user journey and information
-              architecture. We then create stunning UI/UX designs that not only look beautiful but also provide an
-              intuitive and engaging user experience.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-bg">
-        <div class="app-container">
-          <button class="faq-question">
-            <svg class="faq-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="m7 7 10 10" />
-              <path d="M17 7v10H7" />
-            </svg>
-            <h4 class="question-text">Workshopping Wireframe & UI/UX Design</h4>
-          </button>
-          <div class="faq-answer">
-            <p class="faq-content">
-              Our design process starts with detailed wireframes that map out the user journey and information
-              architecture. We then create stunning UI/UX designs that not only look beautiful but also provide an
-              intuitive and engaging user experience.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-bg">
-        <div class="app-container">
-          <button class="faq-question">
-            <svg class="faq-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="m7 7 10 10" />
-              <path d="M17 7v10H7" />
-            </svg>
-            <h4 class="question-text">Wireframe & UI/UX & Workshopping Design</h4>
-          </button>
-          <div class="faq-answer">
-            <p class="faq-content">
-              Our design process starts with detailed wireframes that map out the user journey and information
-              architecture. We then create stunning UI/UX designs that not only look beautiful but also provide an
-              intuitive and engaging user experience.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </section>
-  <!-- choose-use-sec -->
-  <section>
-    <div class="main-choose padding-top-bottom">
+ <section class="faq-section">
+  <div class="faq-item">
+    <div class="faq-bg">
       <div class="app-container">
-        <h2 class="choose-head">
-          Built for Your Success
-          <span class="choose-done">"Powered by Innovation"</span>
-        </h2>
-        <p class="choose-para">
-          We don’t just complete projects—we craft solutions that create measurable growth and
-          real impact. Every strategy is rooted in creativity, expertise, and technology, ensuring your brand
-          stays ahead in a fast-changing digital world.
-        </p>
-      </div>
-
-      <div class="scroll-container">
-        <!-- Row 1 -->
-        <div class="scroll-row left-to-right">
-          <div class="scroll-content">
-            <span class="choose-btn">
-              <p>Built for your success</p>
-            </span>
-            <span class="choose-btn">
-              <p>Results that truly matter</p>
-            </span>
-            <span class="choose-btn">
-              <p>Growth beyond boundaries</p>
-            </span>
-            <span class="choose-btn">
-              <p>Why settle for less?</p>
-            </span>
-            <span class="choose-btn">
-              <p>Powered by innovation</p>
-            </span>
-            <span class="choose-btn">
-              <p>Designed for impact</p>
-            </span>
-            <span class="choose-btn">
-              <p>Future starts here</p>
-            </span>
-            <span class="choose-btn">
-              <p>Smart, simple, effective</p>
-            </span>
-            <span class="choose-btn">
-              <p>Challenges create opportunities</p>
-            </span>
-            <span class="choose-btn">
-              <p>Imagine. Build. Scale.</p>
-            </span>
-          </div>
-
-          <!-- duplicate for seamless loop -->
-          <div class="scroll-content">
-            <span class="choose-btn">
-              <p>Built for your success</p>
-            </span>
-            <span class="choose-btn">
-              <p>Results that truly matter</p>
-            </span>
-            <span class="choose-btn">
-              <p>Growth beyond boundaries</p>
-            </span>
-            <span class="choose-btn">
-              <p>Why settle for less?</p>
-            </span>
-            <span class="choose-btn">
-              <p>Powered by innovation</p>
-            </span>
-            <span class="choose-btn">
-              <p>Designed for impact</p>
-            </span>
-            <span class="choose-btn">
-              <p>Future starts here</p>
-            </span>
-            <span class="choose-btn">
-              <p>Smart, simple, effective</p>
-            </span>
-            <span class="choose-btn">
-              <p>Challenges create opportunities</p>
-            </span>
-            <span class="choose-btn">
-              <p>Imagine. Build. Scale.</p>
-            </span>
-          </div>
-        </div>
-
-        <!-- Row 2 -->
-        <div class="scroll-row right-to-left">
-          <div class="scroll-content">
-            <span class="choose-btn">
-              <p>Solutions that scale</p>
-            </span>
-            <span class="choose-btn">
-              <p>Driven by creativity</p>
-            </span>
-            <span class="choose-btn">
-              <p>Lasting partnerships, proven results</p>
-            </span>
-            <span class="choose-btn">
-              <p>Where ideas take flight</p>
-            </span>
-            <span class="choose-btn">
-              <p>Data meets creativity</p>
-            </span>
-            <span class="choose-btn">
-              <p>Success isn’t optional</p>
-            </span>
-            <span class="choose-btn">
-              <p>We think long-term</p>
-            </span>
-            <span class="choose-btn">
-              <p>Your success is ours</p>
-            </span>
-            <span class="choose-btn">
-              <p>Excellence by design</p>
-            </span>
-            <span class="choose-btn">
-              <p>Dream big, achieve more</p>
-            </span>
-          </div>
-
-          <div class="scroll-content">
-            <span class="choose-btn">
-              <p>Solutions that scale</p>
-            </span>
-            <span class="choose-btn">
-              <p>Driven by creativity</p>
-            </span>
-            <span class="choose-btn">
-              <p>Lasting partnerships, proven results</p>
-            </span>
-            <span class="choose-btn">
-              <p>Where ideas take flight</p>
-            </span>
-            <span class="choose-btn">
-              <p>Data meets creativity</p>
-            </span>
-            <span class="choose-btn">
-              <p>Success isn’t optional</p>
-            </span>
-            <span class="choose-btn">
-              <p>We think long-term</p>
-            </span>
-            <span class="choose-btn">
-              <p>Your success is ours</p>
-            </span>
-            <span class="choose-btn">
-              <p>Excellence by design</p>
-            </span>
-            <span class="choose-btn">
-              <p>Dream big, achieve more</p>
-            </span>
-          </div>
-        </div>
-
-        <!-- Row 3 -->
-        <div class="scroll-row left-to-right">
-          <div class="scroll-content">
-            <span class="choose-btn">
-              <p>Not just projects, results</p>
-            </span>
-            <span class="choose-btn">
-              <p>Built to adapt</p>
-            </span>
-            <span class="choose-btn">
-              <p>Ready for what’s next?</p>
-            </span>
-            <span class="choose-btn">
-              <p>From vision to reality</p>
-            </span>
-            <span class="choose-btn">
-              <p>Let’s grow together</p>
-            </span>
-            <span class="choose-btn">
-              <p>Your goals, our mission</p>
-            </span>
-            <span class="choose-btn">
-              <p>Innovation is our fuel</p>
-            </span>
-            <span class="choose-btn">
-              <p>Focused on lasting value</p>
-            </span>
-            <span class="choose-btn">
-              <p>Growth with purpose</p>
-            </span>
-            <span class="choose-btn">
-              <p>Excellence by design</p>
-            </span>
-          </div>
-
-          <div class="scroll-content">
-            <span class="choose-btn">
-              <p>Not just projects, results</p>
-            </span>
-            <span class="choose-btn">
-              <p>Built to adapt</p>
-            </span>
-            <span class="choose-btn">
-              <p>Ready for what’s next?</p>
-            </span>
-            <span class="choose-btn">
-              <p>From vision to reality</p>
-            </span>
-            <span class="choose-btn">
-              <p>Let’s grow together</p>
-            </span>
-            <span class="choose-btn">
-              <p>Your goals, our mission</p>
-            </span>
-            <span class="choose-btn">
-              <p>Innovation is our fuel</p>
-            </span>
-            <span class="choose-btn">
-              <p>Focused on lasting value</p>
-            </span>
-            <span class="choose-btn">
-              <p>Growth with purpose</p>
-            </span>
-            <span class="choose-btn">
-              <p>Excellence by design</p>
-            </span>
-          </div>
+        <button class="faq-question">
+          <svg class="faq-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m7 7 10 10" />
+            <path d="M17 7v10H7" />
+          </svg>
+          <h4 class="question-text">Evaluation, User Personas & Workshopping</h4>
+        </button>
+        <div class="faq-answer">
+          <p class="faq-content">
+            We begin every project with a deep discovery session — understanding your goals, target customers, and 
+            unique positioning. Through workshopping, we create user personas that guide all design and development 
+            decisions.
+          </p>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-bg">
+      <div class="app-container">
+        <button class="faq-question">
+          <svg class="faq-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m7 7 10 10" />
+            <path d="M17 7v10H7" />
+          </svg>
+          <h4 class="question-text">Keyword Research & Content Planning</h4>
+        </button>
+        <div class="faq-answer">
+          <p class="faq-content">
+            We integrate SEO from the start — analyzing competitors, identifying ranking opportunities, and 
+            planning content that aligns with your business objectives and customer search behavior.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-bg">
+      <div class="app-container">
+        <button class="faq-question">
+          <svg class="faq-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m7 7 10 10" />
+            <path d="M17 7v10H7" />
+          </svg>
+          <h4 class="question-text">Wireframes & UI/UX Design</h4>
+        </button>
+        <div class="faq-answer">
+          <p class="faq-content">
+            We design clear wireframes mapping out the customer journey, then craft visually appealing UI/UX 
+            designs that ensure smooth navigation, engagement, and higher conversions.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-bg">
+      <div class="app-container">
+        <button class="faq-question">
+          <svg class="faq-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m7 7 10 10" />
+            <path d="M17 7v10H7" />
+          </svg>
+          <h4 class="question-text">Development & Integration</h4>
+        </button>
+        <div class="faq-answer">
+          <p class="faq-content">
+            Our developers bring designs to life with fast, secure, and scalable code. We integrate essential 
+            e-commerce tools like payment gateways, CRM, and automation systems tailored to your needs.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-bg">
+      <div class="app-container">
+        <button class="faq-question">
+          <svg class="faq-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m7 7 10 10" />
+            <path d="M17 7v10H7" />
+          </svg>
+          <h4 class="question-text">Testing, Launch & Optimization</h4>
+        </button>
+        <div class="faq-answer">
+          <p class="faq-content">
+            Before launch, we run rigorous quality assurance and usability testing. Post-launch, we monitor 
+            performance, optimize for SEO, and ensure your website continues to deliver ROI.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
   <!-- cta-sec -->
   <div class="cta-main ">
@@ -1901,6 +1768,21 @@ background-color: var(--light-grey-background);
   </div>
 </body>
 <script>
+  const items = document.querySelectorAll(".accordion-item");
+
+    items.forEach(item => {
+        const header = item.querySelector(".accordion-header");
+        header.addEventListener("click", () => {
+            // close others
+            items.forEach(i => {
+                if (i !== item) i.classList.remove("active");
+            });
+            // toggle current
+            item.classList.toggle("active");
+        });
+    });
+
+
   document.addEventListener('DOMContentLoaded', function () {
     const faqItems = document.querySelectorAll('.faq-item');
 
