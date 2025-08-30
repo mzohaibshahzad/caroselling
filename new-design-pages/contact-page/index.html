@@ -5,304 +5,398 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
 
+
     <style>
         * {
-            font-family: "Inter", sans-serif;
-            padding: 0;
             margin: 0;
+            padding: 0;
             box-sizing: border-box;
         }
 
+
+        :root {
+            /* fonts  */
+            --font-primary: 'Inter', sans-serif;
+            --font-secondary: 'Oswald', sans-serif;
+
+
+            /* colors */
+            --primary-color: #0000ff;
+            --light-grey-background: #f1eeee;
+            --black-text: #000000;
+            --background-color: #ffffff;
+            --lightgrey-border-color: #d3d3d3;
+        }
+
+
+
+        body {
+            background: white;
+            color: var(--black-text);
+        }
+
+        body p {
+            font-family: var(--font-primary);
+        }
+
+        body {
+            font-family: var(--font-secondary);
+        }
+
+        /* Global container class for entire site */
         .app-container {
-            max-width: 1440px;
+            max-width: 1585px;
+            width: 100%;
             margin: 0 auto;
-            padding-left: 16px;
-            padding-right: 16px;
+            padding: 0 80px;
         }
 
-        .padding-top-bottom {
-            padding: 60px 0px;
+        @media (max-width: 786px) {
+            .app-container {
+                padding: 0 20px;
+            }
         }
 
-
-        .main {
-            background-color: black;
-            color: white;
-        }
-
-        /* Hero section start */
-     .heroleft {
-            max-width: 850px;
-        }
-
-        .hero-para {
-            font-size: 110px;
-            font-weight: 400;
-            
-        }
-
-        .hero-sec-para {
-            font-size: 100px;
-
-            font-weight: 400;
-        }
-
-        .hero-sec-para span {
-            background-color: blue;
-        }
-
-        .hero-btn {
-
-            font-size: 20px;
-            padding: 15px 20px;
-            margin: 50px 0px;
-            text-align: center;
-            background-color: blue;
-            border: none;
-            border-radius: 100px;
-            color: white;
-        }
-
-        .hero-btn a {
-            color: white;
-            text-decoration: none;
-
-
-        }
-
-
-        .hero-main {
+        /* ================= HERO SECTION ================= */
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background: url("https://a4ari72izk.ufs.sh/f/HNbj1JW7mNRdFsGUyf84DMy2lBUvxa7JkYVjRdocutEw9ghp") center/cover no-repeat;
             display: flex;
             align-items: center;
-            justify-content: space-between;
-            gap: 20px;
-
         }
 
-        .right-para {
+        /* Gradient overlay (left fade) */
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 70%;
+            /* Adjust fade area */
+            height: 100%;
+            background: linear-gradient(to right,
+                    rgba(0, 0, 0, 1) 0%,
+                    /* full black at start */
+                    rgba(0, 0, 0, 1) 30%,
+                    /* keep half area solid black */
+                    rgba(0, 0, 0, 0.6) 80%,
+                    /* darker fade */
+                    rgba(0, 0, 0, 0) 100%
+                    /* fully transparent at end */
+                );
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
             color: white;
-            font-weight: 300;
-            font-size: 30px;
-         
         }
 
-        .heroright {
-            max-width: 500px;
-            width: 100%;
-        }
-
-        /* Hero section end */
-
-
-      
-     /* ===== CONTACT SECTION ===== */
-.contact-section {
-  display: flex;
-  flex-wrap: wrap;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
-  margin: 120px 0;
-  background: #fff;
-}
-
-/* Left Side */
-.contact-left {
-  flex: 1 1 40%;
-  background: #0a0a0a;
-  color: white;
-  padding: 3rem 2.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.contact-left h2 {
-  font-size: 2rem;
-  font-weight: 800;
-  margin-bottom: 1rem;
-  border-left: 5px solid blue;
-  padding-left: 12px;
-}
-
-.contact-left p {
-  font-size: 1rem;
-  margin-bottom: 1.5rem;
-  opacity: 0.9;
-  line-height: 1.6;
-}
-
-.contact-details {
-  list-style: none;
-  padding: 0;
-}
-
-.contact-details li {
-  margin-bottom: 1rem;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.contact-details strong {
-  color: white;
-  font-weight: 700;
-  font-size: 20px;
-}
-
-/* Right Side */
-.contact-right {
-  flex: 1 1 60%;
-  background: #fff;
-  padding: 3rem 2.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.contact-right h3 {
-  margin-bottom: 1.5rem;
-  font-weight: bold;
-  font-size: 1.4rem;
-  color: #0a0a0a;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1.2rem;
-}
-
-.form-group {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
-input,
-textarea {
-  flex: 1;
-  padding: 1rem;
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  font-size: 1rem;
-  transition: border-color 0.3s, box-shadow 0.3s;
-}
-
-input:focus,
-textarea:focus {
-  border-color: blue;
-  outline: none;
-  box-shadow: 0 0 6px rgba(57, 152, 139, 0.3);
-}
-
-textarea {
-  resize: vertical;
-  min-height: 120px;
-}
-
-button {
-  padding: 1rem;
-  background: blue;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  font-weight: bold;
-  font-size: 1.1rem;
-  transition: background 0.3s, transform 0.2s;
-}
-
-button:hover {
-  background: rgb(17, 55, 221);
-  transform: translateY(-2px);
-}
-
-/* Responsive */
-@media(max-width: 900px) {
-  .contact-section {
-    flex-direction: column;
-  }
-
-  .contact-left,
-  .contact-right {
-    flex: 1 1 100%;
-    padding: 2rem;
-  }
-
-  .form-group {
-    flex-direction: column;
-  }
-}
-
-        /* faq-section */
-        .faq-section {
-            margin: 4rem auto;
-        }
-
-        .faq-title {
-            font-size: 7rem;
-            font-weight: 900;
-            margin-bottom: 2rem;
+        .hero h1 {
+            font-size: 55px;
+            font-weight: 500;
             line-height: 1.2;
-            color: #0a0a0a;
+
         }
 
-        .faq-item {
-            background: white;
-            margin-bottom: 1rem;
-            padding: 1.2rem 1rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.09);
-            cursor: pointer;
-            transition: background 0.2s;
+        .hero h1 span {
+            color: var(--primary-color);
+
+
         }
 
-        .faq-item:hover {
-            background: #f5f9ff;
+        .hero p {
+            margin-top: 1rem;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #ddd;
         }
 
-        .faq-question {
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .hero h1 {
+                font-size: 45px;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                justify-content: center;
+                text-align: center;
+                height: 60vh;
+            }
+
+            .hero::before {
+                width: 100%;
+            }
+
+            .hero-content {
+                max-width: 100%;
+            }
+
+            .hero h1 {
+                font-size: 35px;
+            }
+        }
+
+        /* ===== CONTACT SECTION ===== */
+        .contact-section {
             display: flex;
-            justify-content: space-between;
-            font-weight: bold;
+            flex-wrap: wrap;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+            margin: 120px 0;
+            background: #fff;
+        }
+
+        /* Left Side */
+        .contact-left {
+            flex: 1 1 40%;
+            background: #0a0a0a;
+            color: white;
+            padding: 3rem 2.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .contact-left h2 {
+            font-size: 2rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            border-left: 5px solid blue;
+            padding-left: 12px;
+        }
+
+        .contact-left p {
             font-size: 1rem;
-            color: #111;
+            margin-bottom: 1.5rem;
+            opacity: 0.9;
+            line-height: 1.6;
         }
 
-        .faq-question span {
-            color: black;
-            font-size: 1.2rem;
-            font-weight: bold;
-            transition: transform 0.3s;
+        .contact-details {
+            list-style: none;
+            padding: 0;
         }
 
-        .faq-answer {
-            margin-top: 0.7rem;
-            display: none;
-            font-size: 0.95rem;
-            color: #444;
+        .contact-details li {
+            margin-bottom: 1rem;
+            font-size: 16px;
             line-height: 1.5;
         }
 
+        .contact-details strong {
+            color: white;
+            font-weight: 700;
+            font-size: 20px;
+        }
+
+        /* Right Side */
+        .contact-right {
+            flex: 1 1 60%;
+            background: #fff;
+            padding: 3rem 2.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .contact-right h3 {
+            margin-bottom: 1.5rem;
+            font-weight: bold;
+            font-size: 1.4rem;
+            color: #0a0a0a;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+        }
+
+        .form-group {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        input,
+        textarea {
+            flex: 1;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 1rem;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+
+        input:focus,
+        textarea:focus {
+            border-color: blue;
+            outline: none;
+            box-shadow: 0 0 6px rgba(57, 152, 139, 0.3);
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .form-button {
+            padding: 1rem;
+            background: blue;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        .form-button:hover {
+            background: rgb(17, 55, 221);
+            transform: translateY(-2px);
+        }
+
+        /* Responsive */
+        @media(max-width: 900px) {
+            .contact-section {
+                flex-direction: column;
+            }
+
+            .contact-left,
+            .contact-right {
+                flex: 1 1 100%;
+                padding: 2rem;
+            }
+
+            .form-group {
+                flex-direction: column;
+            }
+        }
+
+        /* <!-- FAQ section --> */
+
+
+        .faq-section {
+            background-color: var(--light-grey-background);
+            padding: 120px 0;
+        }
+
+        /* wrapper for background */
+        .faq-bg {
+            background: var(--light-grey-background);
+            border-top: 1px solid var(--lightgrey-border-color);
+            margin-bottom: 2px;
+            transition: background 0.3s ease;
+        }
+
+        /* active = white full width */
+        .faq-item.active .faq-bg {
+            background: white;
+        }
+
+        .faq-question {
+            width: 100%;
+            padding: 2rem;
+            background: none;
+            border: none;
+            font-size: 35px;
+            font-family: var(--font-secondary);
+            font-weight: 400;
+            cursor: pointer;
+            display: flex;
+            justify-content: flex-start;
+            gap: 400px;
+            align-items: center;
+        }
+
+        .faq-question :hover {
+            text-decoration: underline;
+        }
+
+        /* underline only when open */
+        .faq-item.active .question-text {
+            text-decoration: underline;
+        }
+
+
+        .faq-arrow {
+            width: 30px;
+            height: 30px;
+            transition: transform 0.3s ease;
+            flex-shrink: 0;
+            margin-right: 1rem;
+        }
+
+        .faq-item.active .faq-arrow {
+            transform: rotate(-90deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, padding 0.4s ease;
+        }
+
         .faq-item.active .faq-answer {
-            display: block;
+            max-height: 500px;
+            padding: 0 0 1.5rem 0;
         }
 
-        .faq-item.active .faq-question span {
-            content: "–";
-            transform: rotate(180deg);
+        .faq-content {
+            max-width: 960px;
+            margin-left: auto;
+            padding-top: 0.5rem;
+            font-size: 22px;
+            line-height: 1.7;
         }
 
-        /* footer section */
+
+        @media (max-width: 768px) {
+            .faq-section {
+                padding: 1rem 0;
+            }
+
+            .faq-question {
+                padding: 1rem;
+                font-size: 20px;
+                font-weight: 300;
+                gap: 0px;
+            }
+
+            .faq-item.active .faq-answer {
+                padding: 0 0 1rem 0;
+            }
+        }
+
+
+        /*footer */
+
+
         .footer-main {
-            padding-top: 50px;
+
             background-color: black;
             color: white;
         }
@@ -343,7 +437,7 @@ button:hover {
 
         .footer-list a {
             text-decoration: none;
-            color: lightgray;
+            color: var(--light-grey-background);
         }
 
         .footer-list-head {
@@ -356,7 +450,7 @@ button:hover {
         .footer-list li {
             padding: 6px 0;
             font-size: 18px;
-            color: lightgrey;
+            color: var(--light-grey-background);
             cursor: pointer;
         }
 
@@ -378,14 +472,13 @@ button:hover {
             }
 
             .footer-right {
-                display: flex;
-                flex-direction: column;
+                justify-content: start;
             }
         }
 
         .footer-right a {
             text-decoration: none;
-            color: lightgrey;
+            color: var(--light-grey-background);
             font-weight: 300;
             font-size: 16px;
             cursor: pointer;
@@ -403,7 +496,7 @@ button:hover {
         .ftr-spn {
             border-bottom: 1px solid white;
             padding-bottom: 5px;
-            color: blue;
+            color: var(--primary-color);
             cursor: pointer;
         }
 
@@ -411,224 +504,203 @@ button:hover {
             padding: 20px 0;
             text-align: center;
         }
-
-
-        /* Media quries for responsive desing  */
-
-        @media screen and (max-width: 1280px) {
-
-            /* Hero section responsive */
-            .hero-main {
-                flex-direction: column;
-            }
-        }
-
-        @media screen and (max-width:850px) {
-            .our-para {
-                font-size: 30px;
-
-            }
-
-        }
-
-        @media screen and (max-width: 710px) {
-            /* Hero section responsive */
-
-            .hero-para {
-                font-size: 80px;
-            }
-
-            .hero-sec-para {
-                font-size: 80px;
-            }
-
-            .hero-btn {
-                padding: 15px 30px;
-                margin-bottom: 20px;
-
-            }
-
-
-
-        }
-
-        @media screen and (max-width: 582px) {
-
-            /* Hero section responsive */
-            .hero-para {
-                font-size: 60px;
-            }
-
-            .hero-sec-para {
-                font-size: 60px;
-            }
-
-
-        }
-
-        @media screen and (max-width: 453px) {
-
-            /* Hero section responsive */
-            .hero-para {
-                font-size: 50px;
-            }
-
-            .hero-sec-para {
-                font-size: 50px;
-            }
-
-            .right-para {
-
-                font-size: 15px;
-            }
-
-
-        }
-
-        @media screen and (max-width: 389px) {
-
-            .hero-main {
-                gap: 0px;
-            }
-
-            .hero-para {
-                font-size: 40px;
-            }
-
-            .hero-sec-para {
-                font-size: 40px;
-            }
-
-
-        }
     </style>
+
 </head>
 
 <body>
-    <!-- hero-sec -->
-    <section>
-        <div class="main">
-            <div class="app-container">
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="app-container">
+            <div class="hero-content">
+                <h1>
+                    Get In <span>Touch With Our</span>
+                    Team
+                </h1>
+                <p>
+                    We’re here to answer your questions and guide you toward the right solutions for your business.
+                    Whether you’re looking to start a new project, need support, or want to explore how our services can
+                    help you grow, we’re just a message away.
 
-                <!-- hero-sec -->
-                <div class="hero-main  padding-top-bottom">
-                    <div class="heroleft">
-                        <h1 class="hero-para">Get In Touch </h1>
-                        <h1 class="hero-sec-para">With Our <span>Team</span></h1>
-                        <button class="hero-btn">Learn more</button>
-                    </div>
-                    <div class="heroright">
-                        <p class="right-para">We’re here to answer your questions and guide you toward the right
-                            solutions for your business. Whether you’re looking to start a new project, need support, or
-                            want to explore how our services can help you grow, we’re just a message away. Reach out to
-                            us today and let’s build something impactful together.
-                        </p>
-                    </div>
-                </div>
+                </p>
             </div>
         </div>
     </section>
+
+
     <!-- Form section -->
     <section>
         <div class="app-container">
 
-           <section class="contact-section">
-  <!-- Left: Contact Information -->
-  <div class="contact-left">
-    <h2>Get in Touch</h2>
-    <p>We’d love to hear from you! Reach out using the details below or send us a message.</p>
+            <section class="contact-section">
+                <!-- Left: Contact Information -->
+                <div class="contact-left">
+                    <h2>Get in Touch</h2>
+                    <p>We’d love to hear from you! Reach out using the details below or send us a message.</p>
 
-    <ul class="contact-details">
-      <li><strong>Address:</strong> 123 Business Street, City, Country</li>
-      <li><strong>Phone:</strong> +123 456 7890</li>
-      <li><strong>Email:</strong> info@yourcompany.com</li>
-      <li><strong>Working Hours:</strong> Mon – Fri: 9:00 AM – 6:00 PM</li>
-    </ul>
-  </div>
+                    <ul class="contact-details">
+                        <li><strong>Address:</strong> 123 Business Street, City, Country</li>
+                        <li><strong>Phone:</strong> +123 456 7890</li>
+                        <li><strong>Email:</strong> info@yourcompany.com</li>
+                        <li><strong>Working Hours:</strong> Mon – Fri: 9:00 AM – 6:00 PM</li>
+                    </ul>
+                </div>
 
-  <!-- Right: Contact Form -->
-  <div class="contact-right">
-    <h3>Send Us a Message</h3>
-    <form>
-      <div class="form-group">
-        <input type="text" placeholder="Full Name" required>
-        <input type="email" placeholder="Email Address" required>
-      </div>
+                <!-- Right: Contact Form -->
+                <div class="contact-right">
+                    <h3>Send Us a Message</h3>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Full Name" required>
+                            <input type="email" placeholder="Email Address" required>
+                        </div>
 
-      <div class="form-group">
-        <input type="tel" placeholder="Phone Number">
-        <input type="text" placeholder="Subject">
-      </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Phone Number">
+                            <input type="text" placeholder="Subject">
+                        </div>
 
-      <textarea placeholder="Your Message" required></textarea>
+                        <textarea placeholder="Your Message" required></textarea>
 
-      <button type="submit">Submit</button>
-    </form>
-  </div>
-</section>
+                        <button type="submit" class="form-button">Submit</button>
+                    </form>
+                </div>
+            </section>
 
         </div>
     </section>
- 
-    <!-- FAQ SECTION -->
-    <div class="app-container">
-        <section class="faq-section">
-            <h1 class="faq-title">What.<br>The.<br>FAQ?</h1>
 
-            <div class="faq-item">
-                <div class="faq-question">How quickly will you respond to my inquiry? <span>+</span></div>
-                <div class="faq-answer">We usually reply within 24 business hours.</div>
-            </div>
+    <!-- FAQ section -->
+    <section class="faq-section">
 
-            <div class="faq-item">
-                <div class="faq-question">Can I schedule a meeting before starting a project? <span>+</span></div>
-                <div class="faq-answer">Yes! You can schedule a free consultation call to discuss your needs.</div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question">What kind of businesses do you work with? <span>+</span></div>
-                <div class="faq-answer">We work with startups, small businesses, and enterprises across various
-                    industries.</div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question">Do you offer ongoing support after project completion? <span>+</span></div>
-                <div class="faq-answer">Absolutely. We provide continuous support, updates, and optimization as needed.
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question">How can I get a project quote? <span>+</span></div>
-                <div class="faq-answer">Simply fill out the form with your details, and we’ll provide a customized
-                    quote.</div>
-            </div>
-        </section>
+  <div class="faq-item">
+    <div class="faq-bg">
+      <div class="app-container">
+        <button class="faq-question">
+          <svg class="faq-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m7 7 10 10" />
+            <path d="M17 7v10H7" />
+          </svg>
+          <h4 class="question-text">How quickly will you respond to my inquiry?</h4>
+        </button>
+        <div class="faq-answer">
+          <p class="faq-content">
+            We usually reply within 24 business hours.
+          </p>
+        </div>
+      </div>
     </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-bg">
+      <div class="app-container">
+        <button class="faq-question">
+          <svg class="faq-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m7 7 10 10" />
+            <path d="M17 7v10H7" />
+          </svg>
+          <h4 class="question-text">Can I schedule a meeting before starting a project?</h4>
+        </button>
+        <div class="faq-answer">
+          <p class="faq-content">
+            Yes! You can schedule a free consultation call to discuss your needs.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-bg">
+      <div class="app-container">
+        <button class="faq-question">
+          <svg class="faq-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m7 7 10 10" />
+            <path d="M17 7v10H7" />
+          </svg>
+          <h4 class="question-text">What kind of businesses do you work with?</h4>
+        </button>
+        <div class="faq-answer">
+          <p class="faq-content">
+            We work with startups, small businesses, and enterprises across various industries.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-bg">
+      <div class="app-container">
+        <button class="faq-question">
+          <svg class="faq-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m7 7 10 10" />
+            <path d="M17 7v10H7" />
+          </svg>
+          <h4 class="question-text">Do you offer ongoing support after project completion?</h4>
+        </button>
+        <div class="faq-answer">
+          <p class="faq-content">
+            Absolutely. We provide continuous support, updates, and optimization as needed.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-bg">
+      <div class="app-container">
+        <button class="faq-question">
+          <svg class="faq-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m7 7 10 10" />
+            <path d="M17 7v10H7" />
+          </svg>
+          <h4 class="question-text">How can I get a project quote?</h4>
+        </button>
+        <div class="faq-answer">
+          <p class="faq-content">
+            Simply fill out the form with your details, and we’ll provide a customized quote.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
     <!-- footer-sec -->
 
-    <div class="footer-main padding-top-bottom ">
+    <div class="footer-main ">
         <div class="app-container">
             <div class="footer-list-flex">
 
                 <ul class="footer-list">
-                    <p class="footer-list-head">Website</p>
+                    <h5 class="footer-list-head">Website</h5>
                     <li><a href="/website/uiux-design">UI/UX Design</a></li>
                     <li><a href="/website/website-design">Website Design</a></li>
                     <li><a href="/website/seo">SEO</a></li>
                     <li><a href="/website/web-apps">Web Apps</a></li>
                 </ul>
                 <ul class="footer-list">
-                    <p class="footer-list-head">Software</p>
+                    <h5 class="footer-list-head">Software</h5>
                     <li><a href="/software/custom-software">Custom Software</a></li>
                     <li><a href="/software/saas-development">SaaS Development</a></li>
                 </ul>
                 <ul class="footer-list">
-                    <p class="footer-list-head">AI & Data</p>
+                    <h5 class="footer-list-head">AI & Data</h5>
                     <li><a href="/ai-data/business-automation">Business Automation</a></li>
                     <li><a href="/ai-data/ai-setup">AI Setup</a></li>
                 </ul>
                 <ul class="footer-list">
-                    <p class="footer-list-head">Information</p>
+                    <h5 class="footer-list-head">Information</h5>
                     <li><a href="#">Home</a></li>
                     <li><a href="/e-commerce">E commerce</a></li>
                     <li><a href="/pricing">Pricing</a></li>
@@ -637,7 +709,7 @@ button:hover {
                 </ul>
             </div>
             <div class="footer-top-flex">
-               
+
                 <div class="footer-right">
                     <a href="#">Term</a>
                     <a href="#">Privacy</a>
@@ -648,12 +720,25 @@ button:hover {
     </div>
 </body>
 <script>
-    // FAQ toggle
-    document.querySelectorAll('.faq-item').forEach(item => {
-        item.addEventListener('click', () => {
-            item.classList.toggle('active');
-            const symbol = item.querySelector('span');
-            symbol.textContent = item.classList.contains('active') ? "–" : "+";
+    document.addEventListener('DOMContentLoaded', function () {
+        const faqItems = document.querySelectorAll('.faq-item');
+
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+
+            question.addEventListener('click', () => {
+                const isActive = item.classList.contains('active');
+
+                // Close all other items
+                faqItems.forEach(otherItem => {
+                    otherItem.classList.remove('active');
+                });
+
+                // Toggle current item
+                if (!isActive) {
+                    item.classList.add('active');
+                }
+            });
         });
     });
 </script>
