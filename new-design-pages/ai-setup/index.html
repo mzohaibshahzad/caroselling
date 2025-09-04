@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Service Page</title>
+  <title>Ai Setup</title>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -356,12 +356,14 @@
     .heading {
       font-size: 45px;
       font-weight: 500;
-      line-height: 1.1;
+      line-height: 1.4;
       color: black;
     }
 
     .highlight {
-
+      padding: 0px 10px;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.5);
       background-color: var(--primary-color);
       color: white;
     }
@@ -876,6 +878,10 @@
     /* underline only when open */
     .faq-item.active .question-text {
       text-decoration: underline;
+      
+    }
+    .question-text{
+      text-align: start;
     }
 
 
@@ -911,6 +917,11 @@
     }
 
 
+    @media (max-width: 1360px) {
+      .faq-question{
+        gap: 100px;
+      }
+    }
     @media (max-width: 768px) {
       .faq-section {
         padding: 1rem 0;
@@ -1108,6 +1119,7 @@
       gap: 50px;
       justify-content: space-between;
       align-items: center;
+      padding-top: 120px;
     }
 
     .cta-img {
@@ -1128,6 +1140,7 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
+        padding-top: 70px;
       }
 
       .cta-head {
