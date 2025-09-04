@@ -876,14 +876,14 @@ background-color: var(--light-grey-background);
     }
 
 
-    @media (max-width: 768px) {
+     @media (max-width: 768px) {
       .faq-section {
         padding: 1rem 0;
       }
 
       .faq-question {
         padding: 1rem;
-        font-size: 20px;
+        font-size: 18px;
         font-weight: 300;
         gap: 0px;
       }
