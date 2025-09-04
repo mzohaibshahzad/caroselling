@@ -761,7 +761,7 @@ body h5 {
 @media (max-width: 678px) {
   .stat-numbers-section{
     
-    margin: 20px 0;
+    margin-top: 20px;
   }
   .stats-div{
     padding: 0px 10px;
@@ -1374,7 +1374,7 @@ font-size: 20px;
   font-size: 17px;
 }
   .faq-question {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 300;
   }
 
@@ -1522,12 +1522,16 @@ font-size: 20px;
 }
 
 @media screen and (max-width: 700px) {
+  .home-circle-cta svg {
+  height: 35px;
+  width: 35px;
+}
   .home-cta-main{
     height: 30vh;
   }
   .home-circle-cta{
-    width: 180px;
-    height: 180px;
+    width: 150px;
+    height: 150px;
     font-size: 18px;
     gap: 15px;
   }
