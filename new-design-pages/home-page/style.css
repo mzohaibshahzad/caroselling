@@ -143,7 +143,7 @@ body h5 {
   position: relative;
   width: 100%;
   height: 80vh;
-  background: url("https://a4ari72izk.ufs.sh/f/HNbj1JW7mNRdEar1lfxTUsC5LJmj4x0lDnizdSGy3k1fE7tp") center/cover no-repeat;
+  background: url("https://res.cloudinary.com/dnnx3daoy/image/upload/v1757332122/Hero_Homepage_crnrbq.png") center/cover no-repeat;
   background-position: top;
   display: flex;
   align-items: center;
@@ -1551,7 +1551,7 @@ body h5 {
 }
 
 .home-cta-main {
-  background-image: url(https://a4ari72izk.ufs.sh/f/HNbj1JW7mNRdGtIFV9EPuHQFMBAlTyLDJmUcbCj7iX0wWhZk);
+  background-image: url(https://res.cloudinary.com/dnnx3daoy/image/upload/v1757339516/Greyscale_Image_jo2saj_lxkfnj.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 80vh;
