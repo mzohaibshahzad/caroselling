@@ -1626,9 +1626,23 @@
   <!-- image section -->
   <section class="big-image-bg">
     <div class="big-image">
-      <img src="https://res.cloudinary.com/dnnx3daoy/image/upload/v1757337591/Other_bg_image_xbdgq4_epyxxe.jpg"
-        alt="Showcase image" class="Showcase-img">
-    </div>
+  <img
+    src="https://res.cloudinary.com/dnnx3daoy/image/upload/f_auto,q_auto,w_1200/Other_bg_image_xbdgq4_epyxxe.jpg"
+    srcset="
+      https://res.cloudinary.com/dnnx3daoy/image/upload/f_auto,q_auto,w_600/Other_bg_image_xbdgq4_epyxxe.jpg 600w,
+      https://res.cloudinary.com/dnnx3daoy/image/upload/f_auto,q_auto,w_1200/Other_bg_image_xbdgq4_epyxxe.jpg 1200w,
+      https://res.cloudinary.com/dnnx3daoy/image/upload/f_auto,q_auto,w_1800/Other_bg_image_xbdgq4_epyxxe.jpg 1800w
+    "
+    sizes="(max-width: 768px) 600px,
+           (max-width: 1280px) 1200px,
+           1800px"
+    alt="Showcase image"
+    class="Showcase-img"
+    loading="lazy"
+    decoding="async"
+  />
+</div>
+
     <div class="text-section app-container">
       <span class="left-text">Our E-Commerce Approach</span>
       <p class="right-text">
