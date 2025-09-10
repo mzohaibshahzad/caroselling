@@ -377,21 +377,27 @@
         }
 
         .card-footer {
-            margin-top: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+            
         }
 
         /* Rounded buttons with blue theme */
         .cta-button {
             width: 100%;
+            height: 100%;
+            text-decoration: none;
             background: blue;
             color: white;
             border: none;
+            text-align: center;
             padding: 16px 28px;
-            border-radius: 25px;
+            border-radius: 30px;
             font-size: 16px;
             font-weight: 600;
             cursor: pointer;
-            margin-bottom: 12px;
+       
         }
 
         .cta-button:hover {
@@ -720,238 +726,236 @@
 
     <!-- Pricing  section -->
     <section class="pricing-section">
-        <div class="app-container">
-            <!-- Website Services -->
-            <div class="service-category">
-                <div class="category-header">
-                    <h2 class="category-title">
-
-                        Website Services
-                    </h2>
-                    <p class="category-description">Build your digital presence with professional web solutions</p>
-                </div>
-
-                <div class="pricing-grid">
-                    <div class="pricing-card">
-                        <div class="card-header">
-                            <div class="plan-badge">Starter</div>
-                            <h3 class="plan-title">Website Design</h3>
-                            <div class="price-section">
-                                <div class="price">$800</div>
-                                <div class="price-note">One-time payment</div>
-                            </div>
-                        </div>
-
-                        <div class="features-section">
-                            <h4 class="features-title">What's included:</h4>
-                            <ul class="features-list">
-                                <li>Custom-designed websites</li>
-                                <li>Modern & responsive layouts</li>
-                                <li>Conversion-focused design</li>
-                                <li>Mobile optimization</li>
-                                <li>Basic SEO setup</li>
-                            </ul>
-                        </div>
-
-                        <div class="card-footer">
-                            <button class="cta-button">Start Your Project</button>
-                            <p class="guarantee">30-day money-back guarantee</p>
-                        </div>
-                    </div>
-
-                    <div class="pricing-card featured">
-                        <div class="featured-badge">Best Value</div>
-                        <div class="card-header">
-                            <div class="plan-badge popular">Professional</div>
-                            <h3 class="plan-title">SEO Packages</h3>
-                            <div class="price-section">
-                                <div class="price">$600<span class="price-period">/mo</span></div>
-                                <div class="price-note">Billed monthly • Cancel anytime</div>
-                            </div>
-                        </div>
-
-                        <div class="features-section">
-                            <h4 class="features-title">Everything in Starter, plus:</h4>
-                            <ul class="features-list">
-                                <li>Advanced on-page optimization</li>
-                                <li>Off-page & local SEO</li>
-                                <li>Content optimization</li>
-                                <li>Monthly performance reports</li>
-                                <li>Keyword research & tracking</li>
-                                <li>Competitor analysis</li>
-                            </ul>
-                        </div>
-
-                        <div class="card-footer">
-                            <button class="cta-button featured-cta">Start Growing Now</button>
-                            <p class="guarantee">First month money-back guarantee</p>
-                        </div>
-                    </div>
-
-                    <div class="pricing-card">
-                        <div class="card-header">
-                            <div class="plan-badge">Enterprise</div>
-                            <h3 class="plan-title">Web Apps & E-commerce</h3>
-                            <div class="price-section">
-                                <div class="price">$1,500</div>
-                                <div class="price-note">Starting price • Custom quote</div>
-                            </div>
-                        </div>
-
-                        <div class="features-section">
-                            <h4 class="features-title">Complete solution:</h4>
-                            <ul class="features-list">
-                                <li>Scalable web applications</li>
-                                <li>Secure e-commerce platforms</li>
-                                <li>Integrated checkout system</li>
-                                <li>Payment gateway setup</li>
-                                <li>Inventory management</li>
-                            </ul>
-                        </div>
-
-                        <div class="card-footer">
-                            <button class="cta-button">Get Custom Quote</button>
-                            <p class="guarantee">Free consultation included</p>
-                        </div>
-                    </div>
-                </div>
+    <div class="app-container">
+        <!-- Website Services -->
+        <div class="service-category">
+            <div class="category-header">
+                <h2 class="category-title">
+                    Website Services
+                </h2>
+                <p class="category-description">Build your digital presence with professional web solutions</p>
             </div>
 
-            <!-- Software Services -->
-            <div class="service-category">
-                <div class="category-header">
-                    <h2 class="category-title">
-
-                        Software Services
-                    </h2>
-                    <p class="category-description">Custom software solutions tailored to your business needs</p>
-                </div>
-
-                <div class="pricing-grid two-column">
-                    <div class="pricing-card">
-                        <div class="card-header">
-                            <div class="plan-badge">Custom</div>
-                            <h3 class="plan-title">Custom Software Development</h3>
-                            <div class="price-section">
-                                <div class="price">$2,000</div>
-                                <div class="price-note">Starting price • Project-based</div>
-                            </div>
-                        </div>
-
-                        <div class="features-section">
-                            <h4 class="features-title">Tailored solutions:</h4>
-                            <ul class="features-list">
-                                <li>Tailored software solutions</li>
-                                <li>Designed for unique workflows</li>
-                                <li>Business process optimization</li>
-                                <li>Integration with existing systems</li>
-                                <li>Ongoing maintenance & support</li>
-                            </ul>
-                        </div>
-
-                        <div class="card-footer">
-                            <button class="cta-button">Discuss Your Project</button>
-                            <p class="guarantee">Free project consultation</p>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="card-header">
+                        <div class="plan-badge">Starter</div>
+                        <h3 class="plan-title">Website Design</h3>
+                        <div class="price-section">
+                            <div class="price">$800</div>
+                            <div class="price-note">One-time payment</div>
                         </div>
                     </div>
 
-                    <div class="pricing-card">
-                        <div class="card-header">
-                            <div class="plan-badge">SaaS</div>
-                            <h3 class="plan-title">SaaS Development</h3>
-                            <div class="price-section">
-                                <div class="price">$3,000</div>
-                                <div class="price-note">Starting price • Full-stack solution</div>
-                            </div>
-                        </div>
+                    <div class="features-section">
+                        <h4 class="features-title">What's included:</h4>
+                        <ul class="features-list">
+                            <li>Custom-designed websites</li>
+                            <li>Modern & responsive layouts</li>
+                            <li>Conversion-focused design</li>
+                            <li>Mobile optimization</li>
+                            <li>Basic SEO setup</li>
+                        </ul>
+                    </div>
 
-                        <div class="features-section">
-                            <h4 class="features-title">Complete platform:</h4>
-                            <ul class="features-list">
-                                <li>Full-stack SaaS platforms</li>
-                                <li>Subscription-based models</li>
-                                <li>Cloud integration</li>
-                                <li>User management system</li>
-                                <li>Analytics & reporting</li>
-                            </ul>
-                        </div>
-
-                        <div class="card-footer">
-                            <button class="cta-button">Build Your SaaS</button>
-                            <p class="guarantee">MVP delivery guarantee</p>
-                        </div>
+                    <div class="card-footer">
+                        <a href="https://sites.google.com/medifocal.com/medifocalmarketing/contact" class="cta-button">Start Your Project</a>
+                        <p class="guarantee">30-day money-back guarantee</p>
                     </div>
                 </div>
-            </div>
 
-            <!-- AI & Data Services -->
-            <div class="service-category">
-                <div class="category-header">
-                    <h2 class="category-title">
-
-                        AI & Data Services
-                    </h2>
-                    <p class="category-description">Intelligent automation and AI solutions for modern businesses</p>
-                </div>
-
-                <div class="pricing-grid two-column">
-                    <div class="pricing-card">
-                        <div class="card-header">
-                            <div class="plan-badge">Automation</div>
-                            <h3 class="plan-title">Business Automation</h3>
-                            <div class="price-section">
-                                <div class="price">$1,000</div>
-                                <div class="price-note">Per automation workflow</div>
-                            </div>
-                        </div>
-
-                        <div class="features-section">
-                            <h4 class="features-title">Streamline operations:</h4>
-                            <ul class="features-list">
-                                <li>Automated workflows</li>
-                                <li>Reduce manual tasks</li>
-                                <li>Boost efficiency</li>
-                                <li>Process optimization</li>
-                                <li>ROI tracking & reporting</li>
-                            </ul>
-                        </div>
-
-                        <div class="card-footer">
-                            <button class="cta-button">Automate Now</button>
-                            <p class="guarantee">ROI guarantee or money back</p>
+                <div class="pricing-card featured">
+                    <div class="featured-badge">Best Value</div>
+                    <div class="card-header">
+                        <div class="plan-badge popular">Professional</div>
+                        <h3 class="plan-title">SEO Packages</h3>
+                        <div class="price-section">
+                            <div class="price">$600<span class="price-period">/mo</span></div>
+                            <div class="price-note">Billed monthly • Cancel anytime</div>
                         </div>
                     </div>
 
-                    <div class="pricing-card">
-                        <div class="card-header">
-                            <div class="plan-badge">AI-Powered</div>
-                            <h3 class="plan-title">AI Setup & Integration</h3>
-                            <div class="price-section">
-                                <div class="price">$1,200</div>
-                                <div class="price-note">Complete AI implementation</div>
-                            </div>
-                        </div>
+                    <div class="features-section">
+                        <h4 class="features-title">Everything in Starter, plus:</h4>
+                        <ul class="features-list">
+                            <li>Advanced on-page optimization</li>
+                            <li>Off-page & local SEO</li>
+                            <li>Content optimization</li>
+                            <li>Monthly performance reports</li>
+                            <li>Keyword research & tracking</li>
+                            <li>Competitor analysis</li>
+                        </ul>
+                    </div>
 
-                        <div class="features-section">
-                            <h4 class="features-title">Smart solutions:</h4>
-                            <ul class="features-list">
-                                <li>Chatbot implementation</li>
-                                <li>AI-powered analytics</li>
-                                <li>Smarter business operations</li>
-                                <li>Machine learning integration</li>
-                                <li>Predictive insights</li>
-                            </ul>
-                        </div>
+                    <div class="card-footer">
+                        <a href="https://sites.google.com/medifocal.com/medifocalmarketing/contact" class="cta-button featured-cta">Start Growing Now</a>
+                        <p class="guarantee">First month money-back guarantee</p>
+                    </div>
+                </div>
 
-                        <div class="card-footer">
-                            <button class="cta-button">Get AI-Powered</button>
-                            <p class="guarantee">Performance improvement guarantee</p>
+                <div class="pricing-card">
+                    <div class="card-header">
+                        <div class="plan-badge">Enterprise</div>
+                        <h3 class="plan-title">Web Apps & E-commerce</h3>
+                        <div class="price-section">
+                            <div class="price">$1,500</div>
+                            <div class="price-note">Starting price • Custom quote</div>
                         </div>
+                    </div>
+
+                    <div class="features-section">
+                        <h4 class="features-title">Complete solution:</h4>
+                        <ul class="features-list">
+                            <li>Scalable web applications</li>
+                            <li>Secure e-commerce platforms</li>
+                            <li>Integrated checkout system</li>
+                            <li>Payment gateway setup</li>
+                            <li>Inventory management</li>
+                        </ul>
+                    </div>
+
+                    <div class="card-footer">
+                        <a href="https://sites.google.com/medifocal.com/medifocalmarketing/contact" class="cta-button">Get Custom Quote</a>
+                        <p class="guarantee">Free consultation included</p>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+
+        <!-- Software Services -->
+        <div class="service-category">
+            <div class="category-header">
+                <h2 class="category-title">
+                    Software Services
+                </h2>
+                <p class="category-description">Custom software solutions tailored to your business needs</p>
+            </div>
+
+            <div class="pricing-grid two-column">
+                <div class="pricing-card">
+                    <div class="card-header">
+                        <div class="plan-badge">Custom</div>
+                        <h3 class="plan-title">Custom Software Development</h3>
+                        <div class="price-section">
+                            <div class="price">$2,000</div>
+                            <div class="price-note">Starting price • Project-based</div>
+                        </div>
+                    </div>
+
+                    <div class="features-section">
+                        <h4 class="features-title">Tailored solutions:</h4>
+                        <ul class="features-list">
+                            <li>Tailored software solutions</li>
+                            <li>Designed for unique workflows</li>
+                            <li>Business process optimization</li>
+                            <li>Integration with existing systems</li>
+                            <li>Ongoing maintenance & support</li>
+                        </ul>
+                    </div>
+
+                    <div class="card-footer">
+                        <a href="https://sites.google.com/medifocal.com/medifocalmarketing/contact" class="cta-button">Discuss Your Project</a>
+                        <p class="guarantee">Free project consultation</p>
+                    </div>
+                </div>
+
+                <div class="pricing-card">
+                    <div class="card-header">
+                        <div class="plan-badge">SaaS</div>
+                        <h3 class="plan-title">SaaS Development</h3>
+                        <div class="price-section">
+                            <div class="price">$3,000</div>
+                            <div class="price-note">Starting price • Full-stack solution</div>
+                        </div>
+                    </div>
+
+                    <div class="features-section">
+                        <h4 class="features-title">Complete platform:</h4>
+                        <ul class="features-list">
+                            <li>Full-stack SaaS platforms</li>
+                            <li>Subscription-based models</li>
+                            <li>Cloud integration</li>
+                            <li>User management system</li>
+                            <li>Analytics & reporting</li>
+                        </ul>
+                    </div>
+
+                    <div class="card-footer">
+                        <a href="https://sites.google.com/medifocal.com/medifocalmarketing/contact" class="cta-button">Build Your SaaS</a>
+                        <p class="guarantee">MVP delivery guarantee</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- AI & Data Services -->
+        <div class="service-category">
+            <div class="category-header">
+                <h2 class="category-title">
+                    AI & Data Services
+                </h2>
+                <p class="category-description">Intelligent automation and AI solutions for modern businesses</p>
+            </div>
+
+            <div class="pricing-grid two-column">
+                <div class="pricing-card">
+                    <div class="card-header">
+                        <div class="plan-badge">Automation</div>
+                        <h3 class="plan-title">Business Automation</h3>
+                        <div class="price-section">
+                            <div class="price">$1,000</div>
+                            <div class="price-note">Per automation workflow</div>
+                        </div>
+                    </div>
+
+                    <div class="features-section">
+                        <h4 class="features-title">Streamline operations:</h4>
+                        <ul class="features-list">
+                            <li>Automated workflows</li>
+                            <li>Reduce manual tasks</li>
+                            <li>Boost efficiency</li>
+                            <li>Process optimization</li>
+                            <li>ROI tracking & reporting</li>
+                        </ul>
+                    </div>
+
+                    <div class="card-footer">
+                        <a href="https://sites.google.com/medifocal.com/medifocalmarketing/contact" class="cta-button">Automate Now</a>
+                        <p class="guarantee">ROI guarantee or money back</p>
+                    </div>
+                </div>
+
+                <div class="pricing-card">
+                    <div class="card-header">
+                        <div class="plan-badge">AI-Powered</div>
+                        <h3 class="plan-title">AI Setup & Integration</h3>
+                        <div class="price-section">
+                            <div class="price">$1,200</div>
+                            <div class="price-note">Complete AI implementation</div>
+                        </div>
+                    </div>
+
+                    <div class="features-section">
+                        <h4 class="features-title">Smart solutions:</h4>
+                        <ul class="features-list">
+                            <li>Chatbot implementation</li>
+                            <li>AI-powered analytics</li>
+                            <li>Smarter business operations</li>
+                            <li>Machine learning integration</li>
+                            <li>Predictive insights</li>
+                        </ul>
+                    </div>
+
+                    <div class="card-footer">
+                        <a href="https://sites.google.com/medifocal.com/medifocalmarketing/contact" class="cta-button">Get AI-Powered</a>
+                        <p class="guarantee">Performance improvement guarantee</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 
     <!-- FAQ section -->
     <section class="faq-section">
